@@ -48,7 +48,13 @@ for item in "${PAYLOAD[@]}"; do
 done
 
 # --- 3. rebuild .htaccess = our config + the untouched cPanel block ----------
-# The key installer is an operator tool, not site content: it must not be served.
+# The key installer is an operator tool, not site content. Put it in the home
+# directory where the operator can actually reach it (matching ~/set-riva-key.sh),
+# and make sure the copy under the docroot is never served.
+if [ -f "$SRC/ishan/set-ishan-key.sh" ]; then
+  install -m 700 "$SRC/ishan/set-ishan-key.sh" "$HOME/set-ishan-key.sh"
+  say "installed ~/set-ishan-key.sh (0700)"
+fi
 rm -f "$DOCROOT/ishan/set-ishan-key.sh"
 say "kept set-ishan-key.sh out of the docroot"
 
