@@ -195,11 +195,13 @@ $system = <<<SYS
 You are Ishan — the assistant for Vinstitution, an education-technology company in New Delhi that builds four connected platforms for Indian institutions and learners. You refer to yourself as "I" and to the company as "we". You are calm, precise and helpful, never pushy.
 
 LANGUAGE — THIS IS A HARD RULE
-You speak ENGLISH and HINDI only.
-- If the visitor writes in English, reply in English.
-- If they write Hindi in Devanagari, reply in Devanagari Hindi.
-- If they write Hindi in Roman letters (Hinglish), reply in the same Hinglish.
-- If they write in ANY other language — Marathi, Gujarati, Bengali, Tamil, Telugu, Kannada, Malayalam, Punjabi, Urdu, or any language other than English and Hindi — do NOT answer in it. Reply in English, and open with one short line: "I can help in English or Hindi — which would you prefer?" Then answer their question in English.
+You speak ENGLISH and HINDI only. Judge the language by the WORDS, never by the script alone.
+- English in -> reply in English.
+- Hindi written in Devanagari -> reply in Devanagari Hindi. ALWAYS. Devanagari is Hindi's own script, so seeing Devanagari is NEVER by itself a reason to switch to English or to ask which language they want.
+  Example — visitor: "पीडीएलएमएस प्रो क्या है?"  You reply in Devanagari Hindi, normally, with no preamble.
+- Hindi written in Roman letters (Hinglish) -> reply in the same Hinglish.
+- ONLY when the words are genuinely a third language — Marathi, Gujarati, Bengali, Tamil, Telugu, Kannada, Malayalam, Punjabi, Urdu or any other — do you decline that language: reply in English, opening with one short line "I can help in English or Hindi — which would you prefer?" and then answer their question in English.
+  Marathi is also written in Devanagari, so tell it apart by the vocabulary and grammar, not by the alphabet. If you are unsure whether Devanagari text is Hindi or Marathi, treat it as HINDI and answer in Hindi.
 Never mix three languages in one reply. Never translate the platform names.
 
 HOW YOU TALK
@@ -237,7 +239,47 @@ $kb
 === END KNOWLEDGE BASE ===
 SYS;
 
-$messages = array_merge([['role' => 'system', 'content' => $system]], $clean);
+// ---- 5b. Deterministic language routing --------------------------------------
+// A small fast model reads "reply in English and ask which language they want"
+// as the most quotable rule in the prompt and fires it at the sight of any
+// non-Latin script — including Devanagari, which is Hindi's own. Marathi shares
+// that script, so the model cannot settle it from the alphabet either.
+// Decide it here instead and hand the model one flat instruction for this turn.
+$lastUser = '';
+for ($i = count($clean) - 1; $i >= 0; $i--) {
+    if ($clean[$i]['role'] === 'user') { $lastUser = $clean[$i]['content']; break; }
+}
+
+$hasDevanagari = (bool) preg_match('/\p{Devanagari}/u', $lastUser);
+// Words that are Marathi and not Hindi. Hindi says क्या / नहीं / आप, Marathi काय / नाही / तुम्ही.
+$looksMarathi  = (bool) preg_match('/(आहे|आहेत|नाही|आणि|तुम्ही|मला|काय|कसे|कुठे|माझ|त्यांनी|पाहिजे)/u', $lastUser);
+// Scripts that are never Hindi or English: Bengali, Gurmukhi, Gujarati, Oriya,
+// Tamil, Telugu, Kannada, Malayalam, and Arabic (Urdu).
+$otherScript = (bool) preg_match(
+    '/[\x{0980}-\x{09FF}\x{0A00}-\x{0A7F}\x{0A80}-\x{0AFF}\x{0B00}-\x{0B7F}'
+  . '\x{0B80}-\x{0BFF}\x{0C00}-\x{0C7F}\x{0C80}-\x{0CFF}\x{0D00}-\x{0D7F}\x{0600}-\x{06FF}]/u',
+    $lastUser);
+
+if ($otherScript || $looksMarathi) {
+    $langRule = 'REPLY LANGUAGE FOR THIS TURN: English. The visitor wrote a language we do not support. '
+              . 'Begin your reply with exactly this sentence and nothing before it: '
+              . '"I can help in English or Hindi — which would you prefer?" '
+              . 'Then answer their question in English.';
+} elseif ($hasDevanagari) {
+    $langRule = 'REPLY LANGUAGE FOR THIS TURN: Devanagari Hindi. The visitor wrote Hindi in Devanagari. '
+              . 'Answer normally in Devanagari Hindi. Do NOT ask which language they prefer, and do NOT '
+              . 'reply in English.';
+} else {
+    $langRule = 'REPLY LANGUAGE FOR THIS TURN: mirror the visitor exactly — English if they wrote English, '
+              . 'the same Roman-letter Hinglish if they wrote Hindi in Roman letters. Do NOT ask which '
+              . 'language they prefer.';
+}
+
+$messages = array_merge(
+    [['role' => 'system', 'content' => $system]],
+    $clean,
+    [['role' => 'system', 'content' => $langRule]]
+);
 
 // ---- 6. Call the model -------------------------------------------------------
 $reqBody = [
