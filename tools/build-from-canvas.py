@@ -178,6 +178,31 @@ if _acc["i"] != 4:
     raise SystemExit("expected 4 product cards, tagged %d" % _acc["i"])
 
 body = re.sub(r'[ ]{2,}(?=[a-zA-Z-]+=")', " ", body)   # tidy gaps left by stripped handlers
+
+# ---------------------------------------------------------------------------
+# The mock-UI panels show invented figures. Label them so nobody reads them as
+# real institution data: drop the "LIVE" chip, badge every browser chrome with
+# DEMO, and say plainly that the sample data is illustrative.
+# ---------------------------------------------------------------------------
+DEMO_CHIP = ('<span style="margin-left:auto;display:inline-flex;align-items:center;gap:6px;'
+             'font-size:9.5px;font-weight:800;letter-spacing:.14em;color:var(--muted);'
+             'border:1px solid var(--line-2);border-radius:100px;padding:3px 9px;flex:none">DEMO</span>')
+
+live_chip = re.compile(r'<span style="margin-left:auto;[^"]*color:var\(--ok\)"><span style="[^"]*'
+                       r'animation:blip[^"]*"></span>LIVE</span>')
+n_live = len(live_chip.findall(body))
+body = live_chip.sub("", body)
+
+chrome = re.compile(r'(<span style="[^"]*font-family:ui-monospace[^"]*color:var\(--faint\)[^"]*">[^<]*</span>)')
+n_chrome = len(chrome.findall(body))
+body = chrome.sub(r"\1" + DEMO_CHIP, body)
+
+# the canvas calls the panels "live"; they are interactive, but the data is not real
+body = body.replace(
+    "The four panels below are live — click the tabs, chips and question grid.",
+    "The four panels below are interactive demos with sample data — click the tabs, "
+    "chips and question grid.")
+
 body = re.sub(r"[ \t]+\n", "\n", body)
 
 # ---------------------------------------------------------------- 7. CSS file
@@ -265,6 +290,7 @@ html = ("<!DOCTYPE html>\n<html lang=\"en\">\n<head>" + head + theme_boot + "</h
         + body + "\n\n<script src=\"assets/js/main.js?v=%s\"></script>\n</body>\n</html>\n" % VER)
 io.open(os.path.join(ROOT, "index.html"), "w", encoding="utf-8", newline="\n").write(html)
 
+print("demo labels : %d chrome bars badged, %d LIVE chips removed" % (n_chrome, n_live))
 print("style.css   :", len(base_css) + len(extra_css) + len(hover_css), "bytes")
 print("hover rules :", len(seen_h), "  focus rules:", len(seen_f))
 print("index.html  :", len(html), "bytes")

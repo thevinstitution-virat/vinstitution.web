@@ -370,9 +370,10 @@ def build(key):
       <div style="min-width:0">
         <div class="app">
           <div class="app__bar"><i></i><i></i><i></i><span class="app__url">{url_hint}</span>
-            <span class="app__live"><i></i>LIVE</span></div>
+            <span class="app__demo">DEMO</span></div>
           {panel}
         </div>
+        <p class="app__note">Illustrative interface. The figures shown are sample data, not a real institution's records.</p>
       </div>
     </div>
   </div>
