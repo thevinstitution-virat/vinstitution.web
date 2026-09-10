@@ -33,10 +33,17 @@ products/
   practest.html
 contact.php             enquiry handler -> tech@vinstitution.com, returns JSON
 assets/
-  css/style.css         the whole design system, one file
+  css/style.css         v2 design tokens + hub-page styles  (GENERATED - see below)
+  css/pages.css         component classes the product pages use, on v2 tokens
   js/main.js            progressive enhancement only; the site works without it
   img/                  OG share cards, app icons
   logos/                the three logo crops (see below)
+design/
+  vinstitution-v2.dc.html   the design canvas the hub page is built from
+tools/
+  build-from-canvas.py      design canvas -> index.html + assets/css/style.css
+  build-pages-css.py        one-off: rebuilt pages.css on the v2 tokens
+  patch-product-pages.py    one-off: put products/*.html on the v2 theme
 htaccess-head           .htaccess minus the cPanel PHP block (assembled at deploy)
 php-handler.fallback    safety copy of that cPanel block
 deploy.sh               repo -> document root
@@ -45,15 +52,37 @@ deploy.sh               repo -> document root
 
 ### Design system
 
-Light ground, brand palette taken from the logo: vermilion `#E8452A`, gold `#F5B31E`,
-blue `#2E75BC`. Each product owns an accent that the whole page inherits through a single
-`--accent` custom property, set per page in one line:
+**`index.html` and `assets/css/style.css` are generated — do not hand-edit them.**
+The hub page is authored as a Claude Design Canvas at `design/vinstitution-v2.dc.html`.
+Edit the canvas, then regenerate:
 
-```html
-<style>:root{--accent:var(--pd);--accent-lt:var(--pd-lt)}</style>
+```
+python tools/build-from-canvas.py
 ```
 
+The build is idempotent (running it twice gives a byte-identical result) and it
+preserves the `<head>` of `index.html`, so SEO meta, the JSON-LD schema and the
+favicons stay hand-maintained in place. It converts the canvas DSL to static HTML:
+`sc-if` becomes real elements plus `hidden`, `sc-for` is expanded, `{{ bindings }}`
+become ids/data attributes that `main.js` drives, and every `style-hover` /
+`style-focus` becomes a `[data-hv]` / `[data-fc]` CSS rule. Those generated rules
+carry `!important` because the canvas leaves its layout as inline styles, which
+would otherwise win over any selector.
+
+Two grounds, switched by `data-theme` on `<html>` and remembered in
+`localStorage['vin-theme']`. A tiny inline script in `<head>` sets the attribute
+before first paint, so there is no flash of the wrong theme. Every colour is a
+custom property with a dark counterpart; nothing is hard-coded per theme.
+
+Palette: vermilion `#C7351D` / `#E8452A`, gold, blue, and one accent per product
+(`--vv`, `--pd`, `--dg`, `--pt`). Product cards set `data-acc="vv|pd|dg|pt"`, which
+is what colours their tabs and chips.
+
 Type is Fraunces (display) + Plus Jakarta Sans (UI) + Mukta (Devanagari).
+
+`main.js` serves both page styles from one bundle: the hub page's hooks
+(`#theme-toggle`, `#mnav`, `.mock-tab`, `.cell`, `[data-rv]`) and the product
+pages' older ones (`.burger`, `.mnav.is-open`, `.rv`, `.vbar`).
 
 ### Logo
 

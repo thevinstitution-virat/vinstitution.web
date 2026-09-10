@@ -1,71 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vinstitution — Education Technology for Indian Institutions &amp; Learners</title>
-<meta name="description" content="Vinstitution builds four connected education platforms: Vidyaverse campus OS, PDLMS Pro AI digital library, Digi Classroom NCERT-grounded AI tutor, and e-Learning Practest CBT exam engine. One institutional identity across all of them.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://vinstitution.com/">
-
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Vinstitution">
-<meta property="og:title" content="Vinstitution — Four platforms. One education ecosystem.">
-<meta property="og:description" content="A campus OS, an AI digital library, an NCERT-grounded tutor and a CBT exam engine — connected by one institutional login.">
-<meta property="og:url" content="https://vinstitution.com/">
-<meta property="og:image" content="https://vinstitution.com/assets/img/og-vinstitution.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Vinstitution — Four platforms. One education ecosystem.">
-<meta name="twitter:description" content="A campus OS, an AI digital library, an NCERT-grounded tutor and a CBT exam engine — connected by one institutional login.">
-<meta name="twitter:image" content="https://vinstitution.com/assets/img/og-vinstitution.png">
-<meta name="theme-color" content="#FFFCF9" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#090D15" media="(prefers-color-scheme: dark)">
-
-<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
-<link rel="icon" href="assets/img/icon-192.png" type="image/png" sizes="192x192">
-<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Mukta:wght@400;500;600&display=swap" rel="stylesheet">
-
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Organization",
-  "name":"Vinstitution",
-  "url":"https://vinstitution.com/",
-  "logo":"https://vinstitution.com/assets/logos/vinstitution-full.png",
-  "slogan":"Uttiṣṭhata · Jāgrata · Prāpya",
-  "description":"Education technology company building connected platforms for Indian institutions and learners: Vidyaverse, PDLMS Pro, Digi Classroom and e-Learning Practest.",
-  "address":{
-    "@type":"PostalAddress",
-    "streetAddress":"44 First Floor, Regal Building, Connaught Place",
-    "addressLocality":"New Delhi","addressRegion":"Delhi",
-    "postalCode":"110001","addressCountry":"IN"
-  },
-  "contactPoint":{
-    "@type":"ContactPoint","telephone":"+91-9310959596",
-    "contactType":"sales","email":"tech@vinstitution.com",
-    "availableLanguage":["English","Hindi"]
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"ItemList",
-  "name":"Vinstitution platforms",
-  "itemListElement":[
-    {"@type":"ListItem","position":1,"item":{"@type":"SoftwareApplication","name":"Vidyaverse","applicationCategory":"BusinessApplication","url":"https://vidyaverse.vinstitution.com","description":"Institution operating system with 47 integrated modules."}},
-    {"@type":"ListItem","position":2,"item":{"@type":"SoftwareApplication","name":"PDLMS Pro","applicationCategory":"EducationalApplication","url":"https://pdlms.vinstitution.com","description":"Multi-tenant AI-powered digital library with the Varta study assistant."}},
-    {"@type":"ListItem","position":3,"item":{"@type":"SoftwareApplication","name":"Digi Classroom","applicationCategory":"EducationalApplication","url":"https://dgcl.vinstitution.com","description":"NCERT-grounded AI tutor powered by Sarvagya agentic RAG."}},
-    {"@type":"ListItem","position":4,"item":{"@type":"SoftwareApplication","name":"e-Learning Practest","applicationCategory":"EducationalApplication","url":"https://practest.live","description":"Exam-pattern CBT mock test engine for SSC, Banking, Railways, UPSC and State PCS."}}
-  ]
-}
-</script>
-
-
 <script>
   (function(){
     try{
@@ -75,12 +20,82 @@
     }catch(e){ document.documentElement.setAttribute('data-theme','light'); }
   })();
 </script>
-<link rel="stylesheet" href="assets/css/style.css?v=3">
-</head>
-<body>
+<style>
+  :root{
+    --paper:#FFFCF9; --paper-2:#F6F2EB; --surface:#FFFFFF; --surface-2:#F7F5F1;
+    --ink:#12161F; --ink-2:#1E2838; --body:#4B5768; --muted:#78828F; --faint:#98A1AE;
+    --line:#E9E4DB; --line-2:#DAD3C8;
+    --hdr:rgba(255,252,249,.82);
+    --brand:#C7351D; --brand-hi:#E8452A; --brand-tint:#FFF1ED; --btn:#D93B22;
+    --gold:#B8860B; --gold-hi:#F5B31E; --blue:#2E75BC;
+    --vv:#B33327; --vv-t:#FCEEEC; --vv-btn:#B33327;
+    --pd:#A65E0B; --pd-t:#FFF4E6; --pd-btn:#A65E0B;
+    --dg:#B8450E; --dg-t:#FFF0E8; --dg-btn:#B8450E;
+    --pt:#3742C4; --pt-t:#EEF0FE; --pt-btn:#3742C4;
+    --sh1:0 1px 2px rgba(14,18,32,.05); --sh2:0 14px 34px rgba(14,18,32,.09); --sh3:0 30px 64px rgba(14,18,32,.14);
+    --glow-a:rgba(232,69,42,.15); --glow-b:rgba(46,117,188,.13); --glow-c:rgba(245,179,30,.18);
+    --grid-line:rgba(18,22,31,.045);
+    --band:#0E1220; --band-ink:#FFFFFF; --band-body:#A2ADBC; --band-line:rgba(255,255,255,.12); --band-surf:rgba(255,255,255,.05);
+    --ok:#1B7A44; --ok-t:#E6F6EC;
+  }
+  html[data-theme="dark"]{
+    --paper:#090D15; --paper-2:#0D121C; --surface:#141A27; --surface-2:#101623;
+    --ink:#F4F7FB; --ink-2:#DCE3EE; --body:#A9B4C4; --muted:#8E98A6; --faint:#7E8899;
+    --line:rgba(255,255,255,.10); --line-2:rgba(255,255,255,.20);
+    --hdr:rgba(9,13,21,.74);
+    --brand:#FF7A5F; --brand-hi:#FF8A6B; --brand-tint:rgba(232,69,42,.16); --btn:#E8452A;
+    --gold:#F5B31E; --gold-hi:#FFC94A; --blue:#6BA6E8;
+    --vv:#FF8574; --vv-t:rgba(192,54,43,.20); --vv-btn:#C0362B;
+    --pd:#F2A64E; --pd-t:rgba(222,122,27,.18); --pd-btn:#B7660F;
+    --dg:#FF9057; --dg-t:rgba(242,103,34,.18); --dg-btn:#C24A0F;
+    --pt:#9AA2FF; --pt-t:rgba(62,75,216,.22); --pt-btn:#3742C4;
+    --sh1:0 1px 2px rgba(0,0,0,.5); --sh2:0 14px 34px rgba(0,0,0,.55); --sh3:0 30px 64px rgba(0,0,0,.65);
+    --glow-a:rgba(232,69,42,.30); --glow-b:rgba(46,117,188,.26); --glow-c:rgba(245,179,30,.14);
+    --grid-line:rgba(255,255,255,.045);
+    --band:#0D121C; --band-ink:#FFFFFF; --band-body:#A2ADBC; --band-line:rgba(255,255,255,.12); --band-surf:rgba(255,255,255,.05);
+    --ok:#4FC98A; --ok-t:rgba(79,201,138,.16);
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--body);font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;transition:background .45s ease,color .45s ease}
+  img,svg{max-width:100%;display:block}
+  h1,h2,h3,h4{margin:0}
+  p{margin:0}
+  ul{margin:0;padding:0;list-style:none}
+  a{color:var(--brand);text-decoration:none}
+  a:hover{color:var(--brand-hi)}
+  ::selection{background:var(--brand-hi);color:#fff}
+  :focus-visible{outline:2.5px solid var(--brand-hi);outline-offset:3px;border-radius:8px}
+  input::placeholder,textarea::placeholder{color:var(--faint)}
+  @keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+  @keyframes riseSm{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+  @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+  @keyframes inLeft{from{opacity:0;transform:translateX(-34px)}to{opacity:1;transform:none}}
+  @keyframes inRight{from{opacity:0;transform:translateX(34px)}to{opacity:1;transform:none}}
+  @keyframes popIn{0%{opacity:0;transform:scale(.9)}60%{transform:scale(1.02)}100%{opacity:1;transform:scale(1)}}
+  @keyframes growX{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+  @keyframes growY{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+  @keyframes drift{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(0,-22px,0) scale(1.07)}}
+  @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+  @keyframes sway{0%,100%{transform:rotate(-1.2deg)}50%{transform:rotate(1.2deg)}}
+  @keyframes blip{0%,100%{opacity:1}50%{opacity:.2}}
+  @keyframes ring{0%{box-shadow:0 0 0 0 var(--glow-a)}70%{box-shadow:0 0 0 14px transparent}100%{box-shadow:0 0 0 0 transparent}}
+  @keyframes dash{to{stroke-dashoffset:-24}}
+  @keyframes drawLine{from{stroke-dashoffset:400}to{stroke-dashoffset:0}}
+  @keyframes shimmer{0%{background-position:-220% 0}100%{background-position:220% 0}}
+  @keyframes spinSlow{to{transform:rotate(360deg)}}
+  @keyframes orbit{0%{transform:rotate(0) translateX(52px) rotate(0)}100%{transform:rotate(360deg) translateX(52px) rotate(-360deg)}}
+  @keyframes caret{0%,100%{opacity:1}50%{opacity:0}}
+  @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+  @keyframes wave{0%,100%{transform:scaleY(.4)}50%{transform:scaleY(1)}}
+  @keyframes tick{0%{transform:translateY(6px);opacity:0}100%{transform:none;opacity:1}}
+  @keyframes glowPulse{0%,100%{opacity:.55}50%{opacity:1}}
+  @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+</style>
+</helmet>
+
 <div style="background:var(--paper)">
 
-<div id="scroll-progress" aria-hidden="true" style="position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--brand-hi),var(--gold-hi));z-index:99;transition:width .1s linear"></div>
+<div ref="{{ progressRef }}" aria-hidden="true" style="position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--brand-hi),var(--gold-hi));z-index:99;transition:width .1s linear"></div>
 
 <div style="position:relative;overflow:hidden;background:linear-gradient(180deg,var(--paper-2),var(--paper))">
   <div aria-hidden="true" style="position:absolute;inset:-24% -10% auto;height:min(940px,120vw);pointer-events:none;background:radial-gradient(46% 52% at 20% 26%,var(--glow-a),transparent 68%),radial-gradient(40% 46% at 82% 14%,var(--glow-b),transparent 70%),radial-gradient(38% 44% at 56% 74%,var(--glow-c),transparent 70%);filter:blur(12px);animation:drift 24s ease-in-out infinite"></div>
@@ -89,45 +104,45 @@
   <header style="position:sticky;top:0;z-index:80;background:var(--hdr);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--line)">
     <div style="width:100%;max-width:1240px;margin-inline:auto;padding-inline:clamp(16px,4vw,44px)">
       <div style="display:flex;align-items:center;gap:clamp(8px,1.6vw,18px);min-height:76px">
-        <a href="#top" aria-label="Vinstitution — home" style="display:flex;align-items:center;margin-right:auto;flex:none;transition:transform .3s cubic-bezier(.2,.7,.3,1)" data-hv="1">
+        <a href="#top" aria-label="Vinstitution — home" style="display:flex;align-items:center;margin-right:auto;flex:none;transition:transform .3s cubic-bezier(.2,.7,.3,1)" style-hover="transform:scale(1.03)">
           <img src="assets/logos/vinstitution-lockup.png" alt="Vinstitution" width="520" height="168" fetchpriority="high" style="height:42px;width:auto">
         </a>
 
-
-        <nav class="js-desktop" aria-label="Primary" style="display:flex;align-items:center;gap:2px">
-          <a href="#platforms" style="position:relative;padding:9px 13px;border-radius:100px;font-size:14.5px;font-weight:600;color:var(--body);transition:color .22s,background .22s" data-hv="2">Platforms</a>
-          <a href="#journey" style="position:relative;padding:9px 13px;border-radius:100px;font-size:14.5px;font-weight:600;color:var(--body);transition:color .22s,background .22s" data-hv="2">Journey</a>
-          <a href="#ecosystem" style="position:relative;padding:9px 13px;border-radius:100px;font-size:14.5px;font-weight:600;color:var(--body);transition:color .22s,background .22s" data-hv="2">Ecosystem</a>
-          <a href="#why" style="position:relative;padding:9px 13px;border-radius:100px;font-size:14.5px;font-weight:600;color:var(--body);transition:color .22s,background .22s" data-hv="2">Why us</a>
-          <a href="#services" style="position:relative;padding:9px 13px;border-radius:100px;font-size:14.5px;font-weight:600;color:var(--body);transition:color .22s,background .22s" data-hv="2">Services</a>
-          <a href="#contact" style="position:relative;padding:9px 13px;border-radius:100px;font-size:14.5px;font-weight:600;color:var(--body);transition:color .22s,background .22s" data-hv="2">Contact</a>
+        <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <nav aria-label="Primary" style="display:flex;align-items:center;gap:2px">
+          <a href="#platforms" style="position:relative;padding:9px 13px;border-radius:100px;font-size:14.5px;font-weight:600;color:var(--body);transition:color .22s,background .22s" style-hover="color:var(--ink);background:var(--surface-2)">Platforms</a>
+          <a href="#journey" style="position:relative;padding:9px 13px;border-radius:100px;font-size:14.5px;font-weight:600;color:var(--body);transition:color .22s,background .22s" style-hover="color:var(--ink);background:var(--surface-2)">Journey</a>
+          <a href="#ecosystem" style="position:relative;padding:9px 13px;border-radius:100px;font-size:14.5px;font-weight:600;color:var(--body);transition:color .22s,background .22s" style-hover="color:var(--ink);background:var(--surface-2)">Ecosystem</a>
+          <a href="#why" style="position:relative;padding:9px 13px;border-radius:100px;font-size:14.5px;font-weight:600;color:var(--body);transition:color .22s,background .22s" style-hover="color:var(--ink);background:var(--surface-2)">Why us</a>
+          <a href="#services" style="position:relative;padding:9px 13px;border-radius:100px;font-size:14.5px;font-weight:600;color:var(--body);transition:color .22s,background .22s" style-hover="color:var(--ink);background:var(--surface-2)">Services</a>
+          <a href="#contact" style="position:relative;padding:9px 13px;border-radius:100px;font-size:14.5px;font-weight:600;color:var(--body);transition:color .22s,background .22s" style-hover="color:var(--ink);background:var(--surface-2)">Contact</a>
         </nav>
+        </sc-if>
 
-
-        <button type="button" id="theme-toggle" aria-label="Switch to night mode" title="Switch to night mode" style="width:44px;height:44px;flex:none;border-radius:100px;display:grid;place-items:center;color:var(--ink);border:1px solid var(--line-2);background:var(--surface);cursor:pointer;transition:transform .35s cubic-bezier(.2,.7,.3,1),box-shadow .3s,border-color .3s" data-hv="3">
-
-            <svg class="ico-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:19px;height:19px;animation:popIn .4s both"><circle cx="12" cy="12" r="4.2"></circle><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"></path></svg>
-
-
-            <svg class="ico-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:19px;height:19px;animation:popIn .4s both"><path d="M21 13.2A8.6 8.6 0 1 1 10.8 3a6.8 6.8 0 0 0 10.2 10.2Z"></path></svg>
-
+        <button type="button" onClick="{{ toggleTheme }}" aria-label="{{ themeLabel }}" title="{{ themeLabel }}" style="width:44px;height:44px;flex:none;border-radius:100px;display:grid;place-items:center;color:var(--ink);border:1px solid var(--line-2);background:var(--surface);cursor:pointer;transition:transform .35s cubic-bezier(.2,.7,.3,1),box-shadow .3s,border-color .3s" style-hover="transform:rotate(18deg) scale(1.06);box-shadow:var(--sh2);border-color:var(--brand-hi)">
+          <sc-if value="{{ isDark }}">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:19px;height:19px;animation:popIn .4s both"><circle cx="12" cy="12" r="4.2"></circle><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"></path></svg>
+          </sc-if>
+          <sc-if value="{{ isLight }}" hint-placeholder-val="{{ true }}">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:19px;height:19px;animation:popIn .4s both"><path d="M21 13.2A8.6 8.6 0 1 1 10.8 3a6.8 6.8 0 0 0 10.2 10.2Z"></path></svg>
+          </sc-if>
         </button>
 
+        <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <a href="#contact" style="display:inline-flex;align-items:center;gap:8px;padding:11px 19px;border-radius:100px;background:var(--btn);color:#fff;font-size:13.5px;font-weight:700;box-shadow:0 8px 22px rgba(217,59,34,.3);transition:transform .24s cubic-bezier(.2,.7,.3,1),box-shadow .24s" style-hover="transform:translateY(-2px);box-shadow:0 14px 32px rgba(217,59,34,.42);color:#fff">Book a demo</a>
+        </sc-if>
 
-        <a class="js-desktop" href="#contact" style="display:inline-flex;align-items:center;gap:8px;padding:11px 19px;border-radius:100px;background:var(--btn);color:#fff;font-size:13.5px;font-weight:700;box-shadow:0 8px 22px rgba(217,59,34,.3);transition:transform .24s cubic-bezier(.2,.7,.3,1),box-shadow .24s" data-hv="4">Book a demo</a>
-
-
-
-          <button class="js-mobile" type="button" aria-label="Menu" aria-controls="mnav" aria-expanded="false" id="nav-toggle" style="width:44px;height:44px;flex:none;border-radius:12px;display:grid;place-items:center;color:var(--ink);border:1px solid var(--line-2);background:var(--surface);cursor:pointer">
+        <sc-if value="{{ isMobile }}">
+          <button type="button" aria-label="Menu" aria-controls="mnav" aria-expanded="{{ expanded }}" onClick="{{ toggleNav }}" style="width:44px;height:44px;flex:none;border-radius:12px;display:grid;place-items:center;color:var(--ink);border:1px solid var(--line-2);background:var(--surface);cursor:pointer">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="width:20px;height:20px"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
           </button>
-
+        </sc-if>
       </div>
     </div>
   </header>
 
-
-    <nav hidden class="js-mobile-nav" id="mnav" aria-label="Mobile" style="position:fixed;inset:76px 0 0;z-index:79;background:var(--paper);padding:24px clamp(16px,4vw,44px) 40px;display:flex;flex-direction:column;gap:2px;overflow-y:auto;animation:fadeIn .25s both">
+  <sc-if value="{{ navOpen }}">
+    <nav id="mnav" aria-label="Mobile" onClick="{{ closeNav }}" style="position:fixed;inset:76px 0 0;z-index:79;background:var(--paper);padding:24px clamp(16px,4vw,44px) 40px;display:flex;flex-direction:column;gap:2px;overflow-y:auto;animation:fadeIn .25s both">
       <a href="#platforms" style="padding:16px 4px;font-family:'Fraunces',Georgia,serif;font-size:21px;font-weight:600;color:var(--ink);border-bottom:1px solid var(--line);animation:inLeft .4s .02s both">Platforms</a>
       <a href="#journey" style="padding:16px 4px;font-family:'Fraunces',Georgia,serif;font-size:21px;font-weight:600;color:var(--ink);border-bottom:1px solid var(--line);animation:inLeft .4s .06s both">Journey</a>
       <a href="#ecosystem" style="padding:16px 4px;font-family:'Fraunces',Georgia,serif;font-size:21px;font-weight:600;color:var(--ink);border-bottom:1px solid var(--line);animation:inLeft .4s .1s both">Ecosystem</a>
@@ -136,7 +151,7 @@
       <a href="#contact" style="padding:16px 4px;font-family:'Fraunces',Georgia,serif;font-size:21px;font-weight:600;color:var(--ink);border-bottom:1px solid var(--line);animation:inLeft .4s .22s both">Contact</a>
       <a href="#contact" style="align-self:flex-start;margin-top:24px;display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:100px;background:var(--btn);color:#fff;font-size:15px;font-weight:700;animation:popIn .4s .26s both">Book a demo</a>
     </nav>
-
+  </sc-if>
 
   <section id="top" style="position:relative;z-index:1;width:100%;max-width:1240px;margin-inline:auto;padding:clamp(46px,6.5vw,92px) clamp(16px,4vw,44px) clamp(92px,10vw,136px)">
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:clamp(32px,5vw,64px);align-items:center">
@@ -152,14 +167,14 @@
         <h1 style="margin-top:22px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(38px,5.6vw,76px);line-height:1.02;letter-spacing:-.04em;color:var(--ink);text-wrap:balance;animation:rise .85s .12s both">Four platforms.<br>One <em style="font-style:normal;position:relative;color:var(--brand)">education ecosystem<span aria-hidden="true" style="position:absolute;left:0;right:0;bottom:.06em;height:.14em;border-radius:100px;background:linear-gradient(90deg,var(--brand-hi),var(--gold-hi));opacity:.32;transform-origin:left;animation:growX 1s .7s both cubic-bezier(.2,.7,.3,1)"></span></em>.</h1>
         <p style="margin-top:24px;font-size:clamp(16.5px,1.7vw,19.5px);line-height:1.6;color:var(--body);max-width:58ch;text-wrap:pretty;animation:rise .85s .2s both">Vinstitution builds the software Indian institutions and learners actually run on — a campus operating system, an AI digital library, an NCERT-grounded tutor and a CBT exam engine. One institutional identity signs into all of them.</p>
         <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:34px;animation:rise .85s .28s both">
-          <a href="#platforms" style="display:inline-flex;align-items:center;gap:10px;padding:15px 27px;border-radius:100px;background:var(--btn);color:#fff;font-size:15px;font-weight:700;box-shadow:0 12px 30px rgba(217,59,34,.32);transition:transform .26s cubic-bezier(.2,.7,.3,1),box-shadow .26s" data-hv="5">Explore the platforms
+          <a href="#platforms" style="display:inline-flex;align-items:center;gap:10px;padding:15px 27px;border-radius:100px;background:var(--btn);color:#fff;font-size:15px;font-weight:700;box-shadow:0 12px 30px rgba(217,59,34,.32);transition:transform .26s cubic-bezier(.2,.7,.3,1),box-shadow .26s" style-hover="transform:translateY(-3px);box-shadow:0 20px 44px rgba(217,59,34,.46);color:#fff">Explore the platforms
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;flex:none"><path d="M12 5v14M19 12l-7 7-7-7"></path></svg>
           </a>
-          <a href="#contact" style="display:inline-flex;align-items:center;gap:10px;padding:15px 27px;border-radius:100px;border:1.5px solid var(--line-2);color:var(--ink);font-size:15px;font-weight:700;background:var(--surface);transition:transform .26s,border-color .26s,box-shadow .26s" data-hv="6">Talk to us</a>
+          <a href="#contact" style="display:inline-flex;align-items:center;gap:10px;padding:15px 27px;border-radius:100px;border:1.5px solid var(--line-2);color:var(--ink);font-size:15px;font-weight:700;background:var(--surface);transition:transform .26s,border-color .26s,box-shadow .26s" style-hover="transform:translateY(-3px);border-color:var(--ink);box-shadow:var(--sh2);color:var(--ink)">Talk to us</a>
         </div>
       </div>
 
-
+      <sc-if value="{{ showHeroVisual }}" hint-placeholder-val="{{ true }}">
       <div aria-hidden="true" style="min-width:0;position:relative;animation:rise .95s .34s both">
         <div style="position:relative;border-radius:26px;border:1px solid var(--line-2);background:var(--surface);box-shadow:var(--sh3);overflow:hidden;animation:sway 12s ease-in-out infinite">
           <div style="display:flex;align-items:center;gap:8px;padding:13px 16px;border-bottom:1px solid var(--line);background:var(--surface-2)">
@@ -213,37 +228,37 @@
         </div>
         <span style="position:absolute;top:-18px;right:-6px;display:inline-flex;align-items:center;gap:7px;padding:9px 14px;border-radius:100px;background:var(--surface);border:1px solid var(--line-2);box-shadow:var(--sh2);font-size:11.5px;font-weight:800;color:var(--ink);animation:bob 5s ease-in-out infinite"><span style="width:7px;height:7px;border-radius:50%;background:var(--ok);display:block"></span>ISO 9001:2015</span>
       </div>
-
+      </sc-if>
     </div>
   </section>
 </div>
 
-
+<sc-if value="{{ showStats }}" hint-placeholder-val="{{ true }}">
 <div style="width:100%;max-width:1240px;margin-inline:auto;padding-inline:clamp(16px,4vw,44px)">
   <div style="position:relative;z-index:2;margin-top:clamp(-78px,-7vw,-50px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(158px,100%),1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:var(--sh3)">
-    <div data-rv style="background:var(--surface);padding:30px 22px;text-align:center;transition:background .3s" data-hv="7">
+    <div data-rv style="background:var(--surface);padding:30px 22px;text-align:center;transition:background .3s" style-hover="background:var(--surface-2)">
       <b style="display:block;font-family:'Fraunces',Georgia,serif;font-size:clamp(30px,3.6vw,42px);font-weight:600;color:var(--ink);letter-spacing:-.03em;line-height:1"><span data-count="4">4</span></b>
       <span style="display:block;margin-top:8px;font-size:12.5px;font-weight:600;letter-spacing:.03em;color:var(--muted)">Connected platforms</span>
       <span aria-hidden="true" style="display:block;height:3px;margin-top:14px;border-radius:100px;background:var(--brand-hi);opacity:.5;transform-origin:left;animation:growX 1.1s .2s both cubic-bezier(.2,.7,.3,1)"></span>
     </div>
-    <div style="background:var(--surface);padding:30px 22px;text-align:center;transition:background .3s" data-hv="7">
+    <div style="background:var(--surface);padding:30px 22px;text-align:center;transition:background .3s" style-hover="background:var(--surface-2)">
       <b style="display:block;font-family:'Fraunces',Georgia,serif;font-size:clamp(30px,3.6vw,42px);font-weight:600;color:var(--ink);letter-spacing:-.03em;line-height:1"><span data-count="47">47</span></b>
       <span style="display:block;margin-top:8px;font-size:12.5px;font-weight:600;letter-spacing:.03em;color:var(--muted)">Institution modules</span>
       <span aria-hidden="true" style="display:block;height:3px;margin-top:14px;border-radius:100px;background:var(--gold-hi);opacity:.5;transform-origin:left;animation:growX 1.1s .3s both cubic-bezier(.2,.7,.3,1)"></span>
     </div>
-    <div style="background:var(--surface);padding:30px 22px;text-align:center;transition:background .3s" data-hv="7">
+    <div style="background:var(--surface);padding:30px 22px;text-align:center;transition:background .3s" style-hover="background:var(--surface-2)">
       <b style="display:block;font-family:'Fraunces',Georgia,serif;font-size:clamp(30px,3.6vw,42px);font-weight:600;color:var(--ink);letter-spacing:-.03em;line-height:1">6–12</b>
       <span style="display:block;margin-top:8px;font-size:12.5px;font-weight:600;letter-spacing:.03em;color:var(--muted)">CBSE &amp; ICSE covered</span>
       <span aria-hidden="true" style="display:block;height:3px;margin-top:14px;border-radius:100px;background:var(--blue);opacity:.5;transform-origin:left;animation:growX 1.1s .4s both cubic-bezier(.2,.7,.3,1)"></span>
     </div>
-    <div style="background:var(--surface);padding:30px 22px;text-align:center;transition:background .3s" data-hv="7">
+    <div style="background:var(--surface);padding:30px 22px;text-align:center;transition:background .3s" style-hover="background:var(--surface-2)">
       <b style="display:block;font-family:'Fraunces',Georgia,serif;font-size:clamp(30px,3.6vw,42px);font-weight:600;color:var(--ink);letter-spacing:-.03em;line-height:1">ISO 9001</b>
       <span style="display:block;margin-top:8px;font-size:12.5px;font-weight:600;letter-spacing:.03em;color:var(--muted)">2015 certified</span>
       <span aria-hidden="true" style="display:block;height:3px;margin-top:14px;border-radius:100px;background:var(--ok);opacity:.5;transform-origin:left;animation:growX 1.1s .5s both cubic-bezier(.2,.7,.3,1)"></span>
     </div>
   </div>
 </div>
-
+</sc-if>
 
 <section id="platforms" style="padding-block:clamp(64px,8vw,116px)">
   <div style="width:100%;max-width:1240px;margin-inline:auto;padding-inline:clamp(16px,4vw,44px)">
@@ -256,12 +271,12 @@
 
     <div style="display:flex;flex-direction:column;gap:clamp(20px,2.6vw,30px)">
 
-      <article data-acc="vv" data-rv style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:clamp(24px,4vw,52px);align-items:center;padding:clamp(26px,3.6vw,46px);border:1px solid var(--line);border-radius:28px;background:var(--surface);box-shadow:var(--sh1);overflow:hidden;transition:box-shadow .4s,transform .4s,border-color .4s" data-hv="8">
+      <article data-rv style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:clamp(24px,4vw,52px);align-items:center;padding:clamp(26px,3.6vw,46px);border:1px solid var(--line);border-radius:28px;background:var(--surface);box-shadow:var(--sh1);overflow:hidden;transition:box-shadow .4s,transform .4s,border-color .4s" style-hover="transform:translateY(-5px);box-shadow:var(--sh3);border-color:var(--vv)">
         <div aria-hidden="true" style="position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,var(--vv),transparent 82%)"></div>
         <div aria-hidden="true" style="position:absolute;width:360px;height:360px;right:-100px;top:-130px;border-radius:50%;background:var(--vv);opacity:.06;pointer-events:none;animation:drift 18s ease-in-out infinite"></div>
         <div style="position:relative;z-index:1;min-width:0">
           <div style="display:flex;align-items:center;gap:13px;margin-bottom:16px;flex-wrap:wrap">
-            <span aria-hidden="true" style="width:48px;height:48px;border-radius:15px;flex:none;display:grid;place-items:center;color:#fff;background:var(--vv-btn);box-shadow:0 10px 24px rgba(179,51,39,.34);transition:transform .35s cubic-bezier(.2,.7,.3,1)" data-hv="9">
+            <span aria-hidden="true" style="width:48px;height:48px;border-radius:15px;flex:none;display:grid;place-items:center;color:#fff;background:var(--vv-btn);box-shadow:0 10px 24px rgba(179,51,39,.34);transition:transform .35s cubic-bezier(.2,.7,.3,1)" style-hover="transform:rotate(-8deg) scale(1.08)">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:23px;height:23px"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-5h6v5"></path></svg>
             </span>
             <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(24px,2.7vw,33px);letter-spacing:-.03em;color:var(--ink)">Vidyaverse</h3>
@@ -269,14 +284,14 @@
           </div>
           <p style="font-size:16.5px;color:var(--body);max-width:52ch;text-wrap:pretty"><strong style="color:var(--ink);font-weight:700">The operating system for modern institutions.</strong> Academics, fees, attendance, transport, hostel, documents and AI-powered WhatsApp updates to every parent — forty-seven modules behind a single login, all writing to one shared record.</p>
           <ul style="display:flex;flex-wrap:wrap;gap:8px;margin-top:20px">
-            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" data-hv="10">47 modules</li>
-            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" data-hv="10">WhatsApp parent channel</li>
-            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" data-hv="10">Document Studio</li>
-            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" data-hv="10">Admissions CRM</li>
-            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" data-hv="10">DPDP-ready</li>
+            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" style-hover="transform:translateY(-2px);border-color:var(--vv)">47 modules</li>
+            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" style-hover="transform:translateY(-2px);border-color:var(--vv)">WhatsApp parent channel</li>
+            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" style-hover="transform:translateY(-2px);border-color:var(--vv)">Document Studio</li>
+            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" style-hover="transform:translateY(-2px);border-color:var(--vv)">Admissions CRM</li>
+            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" style-hover="transform:translateY(-2px);border-color:var(--vv)">DPDP-ready</li>
           </ul>
           <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin-top:28px">
-            <a href="products/vidyaverse.html" style="display:inline-flex;align-items:center;gap:10px;padding:14px 25px;border-radius:100px;background:var(--vv-btn);color:#fff;font-size:15px;font-weight:700;box-shadow:0 10px 26px rgba(179,51,39,.28);transition:transform .26s,box-shadow .26s" data-hv="11">Explore Vidyaverse</a>
+            <a href="products/vidyaverse.html" style="display:inline-flex;align-items:center;gap:10px;padding:14px 25px;border-radius:100px;background:var(--vv-btn);color:#fff;font-size:15px;font-weight:700;box-shadow:0 10px 26px rgba(179,51,39,.28);transition:transform .26s,box-shadow .26s" style-hover="transform:translateY(-3px);box-shadow:0 18px 40px rgba(179,51,39,.4);color:#fff">Explore Vidyaverse</a>
             <a href="https://vidyaverse.vinstitution.com" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:7px;font-size:14.5px;font-weight:700;color:var(--vv)">Open the app
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M7 17 17 7M9 7h8v8"></path></svg>
             </a>
@@ -289,12 +304,12 @@
             <span style="margin-left:8px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;color:var(--faint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">vidyaverse.vinstitution.com / dashboard</span>
           </div>
           <div style="display:flex;gap:6px;padding:12px 14px 0;flex-wrap:wrap">
-            <button type="button" class="mock-tab is-active" data-tabset="vv" data-tab="0">Overview</button>
-            <button type="button" class="mock-tab" data-tabset="vv" data-tab="1">Fees</button>
-            <button type="button" class="mock-tab" data-tabset="vv" data-tab="2">Messages</button>
+            <button type="button" onClick="{{ vvOverview }}" style="{{ vvTab0 }}">Overview</button>
+            <button type="button" onClick="{{ vvFees }}" style="{{ vvTab1 }}">Fees</button>
+            <button type="button" onClick="{{ vvMsgs }}" style="{{ vvTab2 }}">Messages</button>
           </div>
           <div style="padding:14px;display:flex;flex-direction:column;gap:10px;min-height:268px">
-            <div class="mock-panel" data-panel="vv-0">
+            <sc-if value="{{ vvIsOverview }}" hint-placeholder-val="{{ true }}">
               <div style="display:flex;align-items:center;gap:10px;padding:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px;animation:riseSm .35s both">
                 <span style="width:28px;height:28px;border-radius:8px;flex:none;display:grid;place-items:center;background:var(--vv-t);color:var(--vv)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8"></path></svg></span>
                 <span style="display:block;flex:1;min-width:0"><span style="display:block;font-size:12.5px;font-weight:700;color:var(--ink)">Students on roll</span><span style="display:block;font-size:11px;color:var(--muted)">+18 this week</span></span>
@@ -312,8 +327,8 @@
                 <span style="font-size:12px;font-weight:800;color:var(--vv);font-family:ui-monospace,SFMono-Regular,Menlo,monospace">₹18.4L</span>
               </div>
               <div style="height:6px;border-radius:100px;background:var(--line);overflow:hidden"><i style="display:block;height:100%;width:82%;border-radius:100px;background:var(--vv-btn);transform-origin:left;animation:growX 1.1s .15s both cubic-bezier(.2,.7,.3,1)"></i></div>
-            </div>
-            <div class="mock-panel" data-panel="vv-1" hidden>
+            </sc-if>
+            <sc-if value="{{ vvIsFees }}">
               <div style="display:flex;align-items:baseline;gap:8px;padding:14px;background:var(--surface);border:1px solid var(--line);border-radius:12px;animation:popIn .35s both">
                 <b style="font-family:'Fraunces',Georgia,serif;font-size:30px;font-weight:600;color:var(--ink);letter-spacing:-.03em">₹18.4L</b>
                 <span style="font-size:11.5px;font-weight:700;color:var(--ok)">82% of term target</span>
@@ -327,8 +342,8 @@
                 <span style="display:block;flex:1;min-width:0"><span style="display:block;font-size:12.5px;font-weight:700;color:var(--ink)">Receipts issued today</span><span style="display:block;font-size:11px;color:var(--muted)">Auto-numbered, DPDP-logged</span></span>
                 <span style="font-size:12px;font-weight:800;color:var(--vv);font-family:ui-monospace,SFMono-Regular,Menlo,monospace">37</span>
               </div>
-            </div>
-            <div class="mock-panel" data-panel="vv-2" hidden>
+            </sc-if>
+            <sc-if value="{{ vvIsMsgs }}">
               <div style="padding:13px 15px;border-radius:12px;border:1px solid var(--line);border-left:3px solid var(--vv);background:var(--surface);font-size:12px;line-height:1.55;color:var(--ink-2);animation:inRight .4s both">
                 <b style="display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--vv);margin-bottom:5px">WhatsApp · to parent</b>
                 Aarav was marked present today at 8:42&nbsp;AM ✅ &nbsp;· Term-2 fee ₹12,500 due 15 Jun.
@@ -341,12 +356,12 @@
                 <span style="display:block;flex:1;min-width:0"><span style="display:block;font-size:12.5px;font-weight:700;color:var(--ink)">Delivered · consent honoured</span><span style="display:block;font-size:11px;color:var(--muted)">Opt-outs skipped automatically</span></span>
                 <span style="font-size:12px;font-weight:800;color:var(--ok);font-family:ui-monospace,SFMono-Regular,Menlo,monospace">1,204</span>
               </div>
-            </div>
+            </sc-if>
           </div>
         </div>
       </article>
 
-      <article data-acc="pd" data-rv style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:clamp(24px,4vw,52px);align-items:center;padding:clamp(26px,3.6vw,46px);border:1px solid var(--line);border-radius:28px;background:var(--surface);box-shadow:var(--sh1);overflow:hidden;transition:box-shadow .4s,transform .4s,border-color .4s" data-hv="12">
+      <article data-rv style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:clamp(24px,4vw,52px);align-items:center;padding:clamp(26px,3.6vw,46px);border:1px solid var(--line);border-radius:28px;background:var(--surface);box-shadow:var(--sh1);overflow:hidden;transition:box-shadow .4s,transform .4s,border-color .4s" style-hover="transform:translateY(-5px);box-shadow:var(--sh3);border-color:var(--pd)">
         <div aria-hidden="true" style="position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,var(--pd),transparent 82%)"></div>
         <div aria-hidden="true" style="position:absolute;width:360px;height:360px;right:-100px;top:-130px;border-radius:50%;background:var(--pd);opacity:.06;pointer-events:none;animation:drift 20s ease-in-out infinite"></div>
 
@@ -356,13 +371,13 @@
             <span style="margin-left:8px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;color:var(--faint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">pdlms.vinstitution.com / reader</span>
           </div>
           <div style="display:flex;gap:6px;padding:12px 14px 0;flex-wrap:wrap">
-            <button type="button" class="mock-tab is-active" data-tabset="pd" data-tab="0">EPUB</button>
-            <button type="button" class="mock-tab" data-tabset="pd" data-tab="1">PDF</button>
-            <button type="button" class="mock-tab" data-tabset="pd" data-tab="2">AUDIOBOOK</button>
-            <button type="button" class="mock-tab" data-tabset="pd" data-tab="3">VARTA</button>
+            <button type="button" onClick="{{ pdEpub }}" style="{{ pdTab0 }}">EPUB</button>
+            <button type="button" onClick="{{ pdPdf }}" style="{{ pdTab1 }}">PDF</button>
+            <button type="button" onClick="{{ pdAudio }}" style="{{ pdTab2 }}">AUDIOBOOK</button>
+            <button type="button" onClick="{{ pdVarta }}" style="{{ pdTab3 }}">VARTA</button>
           </div>
           <div style="padding:14px;display:flex;flex-direction:column;gap:10px;min-height:268px">
-            <div class="mock-panel" data-panel="pd-0">
+            <sc-if value="{{ pdIsEpub }}" hint-placeholder-val="{{ true }}">
               <div style="padding:14px 16px;border-radius:12px;border:1px solid var(--line);background:var(--surface);animation:fadeIn .35s both">
                 <b style="display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--pd);margin-bottom:8px">Chapter 7 · Heat &amp; Thermodynamics</b>
                 <span style="display:block;font-family:'Fraunces',Georgia,serif;font-size:14.5px;line-height:1.7;color:var(--ink-2)">Heat is a form of energy that flows from a body at higher temperature to one at lower temperature.</span>
@@ -377,8 +392,8 @@
                 <span style="display:block;height:8px;border-radius:100px;background:var(--line);width:74%;transform-origin:left;animation:growX .7s .16s both"></span>
                 <span style="display:block;height:8px;border-radius:100px;background:var(--line);width:88%;transform-origin:left;animation:growX .7s .24s both"></span>
               </div>
-            </div>
-            <div class="mock-panel" data-panel="pd-1" hidden>
+            </sc-if>
+            <sc-if value="{{ pdIsPdf }}">
               <div style="padding:16px;border-radius:12px;border:1px solid var(--line);background:var(--surface);animation:popIn .35s both">
                 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
                   <b style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--pd)">Page-accurate PDF</b>
@@ -392,31 +407,31 @@
               <div style="display:flex;align-items:center;gap:10px;padding:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px">
                 <span style="display:block;flex:1;min-width:0"><span style="display:block;font-size:12.5px;font-weight:700;color:var(--ink)">PDF Studio</span><span style="display:block;font-size:11px;color:var(--muted)">Split, merge, annotate — no download needed</span></span>
               </div>
-            </div>
-            <div class="mock-panel" data-panel="pd-2" hidden>
+            </sc-if>
+            <sc-if value="{{ pdIsAudio }}">
               <div style="padding:16px;border-radius:12px;border:1px solid var(--line);background:var(--surface);animation:popIn .35s both">
                 <b style="display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--pd);margin-bottom:12px">Natural-voice audiobook</b>
                 <div style="display:flex;align-items:center;gap:12px">
-                  <button type="button" id="pd-play" aria-label="Play" style="width:44px;height:44px;flex:none;border-radius:100px;display:grid;place-items:center;background:var(--pd-btn);color:#fff;cursor:pointer;border:0;transition:transform .25s" data-hv="13">
-
-                      <svg hidden class="ico-playing" viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px"><rect x="6" y="5" width="4" height="14" rx="1"></rect><rect x="14" y="5" width="4" height="14" rx="1"></rect></svg>
-
-
-                      <svg class="ico-paused" viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px"><path d="M8 5l11 7-11 7z"></path></svg>
-
+                  <button type="button" onClick="{{ togglePlay }}" aria-label="{{ playLabel }}" style="width:44px;height:44px;flex:none;border-radius:100px;display:grid;place-items:center;background:var(--pd-btn);color:#fff;cursor:pointer;border:0;transition:transform .25s" style-hover="transform:scale(1.08)">
+                    <sc-if value="{{ playing }}">
+                      <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px"><rect x="6" y="5" width="4" height="14" rx="1"></rect><rect x="14" y="5" width="4" height="14" rx="1"></rect></svg>
+                    </sc-if>
+                    <sc-if value="{{ paused }}" hint-placeholder-val="{{ true }}">
+                      <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px"><path d="M8 5l11 7-11 7z"></path></svg>
+                    </sc-if>
                   </button>
                   <span style="display:flex;align-items:flex-end;gap:3px;height:32px;flex:1;min-width:0">
-                    <i class="wv" style="--h:17px;--d:0.82s"></i><i class="wv" style="--h:24px;--d:0.94s"></i><i class="wv" style="--h:11px;--d:1.06s"></i><i class="wv" style="--h:18px;--d:1.18s"></i><i class="wv" style="--h:25px;--d:0.70s"></i><i class="wv" style="--h:12px;--d:0.82s"></i><i class="wv" style="--h:19px;--d:0.94s"></i><i class="wv" style="--h:26px;--d:1.06s"></i><i class="wv" style="--h:13px;--d:1.18s"></i><i class="wv" style="--h:20px;--d:0.70s"></i><i class="wv" style="--h:27px;--d:0.82s"></i><i class="wv" style="--h:14px;--d:0.94s"></i>
+                    <i style="{{ wave1 }}"></i><i style="{{ wave2 }}"></i><i style="{{ wave3 }}"></i><i style="{{ wave4 }}"></i><i style="{{ wave5 }}"></i><i style="{{ wave6 }}"></i><i style="{{ wave7 }}"></i><i style="{{ wave8 }}"></i><i style="{{ wave9 }}"></i><i style="{{ wave10 }}"></i><i style="{{ wave11 }}"></i><i style="{{ wave12 }}"></i>
                   </span>
-                  <span style="font-size:11.5px;font-weight:800;color:var(--pd);font-family:ui-monospace,SFMono-Regular,Menlo,monospace"><span id="pd-time">01:05</span></span>
+                  <span style="font-size:11.5px;font-weight:800;color:var(--pd);font-family:ui-monospace,SFMono-Regular,Menlo,monospace">{{ audioTime }}</span>
                 </div>
-                <div style="height:6px;border-radius:100px;background:var(--line);overflow:hidden;margin-top:14px"><i class="pd-bar" id="pd-bar"></i></div>
+                <div style="height:6px;border-radius:100px;background:var(--line);overflow:hidden;margin-top:14px"><i style="{{ audioBar }}"></i></div>
               </div>
               <div style="display:flex;align-items:center;gap:10px;padding:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px">
                 <span style="display:block;flex:1;min-width:0"><span style="display:block;font-size:12.5px;font-weight:700;color:var(--ink)">Chapter 7 · Heat &amp; Thermodynamics</span><span style="display:block;font-size:11px;color:var(--muted)">Position syncs back to the reader</span></span>
               </div>
-            </div>
-            <div class="mock-panel" data-panel="pd-3" hidden>
+            </sc-if>
+            <sc-if value="{{ pdIsVarta }}">
               <div style="display:flex;align-items:center;gap:10px;padding:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px;animation:inLeft .35s both">
                 <span style="width:28px;height:28px;border-radius:8px;flex:none;display:grid;place-items:center;background:var(--pd-t);color:var(--pd)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></span>
                 <span style="display:block;flex:1;min-width:0"><span style="display:block;font-size:12.5px;font-weight:700;color:var(--ink)">Why is water's specific heat so high?</span><span style="display:block;font-size:11px;color:var(--muted)">Varta · grounded in the book</span></span>
@@ -429,13 +444,13 @@
                 <span style="display:block;flex:1;min-width:0"><span style="display:block;font-size:12.5px;font-weight:700;color:var(--ink)">Saved to Sanchika</span><span style="display:block;font-size:11px;color:var(--muted)">Notebook keeps the citation with the note</span></span>
                 <span style="font-size:11px;font-weight:800;color:var(--ok)">✓</span>
               </div>
-            </div>
+            </sc-if>
           </div>
         </div>
 
         <div style="position:relative;z-index:1;min-width:0">
           <div style="display:flex;align-items:center;gap:13px;margin-bottom:16px;flex-wrap:wrap">
-            <span aria-hidden="true" style="width:48px;height:48px;border-radius:15px;flex:none;display:grid;place-items:center;color:#fff;background:var(--pd-btn);box-shadow:0 10px 24px rgba(166,94,11,.34);transition:transform .35s cubic-bezier(.2,.7,.3,1)" data-hv="9">
+            <span aria-hidden="true" style="width:48px;height:48px;border-radius:15px;flex:none;display:grid;place-items:center;color:#fff;background:var(--pd-btn);box-shadow:0 10px 24px rgba(166,94,11,.34);transition:transform .35s cubic-bezier(.2,.7,.3,1)" style-hover="transform:rotate(-8deg) scale(1.08)">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:23px;height:23px"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"></path></svg>
             </span>
             <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(24px,2.7vw,33px);letter-spacing:-.03em;color:var(--ink)">PDLMS Pro</h3>
@@ -443,14 +458,14 @@
           </div>
           <p style="font-size:16.5px;color:var(--body);max-width:52ch;text-wrap:pretty"><strong style="color:var(--ink);font-weight:700">Read, listen, and chat with your books.</strong> Upload a title once and it becomes a reflowable EPUB, a page-accurate PDF, a natural-voice audiobook — and <em>Varta</em>, a study assistant that answers only from the text, with a citation you can verify on the page.</p>
           <ul style="display:flex;flex-wrap:wrap;gap:8px;margin-top:20px">
-            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" data-hv="14">Four reading modes</li>
-            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" data-hv="14">Varta AI assistant</li>
-            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" data-hv="14">PDF Studio</li>
-            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" data-hv="14">Sanchika notebook</li>
-            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" data-hv="14">Multi-tenant</li>
+            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" style-hover="transform:translateY(-2px);border-color:var(--pd)">Four reading modes</li>
+            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" style-hover="transform:translateY(-2px);border-color:var(--pd)">Varta AI assistant</li>
+            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" style-hover="transform:translateY(-2px);border-color:var(--pd)">PDF Studio</li>
+            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" style-hover="transform:translateY(-2px);border-color:var(--pd)">Sanchika notebook</li>
+            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" style-hover="transform:translateY(-2px);border-color:var(--pd)">Multi-tenant</li>
           </ul>
           <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin-top:28px">
-            <a href="products/pdlms.html" style="display:inline-flex;align-items:center;gap:10px;padding:14px 25px;border-radius:100px;background:var(--pd-btn);color:#fff;font-size:15px;font-weight:700;box-shadow:0 10px 26px rgba(166,94,11,.28);transition:transform .26s,box-shadow .26s" data-hv="15">Explore PDLMS Pro</a>
+            <a href="products/pdlms.html" style="display:inline-flex;align-items:center;gap:10px;padding:14px 25px;border-radius:100px;background:var(--pd-btn);color:#fff;font-size:15px;font-weight:700;box-shadow:0 10px 26px rgba(166,94,11,.28);transition:transform .26s,box-shadow .26s" style-hover="transform:translateY(-3px);box-shadow:0 18px 40px rgba(166,94,11,.4);color:#fff">Explore PDLMS Pro</a>
             <a href="https://pdlms.vinstitution.com" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:7px;font-size:14.5px;font-weight:700;color:var(--pd)">Open the app
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M7 17 17 7M9 7h8v8"></path></svg>
             </a>
@@ -458,12 +473,12 @@
         </div>
       </article>
 
-      <article data-acc="dg" data-rv style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:clamp(24px,4vw,52px);align-items:center;padding:clamp(26px,3.6vw,46px);border:1px solid var(--line);border-radius:28px;background:var(--surface);box-shadow:var(--sh1);overflow:hidden;transition:box-shadow .4s,transform .4s,border-color .4s" data-hv="16">
+      <article data-rv style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:clamp(24px,4vw,52px);align-items:center;padding:clamp(26px,3.6vw,46px);border:1px solid var(--line);border-radius:28px;background:var(--surface);box-shadow:var(--sh1);overflow:hidden;transition:box-shadow .4s,transform .4s,border-color .4s" style-hover="transform:translateY(-5px);box-shadow:var(--sh3);border-color:var(--dg)">
         <div aria-hidden="true" style="position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,var(--dg),transparent 82%)"></div>
         <div aria-hidden="true" style="position:absolute;width:360px;height:360px;right:-100px;top:-130px;border-radius:50%;background:var(--dg);opacity:.06;pointer-events:none;animation:drift 22s ease-in-out infinite"></div>
         <div style="position:relative;z-index:1;min-width:0">
           <div style="display:flex;align-items:center;gap:13px;margin-bottom:16px;flex-wrap:wrap">
-            <span aria-hidden="true" style="width:48px;height:48px;border-radius:15px;flex:none;display:grid;place-items:center;color:#fff;background:var(--dg-btn);box-shadow:0 10px 24px rgba(184,69,14,.34);transition:transform .35s cubic-bezier(.2,.7,.3,1)" data-hv="9">
+            <span aria-hidden="true" style="width:48px;height:48px;border-radius:15px;flex:none;display:grid;place-items:center;color:#fff;background:var(--dg-btn);box-shadow:0 10px 24px rgba(184,69,14,.34);transition:transform .35s cubic-bezier(.2,.7,.3,1)" style-hover="transform:rotate(-8deg) scale(1.08)">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:23px;height:23px"><path d="M22 10 12 5 2 10l10 5 10-5ZM6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"></path></svg>
             </span>
             <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(24px,2.7vw,33px);letter-spacing:-.03em;color:var(--ink)">Digi Classroom</h3>
@@ -471,14 +486,14 @@
           </div>
           <p style="font-size:16.5px;color:var(--body);max-width:52ch;text-wrap:pretty"><strong style="color:var(--ink);font-weight:700">The AI tutor that shows its sources.</strong> <em>Sarvagya</em> runs agentic RAG over NCERT, so every answer is citation-backed and Bloom-tagged — paired with an adaptive Practest engine and a focus suite built for CBSE &amp; ICSE learners, Classes 6–12.</p>
           <ul style="display:flex;flex-wrap:wrap;gap:8px;margin-top:20px">
-            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" data-hv="17">Agentic RAG</li>
-            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" data-hv="17">100% NCERT-cited</li>
-            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" data-hv="17">Bloom-tagged</li>
-            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" data-hv="17">Adaptive testing</li>
-            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" data-hv="17">Offline-ready</li>
+            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" style-hover="transform:translateY(-2px);border-color:var(--dg)">Agentic RAG</li>
+            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" style-hover="transform:translateY(-2px);border-color:var(--dg)">100% NCERT-cited</li>
+            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" style-hover="transform:translateY(-2px);border-color:var(--dg)">Bloom-tagged</li>
+            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" style-hover="transform:translateY(-2px);border-color:var(--dg)">Adaptive testing</li>
+            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" style-hover="transform:translateY(-2px);border-color:var(--dg)">Offline-ready</li>
           </ul>
           <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin-top:28px">
-            <a href="products/digi-classroom.html" style="display:inline-flex;align-items:center;gap:10px;padding:14px 25px;border-radius:100px;background:var(--dg-btn);color:#fff;font-size:15px;font-weight:700;box-shadow:0 10px 26px rgba(184,69,14,.28);transition:transform .26s,box-shadow .26s" data-hv="18">Explore Digi Classroom</a>
+            <a href="products/digi-classroom.html" style="display:inline-flex;align-items:center;gap:10px;padding:14px 25px;border-radius:100px;background:var(--dg-btn);color:#fff;font-size:15px;font-weight:700;box-shadow:0 10px 26px rgba(184,69,14,.28);transition:transform .26s,box-shadow .26s" style-hover="transform:translateY(-3px);box-shadow:0 18px 40px rgba(184,69,14,.4);color:#fff">Explore Digi Classroom</a>
             <a href="https://dgcl.vinstitution.com" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:7px;font-size:14.5px;font-weight:700;color:var(--dg)">Open the app
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M7 17 17 7M9 7h8v8"></path></svg>
             </a>
@@ -493,10 +508,10 @@
           <div style="padding:14px;display:flex;flex-direction:column;gap:10px;min-height:268px">
             <span style="font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)">Ask the tutor</span>
             <div style="display:flex;gap:6px;flex-wrap:wrap">
-              <button type="button" class="mock-q is-active" data-q="0">Explain photosynthesis simply 🌱</button>
-              <button type="button" class="mock-q" data-q="1">What is latent heat?</button>
+              <button type="button" onClick="{{ askPhoto }}" style="{{ dgQ0 }}">Explain photosynthesis simply 🌱</button>
+              <button type="button" onClick="{{ askHeat }}" style="{{ dgQ1 }}">What is latent heat?</button>
             </div>
-            <div class="mock-panel" data-panel="dg-0">
+            <sc-if value="{{ dgIsPhoto }}" hint-placeholder-val="{{ true }}">
               <div style="display:flex;align-items:center;gap:10px;padding:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px;animation:inRight .35s both">
                 <span style="width:28px;height:28px;border-radius:8px;flex:none;display:grid;place-items:center;background:var(--dg-t);color:var(--dg)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px"><path d="M12 2a7 7 0 0 0-4 12.7V17a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-2.3A7 7 0 0 0 12 2ZM10 22h4"></path></svg></span>
                 <span style="display:block;flex:1;min-width:0"><span style="display:block;font-size:12.5px;font-weight:700;color:var(--ink)">Explain photosynthesis simply 🌱</span><span style="display:block;font-size:11px;color:var(--muted)">Digi Tutor · grounded in NCERT</span></span>
@@ -505,8 +520,8 @@
                 <b style="display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--dg);margin-bottom:5px">NCERT Sci 9 · p.96 · Bloom: Understand</b>
                 Plants make food from sunlight, water and CO₂ — turning light energy into glucose and releasing oxygen.
               </div>
-            </div>
-            <div class="mock-panel" data-panel="dg-1" hidden>
+            </sc-if>
+            <sc-if value="{{ dgIsHeat }}">
               <div style="display:flex;align-items:center;gap:10px;padding:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px;animation:inRight .35s both">
                 <span style="width:28px;height:28px;border-radius:8px;flex:none;display:grid;place-items:center;background:var(--dg-t);color:var(--dg)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px"><path d="M12 2a7 7 0 0 0-4 12.7V17a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-2.3A7 7 0 0 0 12 2ZM10 22h4"></path></svg></span>
                 <span style="display:block;flex:1;min-width:0"><span style="display:block;font-size:12.5px;font-weight:700;color:var(--ink)">What is latent heat?</span><span style="display:block;font-size:11px;color:var(--muted)">Digi Tutor · grounded in NCERT</span></span>
@@ -515,7 +530,7 @@
                 <b style="display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--dg);margin-bottom:5px">NCERT Sci 9 · Bloom: Understand</b>
                 The heat absorbed or released during a change of state, without any change in temperature.
               </div>
-            </div>
+            </sc-if>
             <div style="display:flex;align-items:center;gap:10px;padding:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px">
               <span style="width:28px;height:28px;border-radius:8px;flex:none;display:grid;place-items:center;background:var(--dg-t);color:var(--dg)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px"><path d="m12 2 2.4 7.4H22l-6.2 4.5 2.4 7.4-6.2-4.6L5.8 21l2.4-7.4L2 9.4h7.6z"></path></svg></span>
               <span style="display:block;flex:1;min-width:0"><span style="display:block;font-size:12.5px;font-weight:700;color:var(--ink)">Practest · adaptive</span><span style="display:block;font-size:11px;color:var(--muted)">Difficulty tuned to you · Level 7/10</span></span>
@@ -526,7 +541,7 @@
         </div>
       </article>
 
-      <article data-acc="pt" data-rv style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:clamp(24px,4vw,52px);align-items:center;padding:clamp(26px,3.6vw,46px);border:1px solid var(--line);border-radius:28px;background:var(--surface);box-shadow:var(--sh1);overflow:hidden;transition:box-shadow .4s,transform .4s,border-color .4s" data-hv="19">
+      <article data-rv style="position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:clamp(24px,4vw,52px);align-items:center;padding:clamp(26px,3.6vw,46px);border:1px solid var(--line);border-radius:28px;background:var(--surface);box-shadow:var(--sh1);overflow:hidden;transition:box-shadow .4s,transform .4s,border-color .4s" style-hover="transform:translateY(-5px);box-shadow:var(--sh3);border-color:var(--pt)">
         <div aria-hidden="true" style="position:absolute;inset:0 0 auto;height:3px;background:linear-gradient(90deg,var(--pt),transparent 82%)"></div>
         <div aria-hidden="true" style="position:absolute;width:360px;height:360px;right:-100px;top:-130px;border-radius:50%;background:var(--pt);opacity:.06;pointer-events:none;animation:drift 19s ease-in-out infinite"></div>
 
@@ -539,30 +554,13 @@
             <div style="display:flex;align-items:center;gap:10px;padding:12px;background:var(--surface);border:1px solid var(--line);border-radius:12px">
               <span style="width:28px;height:28px;border-radius:8px;flex:none;display:grid;place-items:center;background:var(--pt-t);color:var(--pt)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:14px;height:14px"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span>
               <span style="display:block;flex:1;min-width:0"><span style="display:block;font-size:12.5px;font-weight:700;color:var(--ink)">Section timer · server-side</span><span style="display:block;font-size:11px;color:var(--muted)">Auto-submit fires even if the tab closes</span></span>
-              <span style="font-size:13px;font-weight:800;color:var(--pt);font-family:ui-monospace,SFMono-Regular,Menlo,monospace"><span id="exam-time">00:12:04</span></span>
+              <span style="font-size:13px;font-weight:800;color:var(--pt);font-family:ui-monospace,SFMono-Regular,Menlo,monospace">{{ examTime }}</span>
             </div>
             <span style="font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)">Question palette · click to change state</span>
             <div style="display:grid;grid-template-columns:repeat(10,1fr);gap:5px">
-              <button type="button" class="cell is-1" data-cell="0" title="Answered">1</button>
-                <button type="button" class="cell is-1" data-cell="1" title="Answered">2</button>
-                <button type="button" class="cell is-0" data-cell="2" title="Not visited">3</button>
-                <button type="button" class="cell is-2" data-cell="3" title="Not answered">4</button>
-                <button type="button" class="cell is-1" data-cell="4" title="Answered">5</button>
-                <button type="button" class="cell is-3" data-cell="5" title="Marked">6</button>
-                <button type="button" class="cell is-0" data-cell="6" title="Not visited">7</button>
-                <button type="button" class="cell is-1" data-cell="7" title="Answered">8</button>
-                <button type="button" class="cell is-1" data-cell="8" title="Answered">9</button>
-                <button type="button" class="cell is-2" data-cell="9" title="Not answered">10</button>
-                <button type="button" class="cell is-0" data-cell="10" title="Not visited">11</button>
-                <button type="button" class="cell is-0" data-cell="11" title="Not visited">12</button>
-                <button type="button" class="cell is-1" data-cell="12" title="Answered">13</button>
-                <button type="button" class="cell is-1" data-cell="13" title="Answered">14</button>
-                <button type="button" class="cell is-3" data-cell="14" title="Marked">15</button>
-                <button type="button" class="cell is-0" data-cell="15" title="Not visited">16</button>
-                <button type="button" class="cell is-1" data-cell="16" title="Answered">17</button>
-                <button type="button" class="cell is-0" data-cell="17" title="Not visited">18</button>
-                <button type="button" class="cell is-2" data-cell="18" title="Not answered">19</button>
-                <button type="button" class="cell is-1" data-cell="19" title="Answered">20</button>
+              <sc-for list="{{ cells }}" as="cell" hint-placeholder-count="20">
+                <button type="button" onClick="{{ cell.onClick }}" title="{{ cell.title }}" style="{{ cell.style }}">{{ cell.n }}</button>
+              </sc-for>
             </div>
             <div style="display:flex;gap:6px;flex-wrap:wrap">
               <span style="font-size:10.5px;font-weight:700;padding:5px 10px;border-radius:100px;background:var(--ok-t);color:var(--ok)">Answered</span>
@@ -580,7 +578,7 @@
 
         <div style="position:relative;z-index:1;min-width:0">
           <div style="display:flex;align-items:center;gap:13px;margin-bottom:16px;flex-wrap:wrap">
-            <span aria-hidden="true" style="width:48px;height:48px;border-radius:15px;flex:none;display:grid;place-items:center;color:#fff;background:var(--pt-btn);box-shadow:0 10px 24px rgba(55,66,196,.34);transition:transform .35s cubic-bezier(.2,.7,.3,1)" data-hv="9">
+            <span aria-hidden="true" style="width:48px;height:48px;border-radius:15px;flex:none;display:grid;place-items:center;color:#fff;background:var(--pt-btn);box-shadow:0 10px 24px rgba(55,66,196,.34);transition:transform .35s cubic-bezier(.2,.7,.3,1)" style-hover="transform:rotate(-8deg) scale(1.08)">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:23px;height:23px"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3.2 2"></path></svg>
             </span>
             <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(24px,2.7vw,33px);letter-spacing:-.03em;color:var(--ink)">e-Learning Practest</h3>
@@ -588,14 +586,14 @@
           </div>
           <p style="font-size:16.5px;color:var(--body);max-width:52ch;text-wrap:pretty"><strong style="color:var(--ink);font-weight:700">Practise like it's the real exam hall.</strong> Server-timed CBT mocks with the exact five-state palette, section locks and negative marking of SSC, Banking, Railways, UPSC and State PCS papers — plus video courses and analytics that name where marks are leaking.</p>
           <ul style="display:flex;flex-wrap:wrap;gap:8px;margin-top:20px">
-            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" data-hv="20">Server-authoritative timer</li>
-            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" data-hv="20">Exam-exact palette</li>
-            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" data-hv="20">All-India percentile</li>
-            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" data-hv="20">Video courses</li>
-            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" data-hv="20">Crash-safe resume</li>
+            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" style-hover="transform:translateY(-2px);border-color:var(--pt)">Server-authoritative timer</li>
+            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" style-hover="transform:translateY(-2px);border-color:var(--pt)">Exam-exact palette</li>
+            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" style-hover="transform:translateY(-2px);border-color:var(--pt)">All-India percentile</li>
+            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" style-hover="transform:translateY(-2px);border-color:var(--pt)">Video courses</li>
+            <li style="font-size:13px;font-weight:600;color:var(--ink-2);padding:7px 13px;border-radius:10px;background:var(--surface-2);border:1px solid var(--line);transition:transform .25s,border-color .25s" style-hover="transform:translateY(-2px);border-color:var(--pt)">Crash-safe resume</li>
           </ul>
           <div style="display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin-top:28px">
-            <a href="products/practest.html" style="display:inline-flex;align-items:center;gap:10px;padding:14px 25px;border-radius:100px;background:var(--pt-btn);color:#fff;font-size:15px;font-weight:700;box-shadow:0 10px 26px rgba(55,66,196,.28);transition:transform .26s,box-shadow .26s" data-hv="21">Explore Practest</a>
+            <a href="products/practest.html" style="display:inline-flex;align-items:center;gap:10px;padding:14px 25px;border-radius:100px;background:var(--pt-btn);color:#fff;font-size:15px;font-weight:700;box-shadow:0 10px 26px rgba(55,66,196,.28);transition:transform .26s,box-shadow .26s" style-hover="transform:translateY(-3px);box-shadow:0 18px 40px rgba(55,66,196,.4);color:#fff">Explore Practest</a>
             <a href="https://practest.live" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:7px;font-size:14.5px;font-weight:700;color:var(--pt)">Open the app
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M7 17 17 7M9 7h8v8"></path></svg>
             </a>
@@ -620,7 +618,7 @@
 
       <article data-rv style="position:relative;display:grid;grid-template-columns:48px 1fr;gap:clamp(16px,2.4vw,26px);align-items:start">
         <span aria-hidden="true" style="width:48px;height:48px;border-radius:100px;display:grid;place-items:center;background:var(--surface);border:2px solid var(--brand-hi);color:var(--brand);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;font-weight:800;box-shadow:var(--sh1);z-index:1">01</span>
-        <div style="padding:24px 26px;border-radius:20px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh1);transition:transform .3s,box-shadow .3s,border-color .3s" data-hv="22">
+        <div style="padding:24px 26px;border-radius:20px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh1);transition:transform .3s,box-shadow .3s,border-color .3s" style-hover="transform:translateX(6px);box-shadow:var(--sh2);border-color:var(--brand-hi)">
           <span style="font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--brand)">The print room</span>
           <h3 style="margin-top:8px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:22px;color:var(--ink);letter-spacing:-.02em">Educational publishing &amp; school branding</h3>
           <p style="margin-top:9px;font-size:14.5px;color:var(--muted);text-wrap:pretty">Magazines, prospectus, diaries, report cards and campus identity — the work that put us inside schools long before the software did.</p>
@@ -629,7 +627,7 @@
 
       <article data-rv style="position:relative;display:grid;grid-template-columns:48px 1fr;gap:clamp(16px,2.4vw,26px);align-items:start">
         <span aria-hidden="true" style="width:48px;height:48px;border-radius:100px;display:grid;place-items:center;background:var(--surface);border:2px solid var(--vv);color:var(--vv);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;font-weight:800;box-shadow:var(--sh1);z-index:1">02</span>
-        <div style="padding:24px 26px;border-radius:20px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh1);transition:transform .3s,box-shadow .3s,border-color .3s" data-hv="23">
+        <div style="padding:24px 26px;border-radius:20px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh1);transition:transform .3s,box-shadow .3s,border-color .3s" style-hover="transform:translateX(6px);box-shadow:var(--sh2);border-color:var(--vv)">
           <span style="font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--vv)">The campus OS</span>
           <h3 style="margin-top:8px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:22px;color:var(--ink);letter-spacing:-.02em">Vidyaverse — 47 modules, one record</h3>
           <p style="margin-top:9px;font-size:14.5px;color:var(--muted);text-wrap:pretty">Academics, fees, attendance, transport, hostel and documents behind a single login — and the identity provider the rest of the stack now trusts.</p>
@@ -638,7 +636,7 @@
 
       <article data-rv style="position:relative;display:grid;grid-template-columns:48px 1fr;gap:clamp(16px,2.4vw,26px);align-items:start">
         <span aria-hidden="true" style="width:48px;height:48px;border-radius:100px;display:grid;place-items:center;background:var(--surface);border:2px solid var(--pd);color:var(--pd);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;font-weight:800;box-shadow:var(--sh1);z-index:1">03</span>
-        <div style="padding:24px 26px;border-radius:20px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh1);transition:transform .3s,box-shadow .3s,border-color .3s" data-hv="24">
+        <div style="padding:24px 26px;border-radius:20px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh1);transition:transform .3s,box-shadow .3s,border-color .3s" style-hover="transform:translateX(6px);box-shadow:var(--sh2);border-color:var(--pd)">
           <span style="font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--pd)">The library</span>
           <h3 style="margin-top:8px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:22px;color:var(--ink);letter-spacing:-.02em">PDLMS Pro — four reading modes and Varta</h3>
           <p style="margin-top:9px;font-size:14.5px;color:var(--muted);text-wrap:pretty">One upload becomes EPUB, PDF and audiobook, with a study assistant that answers only from the text and cites the page.</p>
@@ -647,7 +645,7 @@
 
       <article data-rv style="position:relative;display:grid;grid-template-columns:48px 1fr;gap:clamp(16px,2.4vw,26px);align-items:start">
         <span aria-hidden="true" style="width:48px;height:48px;border-radius:100px;display:grid;place-items:center;background:var(--surface);border:2px solid var(--dg);color:var(--dg);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;font-weight:800;box-shadow:var(--sh1);z-index:1">04</span>
-        <div style="padding:24px 26px;border-radius:20px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh1);transition:transform .3s,box-shadow .3s,border-color .3s" data-hv="25">
+        <div style="padding:24px 26px;border-radius:20px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh1);transition:transform .3s,box-shadow .3s,border-color .3s" style-hover="transform:translateX(6px);box-shadow:var(--sh2);border-color:var(--dg)">
           <span style="font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--dg)">The tutor</span>
           <h3 style="margin-top:8px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:22px;color:var(--ink);letter-spacing:-.02em">Digi Classroom — Sarvagya over NCERT</h3>
           <p style="margin-top:9px;font-size:14.5px;color:var(--muted);text-wrap:pretty">Agentic RAG that keeps every answer citation-backed and Bloom-tagged for CBSE and ICSE learners, Classes 6–12.</p>
@@ -656,7 +654,7 @@
 
       <article data-rv style="position:relative;display:grid;grid-template-columns:48px 1fr;gap:clamp(16px,2.4vw,26px);align-items:start">
         <span aria-hidden="true" style="width:48px;height:48px;border-radius:100px;display:grid;place-items:center;background:var(--surface);border:2px solid var(--pt);color:var(--pt);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;font-weight:800;box-shadow:var(--sh1);z-index:1">05</span>
-        <div style="padding:24px 26px;border-radius:20px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh1);transition:transform .3s,box-shadow .3s,border-color .3s" data-hv="26">
+        <div style="padding:24px 26px;border-radius:20px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh1);transition:transform .3s,box-shadow .3s,border-color .3s" style-hover="transform:translateX(6px);box-shadow:var(--sh2);border-color:var(--pt)">
           <span style="font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--pt)">The exam hall</span>
           <h3 style="margin-top:8px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:22px;color:var(--ink);letter-spacing:-.02em">e-Learning Practest — CBT for government exams</h3>
           <p style="margin-top:9px;font-size:14.5px;color:var(--muted);text-wrap:pretty">The same engineering pointed at aspirants: server-timed mocks for SSC, Banking, Railways, UPSC and State PCS.</p>
@@ -675,7 +673,7 @@
       <p style="margin-top:16px;font-size:clamp(16px,1.6vw,18.5px);color:var(--band-body);max-width:62ch;margin-inline:auto;text-wrap:pretty">Vidyaverse is the identity provider. Sign in once and step straight into the library and the AI tutor — no second password, no re-registration, roles and memberships carried across.</p>
     </div>
 
-    <article data-rv style="padding:clamp(24px,3vw,36px);border-radius:26px;border:1px solid rgba(245,179,30,.4);background:rgba(245,179,30,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:clamp(20px,3vw,40px);align-items:center;transition:transform .35s,border-color .35s" data-hv="27">
+    <article data-rv style="padding:clamp(24px,3vw,36px);border-radius:26px;border:1px solid rgba(245,179,30,.4);background:rgba(245,179,30,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:clamp(20px,3vw,40px);align-items:center;transition:transform .35s,border-color .35s" style-hover="transform:translateY(-4px);border-color:var(--gold-hi)">
       <div style="min-width:0">
         <span style="font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-hi);margin-bottom:12px;display:block">Identity provider · hub</span>
         <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(24px,2.6vw,31px);color:var(--band-ink);margin-bottom:10px">Vidyaverse</h3>
@@ -693,7 +691,7 @@
     </div>
 
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:18px">
-      <article data-rv style="padding:30px;border-radius:24px;background:var(--band-surf);border:1px solid var(--band-line);transition:background .35s,transform .35s,border-color .35s" data-hv="28">
+      <article data-rv style="padding:30px;border-radius:24px;background:var(--band-surf);border:1px solid var(--band-line);transition:background .35s,transform .35s,border-color .35s" style-hover="background:rgba(255,255,255,.09);transform:translateY(-5px);border-color:var(--pd)">
         <span style="font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#F2A64E;margin-bottom:12px;display:block">Connected · library</span>
         <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:24px;color:var(--band-ink);margin-bottom:10px">PDLMS Pro</h3>
         <p style="font-size:14.5px;color:var(--band-body);line-height:1.6;text-wrap:pretty">EPUB, PDF and audiobooks with an AI study assistant, one tap away from the campus dashboard.</p>
@@ -703,7 +701,7 @@
           <li style="position:relative;padding-left:22px;font-size:13.5px;color:#B4BECD"><span aria-hidden="true" style="position:absolute;left:0;top:8px;width:7px;height:7px;border-radius:2px;background:var(--gold-hi);opacity:.85;display:block"></span>Usage analytics back to admins</li>
         </ul>
       </article>
-      <article data-rv style="padding:30px;border-radius:24px;background:var(--band-surf);border:1px solid var(--band-line);transition:background .35s,transform .35s,border-color .35s" data-hv="29">
+      <article data-rv style="padding:30px;border-radius:24px;background:var(--band-surf);border:1px solid var(--band-line);transition:background .35s,transform .35s,border-color .35s" style-hover="background:rgba(255,255,255,.09);transform:translateY(-5px);border-color:var(--dg)">
         <span style="font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#FF9057;margin-bottom:12px;display:block">Connected · tutor</span>
         <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:24px;color:var(--band-ink);margin-bottom:10px">Digi Classroom</h3>
         <p style="font-size:14.5px;color:var(--band-body);line-height:1.6;text-wrap:pretty">Agentic RAG over NCERT with an adaptive practice-test engine and a full student productivity suite.</p>
@@ -735,49 +733,49 @@
     </div>
 
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(290px,100%),1fr));gap:18px">
-      <article data-rv style="position:relative;padding:32px;border-radius:24px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--sh1);overflow:hidden;transition:transform .35s,box-shadow .35s,border-color .35s" data-hv="30">
+      <article data-rv style="position:relative;padding:32px;border-radius:24px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--sh1);overflow:hidden;transition:transform .35s,box-shadow .35s,border-color .35s" style-hover="transform:translateY(-6px);box-shadow:var(--sh3);border-color:var(--brand-hi)">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
-          <span style="width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--brand-tint);color:var(--brand);transition:transform .35s cubic-bezier(.2,.7,.3,1)" data-hv="31"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:21px;height:21px"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"></path></svg></span>
+          <span style="width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--brand-tint);color:var(--brand);transition:transform .35s cubic-bezier(.2,.7,.3,1)" style-hover="transform:rotate(-10deg) scale(1.1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:21px;height:21px"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"></path></svg></span>
           <span aria-hidden="true" style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;font-weight:700;color:var(--faint)">01</span>
         </div>
         <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;color:var(--ink);margin-bottom:10px;letter-spacing:-.02em">AI that cites, or stays quiet</h3>
         <p style="font-size:14.5px;color:var(--muted);text-wrap:pretty">Varta and Sarvagya answer from your textbook and link the exact page and paragraph. If it isn't in the source, the system says so instead of inventing it.</p>
       </article>
-      <article data-rv style="position:relative;padding:32px;border-radius:24px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--sh1);overflow:hidden;transition:transform .35s,box-shadow .35s,border-color .35s" data-hv="32">
+      <article data-rv style="position:relative;padding:32px;border-radius:24px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--sh1);overflow:hidden;transition:transform .35s,box-shadow .35s,border-color .35s" style-hover="transform:translateY(-6px);box-shadow:var(--sh3);border-color:var(--blue)">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
-          <span style="width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--pt-t);color:var(--blue);transition:transform .35s cubic-bezier(.2,.7,.3,1)" data-hv="31"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:21px;height:21px"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path></svg></span>
+          <span style="width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--pt-t);color:var(--blue);transition:transform .35s cubic-bezier(.2,.7,.3,1)" style-hover="transform:rotate(-10deg) scale(1.1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:21px;height:21px"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"></path></svg></span>
           <span aria-hidden="true" style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;font-weight:700;color:var(--faint)">02</span>
         </div>
         <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;color:var(--ink);margin-bottom:10px;letter-spacing:-.02em">Multi-tenant by architecture</h3>
         <p style="font-size:14.5px;color:var(--muted);text-wrap:pretty">Every institution's data sits in its own logical boundary with least-privilege roles. Isolation is structural, not a filter someone remembered to apply.</p>
       </article>
-      <article data-rv style="position:relative;padding:32px;border-radius:24px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--sh1);overflow:hidden;transition:transform .35s,box-shadow .35s,border-color .35s" data-hv="33">
+      <article data-rv style="position:relative;padding:32px;border-radius:24px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--sh1);overflow:hidden;transition:transform .35s,box-shadow .35s,border-color .35s" style-hover="transform:translateY(-6px);box-shadow:var(--sh3);border-color:var(--gold-hi)">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
-          <span style="width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--pd-t);color:var(--gold);transition:transform .35s cubic-bezier(.2,.7,.3,1)" data-hv="31"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:21px;height:21px"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"></path></svg></span>
+          <span style="width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--pd-t);color:var(--gold);transition:transform .35s cubic-bezier(.2,.7,.3,1)" style-hover="transform:rotate(-10deg) scale(1.1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:21px;height:21px"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18Z"></path></svg></span>
           <span aria-hidden="true" style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;font-weight:700;color:var(--faint)">03</span>
         </div>
         <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;color:var(--ink);margin-bottom:10px;letter-spacing:-.02em">Built for Bharat, not ported to it</h3>
         <p style="font-size:14.5px;color:var(--muted);text-wrap:pretty">Hindi and English throughout, WhatsApp as the parent channel, offline-first study tools, and NCERT as the source of truth — because that is how Indian institutions actually work.</p>
       </article>
-      <article data-rv style="position:relative;padding:32px;border-radius:24px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--sh1);overflow:hidden;transition:transform .35s,box-shadow .35s,border-color .35s" data-hv="34">
+      <article data-rv style="position:relative;padding:32px;border-radius:24px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--sh1);overflow:hidden;transition:transform .35s,box-shadow .35s,border-color .35s" style-hover="transform:translateY(-6px);box-shadow:var(--sh3);border-color:var(--pt)">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
-          <span style="width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--pt-t);color:var(--pt);transition:transform .35s cubic-bezier(.2,.7,.3,1)" data-hv="31"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:21px;height:21px"><path d="M15 7h3a5 5 0 0 1 0 10h-3M9 17H6A5 5 0 0 1 6 7h3M8 12h8"></path></svg></span>
+          <span style="width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--pt-t);color:var(--pt);transition:transform .35s cubic-bezier(.2,.7,.3,1)" style-hover="transform:rotate(-10deg) scale(1.1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:21px;height:21px"><path d="M15 7h3a5 5 0 0 1 0 10h-3M9 17H6A5 5 0 0 1 6 7h3M8 12h8"></path></svg></span>
           <span aria-hidden="true" style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;font-weight:700;color:var(--faint)">04</span>
         </div>
         <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;color:var(--ink);margin-bottom:10px;letter-spacing:-.02em">One identity, four products</h3>
         <p style="font-size:14.5px;color:var(--muted);text-wrap:pretty">Students and staff carry a single institutional login across the campus OS, the library and the tutor. No parallel user lists drifting out of sync.</p>
       </article>
-      <article data-rv style="position:relative;padding:32px;border-radius:24px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--sh1);overflow:hidden;transition:transform .35s,box-shadow .35s,border-color .35s" data-hv="35">
+      <article data-rv style="position:relative;padding:32px;border-radius:24px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--sh1);overflow:hidden;transition:transform .35s,box-shadow .35s,border-color .35s" style-hover="transform:translateY(-6px);box-shadow:var(--sh3);border-color:var(--vv)">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
-          <span style="width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--vv-t);color:var(--vv);transition:transform .35s cubic-bezier(.2,.7,.3,1)" data-hv="31"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:21px;height:21px"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span>
+          <span style="width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--vv-t);color:var(--vv);transition:transform .35s cubic-bezier(.2,.7,.3,1)" style-hover="transform:rotate(-10deg) scale(1.1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:21px;height:21px"><rect x="3" y="11" width="18" height="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span>
           <span aria-hidden="true" style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;font-weight:700;color:var(--faint)">05</span>
         </div>
         <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;color:var(--ink);margin-bottom:10px;letter-spacing:-.02em">DPDP-ready from day one</h3>
         <p style="font-size:14.5px;color:var(--muted);text-wrap:pretty">Consent-first messaging, honoured opt-outs, audit-logged access, encryption in transit and at rest. Minors' data is treated as the sensitive category it is.</p>
       </article>
-      <article data-rv style="position:relative;padding:32px;border-radius:24px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--sh1);overflow:hidden;transition:transform .35s,box-shadow .35s,border-color .35s" data-hv="36">
+      <article data-rv style="position:relative;padding:32px;border-radius:24px;border:1px solid var(--line);background:var(--surface);box-shadow:var(--sh1);overflow:hidden;transition:transform .35s,box-shadow .35s,border-color .35s" style-hover="transform:translateY(-6px);box-shadow:var(--sh3);border-color:var(--pd)">
         <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
-          <span style="width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--pd-t);color:var(--pd);transition:transform .35s cubic-bezier(.2,.7,.3,1)" data-hv="31"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:21px;height:21px"><circle cx="12" cy="9" r="6"></circle><path d="m8.5 14.5-1.5 7 5-3 5 3-1.5-7"></path></svg></span>
+          <span style="width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--pd-t);color:var(--pd);transition:transform .35s cubic-bezier(.2,.7,.3,1)" style-hover="transform:rotate(-10deg) scale(1.1)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:21px;height:21px"><circle cx="12" cy="9" r="6"></circle><path d="m8.5 14.5-1.5 7 5-3 5 3-1.5-7"></path></svg></span>
           <span aria-hidden="true" style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;font-weight:700;color:var(--faint)">06</span>
         </div>
         <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;color:var(--ink);margin-bottom:10px;letter-spacing:-.02em">ISO 9001:2015 certified</h3>
@@ -796,23 +794,23 @@
     </div>
 
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:18px">
-      <div data-rv style="padding:30px;border-radius:22px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh1);transition:transform .35s,box-shadow .35s,border-color .35s" data-hv="37">
-        <span style="width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--surface-2);color:var(--brand);border:1px solid var(--line);margin-bottom:16px;transition:transform .35s" data-hv="38"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:17px;height:17px"><path d="M6 2h9l5 5v15H6z"></path><path d="M15 2v5h5M9 13h6M9 17h6"></path></svg></span>
+      <div data-rv style="padding:30px;border-radius:22px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh1);transition:transform .35s,box-shadow .35s,border-color .35s" style-hover="transform:translateY(-6px);box-shadow:var(--sh2);border-color:var(--brand-hi)">
+        <span style="width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--surface-2);color:var(--brand);border:1px solid var(--line);margin-bottom:16px;transition:transform .35s" style-hover="transform:translateY(-3px)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:17px;height:17px"><path d="M6 2h9l5 5v15H6z"></path><path d="M15 2v5h5M9 13h6M9 17h6"></path></svg></span>
         <h4 style="font-size:15.5px;font-weight:800;letter-spacing:-.01em;margin-bottom:8px;color:var(--ink)">Educational Publishing</h4>
         <p style="font-size:13.5px;color:var(--muted);line-height:1.6;text-wrap:pretty">School magazines and annual books, prospectus, diaries, report cards, admission forms and brochures — designed, printed and delivered.</p>
       </div>
-      <div data-rv style="padding:30px;border-radius:22px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh1);transition:transform .35s,box-shadow .35s,border-color .35s" data-hv="37">
-        <span style="width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--surface-2);color:var(--brand);border:1px solid var(--line);margin-bottom:16px;transition:transform .35s" data-hv="38"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:17px;height:17px"><path d="M4 4h13v16H4z"></path><path d="M17 8h3v10a2 2 0 0 1-3 2M7 8h7M7 12h7M7 16h4"></path></svg></span>
+      <div data-rv style="padding:30px;border-radius:22px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh1);transition:transform .35s,box-shadow .35s,border-color .35s" style-hover="transform:translateY(-6px);box-shadow:var(--sh2);border-color:var(--brand-hi)">
+        <span style="width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--surface-2);color:var(--brand);border:1px solid var(--line);margin-bottom:16px;transition:transform .35s" style-hover="transform:translateY(-3px)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:17px;height:17px"><path d="M4 4h13v16H4z"></path><path d="M17 8h3v10a2 2 0 0 1-3 2M7 8h7M7 12h7M7 16h4"></path></svg></span>
         <h4 style="font-size:15.5px;font-weight:800;letter-spacing:-.01em;margin-bottom:8px;color:var(--ink)">News Agency</h4>
         <p style="font-size:13.5px;color:var(--muted);line-height:1.6;text-wrap:pretty">Educational journalism for future leaders — daily news, current affairs, career guidance, exam and scholarship updates, interviews and podcasts.</p>
       </div>
-      <div data-rv style="padding:30px;border-radius:22px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh1);transition:transform .35s,box-shadow .35s,border-color .35s" data-hv="37">
-        <span style="width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--surface-2);color:var(--brand);border:1px solid var(--line);margin-bottom:16px;transition:transform .35s" data-hv="38"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:17px;height:17px"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"></path></svg></span>
+      <div data-rv style="padding:30px;border-radius:22px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh1);transition:transform .35s,box-shadow .35s,border-color .35s" style-hover="transform:translateY(-6px);box-shadow:var(--sh2);border-color:var(--brand-hi)">
+        <span style="width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--surface-2);color:var(--brand);border:1px solid var(--line);margin-bottom:16px;transition:transform .35s" style-hover="transform:translateY(-3px)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:17px;height:17px"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"></path></svg></span>
         <h4 style="font-size:15.5px;font-weight:800;letter-spacing:-.01em;margin-bottom:8px;color:var(--ink)">Student Magazine Programme</h4>
         <p style="font-size:13.5px;color:var(--muted);line-height:1.6;text-wrap:pretty">Article submissions, inter-school competitions, editorial review and real publication — with certificates and recognition for every young writer.</p>
       </div>
-      <div data-rv style="padding:30px;border-radius:22px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh1);transition:transform .35s,box-shadow .35s,border-color .35s" data-hv="37">
-        <span style="width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--surface-2);color:var(--brand);border:1px solid var(--line);margin-bottom:16px;transition:transform .35s" data-hv="38"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:17px;height:17px"><path d="M12 3 2 12h3v8h6v-5h2v5h6v-8h3z"></path></svg></span>
+      <div data-rv style="padding:30px;border-radius:22px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh1);transition:transform .35s,box-shadow .35s,border-color .35s" style-hover="transform:translateY(-6px);box-shadow:var(--sh2);border-color:var(--brand-hi)">
+        <span style="width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--surface-2);color:var(--brand);border:1px solid var(--line);margin-bottom:16px;transition:transform .35s" style-hover="transform:translateY(-3px)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:17px;height:17px"><path d="M12 3 2 12h3v8h6v-5h2v5h6v-8h3z"></path></svg></span>
         <h4 style="font-size:15.5px;font-weight:800;letter-spacing:-.01em;margin-bottom:8px;color:var(--ink)">School Branding</h4>
         <p style="font-size:13.5px;color:var(--muted);line-height:1.6;text-wrap:pretty">Identity, signage, stationery, ID cards, lanyards, certificates, posters and banners — one visual system applied consistently across a campus.</p>
       </div>
@@ -829,15 +827,15 @@
         <p style="margin-top:16px;font-size:17px;color:var(--muted);max-width:46ch;text-wrap:pretty">Tell us which platform you're curious about. We'll set up a walkthrough with the team that built it — not a sales script.</p>
 
         <div style="margin-top:34px;display:flex;flex-direction:column;gap:2px">
-          <a href="tel:+919310959596" style="display:flex;align-items:flex-start;gap:14px;padding:16px 8px 16px 0;border-bottom:1px solid var(--line);color:var(--ink);border-radius:10px;transition:color .22s,padding .22s,background .22s" data-hv="39">
+          <a href="tel:+919310959596" style="display:flex;align-items:flex-start;gap:14px;padding:16px 8px 16px 0;border-bottom:1px solid var(--line);color:var(--ink);border-radius:10px;transition:color .22s,padding .22s,background .22s" style-hover="color:var(--brand);padding-left:10px;background:var(--surface-2)">
             <span style="width:38px;height:38px;border-radius:12px;flex:none;display:grid;place-items:center;background:var(--surface);border:1px solid var(--line);color:var(--brand)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"></path></svg></span>
             <span style="display:block"><b style="display:block;font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:3px">Phone</b><span style="font-size:15.5px;font-weight:600;line-height:1.45">+91 93109 59596</span></span>
           </a>
-          <a href="mailto:tech@vinstitution.com" style="display:flex;align-items:flex-start;gap:14px;padding:16px 8px 16px 0;border-bottom:1px solid var(--line);color:var(--ink);border-radius:10px;transition:color .22s,padding .22s,background .22s" data-hv="39">
+          <a href="mailto:tech@vinstitution.com" style="display:flex;align-items:flex-start;gap:14px;padding:16px 8px 16px 0;border-bottom:1px solid var(--line);color:var(--ink);border-radius:10px;transition:color .22s,padding .22s,background .22s" style-hover="color:var(--brand);padding-left:10px;background:var(--surface-2)">
             <span style="width:38px;height:38px;border-radius:12px;flex:none;display:grid;place-items:center;background:var(--surface);border:1px solid var(--line);color:var(--brand)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m2 7 10 6 10-6"></path></svg></span>
             <span style="display:block"><b style="display:block;font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:3px">Email</b><span style="font-size:15.5px;font-weight:600;line-height:1.45">tech@vinstitution.com</span></span>
           </a>
-          <a href="https://wa.me/919310959596" target="_blank" rel="noopener" style="display:flex;align-items:flex-start;gap:14px;padding:16px 8px 16px 0;border-bottom:1px solid var(--line);color:var(--ink);border-radius:10px;transition:color .22s,padding .22s,background .22s" data-hv="39">
+          <a href="https://wa.me/919310959596" target="_blank" rel="noopener" style="display:flex;align-items:flex-start;gap:14px;padding:16px 8px 16px 0;border-bottom:1px solid var(--line);color:var(--ink);border-radius:10px;transition:color .22s,padding .22s,background .22s" style-hover="color:var(--brand);padding-left:10px;background:var(--surface-2)">
             <span style="width:38px;height:38px;border-radius:12px;flex:none;display:grid;place-items:center;background:var(--surface);border:1px solid var(--line);color:var(--brand)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1 1 21 11.5Z"></path></svg></span>
             <span style="display:block"><b style="display:block;font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:3px">WhatsApp</b><span style="font-size:15.5px;font-weight:600;line-height:1.45">Message us directly</span></span>
           </a>
@@ -848,25 +846,25 @@
         </div>
       </div>
 
-      <form data-rv id="enquiry" action="contact.php" method="post" style="min-width:0;padding:clamp(24px,3.4vw,40px);border-radius:26px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh3)">
+      <form data-rv id="enquiry" action="contact.php" method="post" onSubmit="{{ onSubmit }}" style="min-width:0;padding:clamp(24px,3.4vw,40px);border-radius:26px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--sh3)">
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:16px">
           <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:16px;min-width:0">
             <label for="f-name" style="font-size:12.5px;font-weight:700;color:var(--ink-2)">Your name</label>
-            <input id="f-name" name="name" type="text" required autocomplete="name" placeholder="Full name" style="font:inherit;font-size:15px;color:var(--ink);padding:13px 15px;border-radius:13px;border:1.5px solid var(--line-2);background:var(--surface-2);width:100%;transition:border-color .2s,box-shadow .2s,background .2s" data-fc="1">
+            <input id="f-name" name="name" type="text" required autocomplete="name" placeholder="Full name" style="font:inherit;font-size:15px;color:var(--ink);padding:13px 15px;border-radius:13px;border:1.5px solid var(--line-2);background:var(--surface-2);width:100%;transition:border-color .2s,box-shadow .2s,background .2s" style-focus="border-color:var(--brand-hi);box-shadow:0 0 0 3.5px rgba(232,69,42,.14);outline:none;background:var(--surface)">
           </div>
           <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:16px;min-width:0">
             <label for="f-org" style="font-size:12.5px;font-weight:700;color:var(--ink-2)">Institution</label>
-            <input id="f-org" name="org" type="text" autocomplete="organization" placeholder="School / college / institute" style="font:inherit;font-size:15px;color:var(--ink);padding:13px 15px;border-radius:13px;border:1.5px solid var(--line-2);background:var(--surface-2);width:100%;transition:border-color .2s,box-shadow .2s,background .2s" data-fc="1">
+            <input id="f-org" name="org" type="text" autocomplete="organization" placeholder="School / college / institute" style="font:inherit;font-size:15px;color:var(--ink);padding:13px 15px;border-radius:13px;border:1.5px solid var(--line-2);background:var(--surface-2);width:100%;transition:border-color .2s,box-shadow .2s,background .2s" style-focus="border-color:var(--brand-hi);box-shadow:0 0 0 3.5px rgba(232,69,42,.14);outline:none;background:var(--surface)">
           </div>
         </div>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:16px">
           <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:16px;min-width:0">
             <label for="f-email" style="font-size:12.5px;font-weight:700;color:var(--ink-2)">Email</label>
-            <input id="f-email" name="email" type="email" required autocomplete="email" placeholder="you@institution.edu" style="font:inherit;font-size:15px;color:var(--ink);padding:13px 15px;border-radius:13px;border:1.5px solid var(--line-2);background:var(--surface-2);width:100%;transition:border-color .2s,box-shadow .2s,background .2s" data-fc="1">
+            <input id="f-email" name="email" type="email" required autocomplete="email" placeholder="you@institution.edu" style="font:inherit;font-size:15px;color:var(--ink);padding:13px 15px;border-radius:13px;border:1.5px solid var(--line-2);background:var(--surface-2);width:100%;transition:border-color .2s,box-shadow .2s,background .2s" style-focus="border-color:var(--brand-hi);box-shadow:0 0 0 3.5px rgba(232,69,42,.14);outline:none;background:var(--surface)">
           </div>
           <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:16px;min-width:0">
             <label for="f-phone" style="font-size:12.5px;font-weight:700;color:var(--ink-2)">Phone</label>
-            <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+91" style="font:inherit;font-size:15px;color:var(--ink);padding:13px 15px;border-radius:13px;border:1.5px solid var(--line-2);background:var(--surface-2);width:100%;transition:border-color .2s,box-shadow .2s,background .2s" data-fc="1">
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+91" style="font:inherit;font-size:15px;color:var(--ink);padding:13px 15px;border-radius:13px;border:1.5px solid var(--line-2);background:var(--surface-2);width:100%;transition:border-color .2s,box-shadow .2s,background .2s" style-focus="border-color:var(--brand-hi);box-shadow:0 0 0 3.5px rgba(232,69,42,.14);outline:none;background:var(--surface)">
           </div>
         </div>
         <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:16px">
@@ -883,12 +881,12 @@
         </div>
         <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:16px">
           <label for="f-msg" style="font-size:12.5px;font-weight:700;color:var(--ink-2)">Message</label>
-          <textarea id="f-msg" name="message" required placeholder="Roughly how many students, and what you're trying to fix." style="font:inherit;font-size:15px;color:var(--ink);padding:13px 15px;border-radius:13px;border:1.5px solid var(--line-2);background:var(--surface-2);width:100%;resize:vertical;min-height:118px;line-height:1.55;transition:border-color .2s,box-shadow .2s,background .2s" data-fc="1"></textarea>
+          <textarea id="f-msg" name="message" required placeholder="Roughly how many students, and what you're trying to fix." style="font:inherit;font-size:15px;color:var(--ink);padding:13px 15px;border-radius:13px;border:1.5px solid var(--line-2);background:var(--surface-2);width:100%;resize:vertical;min-height:118px;line-height:1.55;transition:border-color .2s,box-shadow .2s,background .2s" style-focus="border-color:var(--brand-hi);box-shadow:0 0 0 3.5px rgba(232,69,42,.14);outline:none;background:var(--surface)"></textarea>
         </div>
         <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
-        <button type="submit" style="display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;margin-top:6px;padding:16px 24px;border-radius:100px;background:var(--btn);color:#fff;font-size:15px;font-weight:700;border:0;cursor:pointer;box-shadow:0 12px 30px rgba(217,59,34,.3);transition:transform .26s,box-shadow .26s" data-hv="40">Send enquiry</button>
+        <button type="submit" style="display:inline-flex;align-items:center;justify-content:center;gap:10px;width:100%;margin-top:6px;padding:16px 24px;border-radius:100px;background:var(--btn);color:#fff;font-size:15px;font-weight:700;border:0;cursor:pointer;box-shadow:0 12px 30px rgba(217,59,34,.3);transition:transform .26s,box-shadow .26s" style-hover="transform:translateY(-3px);box-shadow:0 20px 44px rgba(217,59,34,.44)">Send enquiry</button>
         <p style="margin-top:14px;font-size:12.5px;color:var(--faint);text-align:center;line-height:1.5">We reply within one working day. Your details stay with us — never sold, never shared.</p>
-        <p role="status" aria-live="polite" id="form-msg" style="margin-top:16px;font-size:14px;font-weight:600;display:none"></p>
+        <p role="status" aria-live="polite" ref="{{ msgRef }}" style="margin-top:16px;font-size:14px;font-weight:600;display:none"></p>
       </form>
     </div>
   </div>
@@ -898,7 +896,7 @@
   <div style="width:100%;max-width:1240px;margin-inline:auto;padding-inline:clamp(16px,4vw,44px)">
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(190px,100%),1fr));gap:36px;padding-bottom:38px;border-bottom:1px solid var(--band-line)">
       <div style="min-width:0;grid-column:span 2">
-        <a href="#top" aria-label="Vinstitution — home" style="display:inline-block;transition:transform .3s" data-hv="1">
+        <a href="#top" aria-label="Vinstitution — home" style="display:inline-block;transition:transform .3s" style-hover="transform:scale(1.03)">
           <img src="assets/logos/vinstitution-full.png" alt="Vinstitution — Uttiṣṭhata, Jāgrata, Prāpya · ISO 9001:2015 Certified" width="760" height="338" loading="lazy" style="width:min(268px,80%);height:auto">
         </a>
         <p style="margin-top:20px;font-size:14px;line-height:1.65;max-width:36ch;text-wrap:pretty">Four connected platforms for Indian institutions and learners — plus the publishing studio that started it all.</p>
@@ -906,45 +904,340 @@
       <div style="min-width:0">
         <h4 style="font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#fff;margin-bottom:16px">Platforms</h4>
         <ul style="display:flex;flex-direction:column;gap:11px">
-          <li><a href="products/vidyaverse.html" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" data-hv="41">Vidyaverse</a></li>
-          <li><a href="products/pdlms.html" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" data-hv="41">PDLMS Pro</a></li>
-          <li><a href="products/digi-classroom.html" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" data-hv="41">Digi Classroom</a></li>
-          <li><a href="products/practest.html" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" data-hv="41">e-Learning Practest</a></li>
+          <li><a href="products/vidyaverse.html" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" style-hover="color:#fff;padding-left:4px">Vidyaverse</a></li>
+          <li><a href="products/pdlms.html" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" style-hover="color:#fff;padding-left:4px">PDLMS Pro</a></li>
+          <li><a href="products/digi-classroom.html" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" style-hover="color:#fff;padding-left:4px">Digi Classroom</a></li>
+          <li><a href="products/practest.html" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" style-hover="color:#fff;padding-left:4px">e-Learning Practest</a></li>
         </ul>
       </div>
       <div style="min-width:0">
         <h4 style="font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#fff;margin-bottom:16px">Open an app</h4>
         <ul style="display:flex;flex-direction:column;gap:11px">
-          <li><a href="https://vidyaverse.vinstitution.com" target="_blank" rel="noopener" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" data-hv="41">vidyaverse.vinstitution.com</a></li>
-          <li><a href="https://pdlms.vinstitution.com" target="_blank" rel="noopener" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" data-hv="41">pdlms.vinstitution.com</a></li>
-          <li><a href="https://dgcl.vinstitution.com" target="_blank" rel="noopener" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" data-hv="41">dgcl.vinstitution.com</a></li>
-          <li><a href="https://practest.live" target="_blank" rel="noopener" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" data-hv="41">practest.live</a></li>
+          <li><a href="https://vidyaverse.vinstitution.com" target="_blank" rel="noopener" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" style-hover="color:#fff;padding-left:4px">vidyaverse.vinstitution.com</a></li>
+          <li><a href="https://pdlms.vinstitution.com" target="_blank" rel="noopener" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" style-hover="color:#fff;padding-left:4px">pdlms.vinstitution.com</a></li>
+          <li><a href="https://dgcl.vinstitution.com" target="_blank" rel="noopener" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" style-hover="color:#fff;padding-left:4px">dgcl.vinstitution.com</a></li>
+          <li><a href="https://practest.live" target="_blank" rel="noopener" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" style-hover="color:#fff;padding-left:4px">practest.live</a></li>
         </ul>
       </div>
       <div style="min-width:0">
         <h4 style="font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#fff;margin-bottom:16px">Company</h4>
         <ul style="display:flex;flex-direction:column;gap:11px">
-          <li><a href="#ecosystem" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" data-hv="41">The ecosystem</a></li>
-          <li><a href="#why" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" data-hv="41">Why Vinstitution</a></li>
-          <li><a href="#services" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" data-hv="41">Publishing &amp; branding</a></li>
-          <li><a href="#contact" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" data-hv="41">Contact</a></li>
-          <li><a href="mailto:tech@vinstitution.com" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" data-hv="41">tech@vinstitution.com</a></li>
+          <li><a href="#ecosystem" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" style-hover="color:#fff;padding-left:4px">The ecosystem</a></li>
+          <li><a href="#why" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" style-hover="color:#fff;padding-left:4px">Why Vinstitution</a></li>
+          <li><a href="#services" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" style-hover="color:#fff;padding-left:4px">Publishing &amp; branding</a></li>
+          <li><a href="#contact" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" style-hover="color:#fff;padding-left:4px">Contact</a></li>
+          <li><a href="mailto:tech@vinstitution.com" style="font-size:14px;color:#8F9BAC;transition:color .2s,padding-left .2s" style-hover="color:#fff;padding-left:4px">tech@vinstitution.com</a></li>
         </ul>
       </div>
     </div>
     <div style="display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;padding-top:24px;font-size:13px">
-      <span>© <span id="year">2026</span> Vinstitution. All rights reserved.</span>
+      <span>© <span ref="{{ yearRef }}">2026</span> Vinstitution. All rights reserved.</span>
       <span style="display:inline-flex;align-items:center;gap:8px;color:#6E7A8C"><span aria-hidden="true" style="width:6px;height:6px;border-radius:50%;background:var(--ok);display:block;animation:blip 3s ease-in-out infinite"></span>New Delhi, India</span>
     </div>
   </div>
 </footer>
 
-<a href="#top" id="to-top" aria-label="Back to top" style="position:fixed;right:20px;bottom:20px;z-index:90;width:48px;height:48px;border-radius:100px;display:none;place-items:center;background:var(--surface);border:1px solid var(--line-2);color:var(--ink);box-shadow:var(--sh2);transition:transform .28s,box-shadow .28s" data-hv="42">
+<a href="#top" ref="{{ topRef }}" aria-label="Back to top" style="position:fixed;right:20px;bottom:20px;z-index:90;width:48px;height:48px;border-radius:100px;display:none;place-items:center;background:var(--surface);border:1px solid var(--line-2);color:var(--ink);box-shadow:var(--sh2);transition:transform .28s,box-shadow .28s" style-hover="transform:translateY(-4px);box-shadow:var(--sh3);color:var(--brand)">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
 </a>
 
 </div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280},&quot;showHeroVisual&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Hero&quot;},&quot;showStats&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Hero&quot;}}">
+class Component extends DCLogic {
+  state = {
+    isMobile: false,
+    navOpen: false,
+    theme: 'light',
+    vvTab: 0,
+    pdTab: 0,
+    dgQ: 0,
+    playing: false,
+    audioPct: 34,
+    examSecs: 724,
+    cells: []
+  };
 
-<script src="assets/js/main.js?v=3"></script>
+  constructor(props){
+    super(props);
+    this.msgRef = React.createRef();
+    this.yearRef = React.createRef();
+    this.progressRef = React.createRef();
+    this.topRef = React.createRef();
+    var cells = [];
+    var seed = [1,1,0,2,1,3,0,1,1,2,0,0,1,1,3,0,1,0,2,1];
+    for (var i = 0; i < 20; i++) cells.push(seed[i]);
+    this.state.cells = cells;
+  }
+
+  componentDidMount(){
+    if (this.yearRef.current) this.yearRef.current.textContent = String(new Date().getFullYear());
+
+    var t = document.documentElement.getAttribute('data-theme') || 'light';
+    this.setState({ theme: t });
+
+    this.mq = window.matchMedia('(max-width: 900px)');
+    this.onMq = () => {
+      var m = this.mq.matches;
+      this.setState(function(s){ return { isMobile: m, navOpen: m ? s.navOpen : false }; });
+    };
+    this.onMq();
+    if (this.mq.addEventListener) this.mq.addEventListener('change', this.onMq); else this.mq.addListener(this.onMq);
+
+    this.onKey = (e) => { if (e.key === 'Escape') this.setState({ navOpen: false }); };
+    window.addEventListener('keydown', this.onKey);
+
+    this.onScroll = () => {
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      var p = h > 0 ? Math.min(window.scrollY / h, 1) : 0;
+      if (this.progressRef.current) this.progressRef.current.style.width = (p * 100).toFixed(2) + '%';
+      if (this.topRef.current) this.topRef.current.style.display = window.scrollY > 700 ? 'grid' : 'none';
+    };
+    this.onScroll();
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+
+    this.examTimer = setInterval(() => {
+      this.setState(function(s){ return { examSecs: s.examSecs > 0 ? s.examSecs - 1 : 5400 }; });
+    }, 1000);
+
+    this.startCounters();
+    this.startReveals();
+  }
+
+  componentWillUnmount(){
+    if (this.mq){ if (this.mq.removeEventListener) this.mq.removeEventListener('change', this.onMq); else this.mq.removeListener(this.onMq); }
+    window.removeEventListener('keydown', this.onKey);
+    window.removeEventListener('scroll', this.onScroll);
+    clearInterval(this.examTimer);
+    clearInterval(this.audioTimer);
+    if (this.io) this.io.disconnect();
+    document.body.style.overflow = '';
+  }
+
+  componentDidUpdate(prev){
+    document.body.style.overflow = this.state.navOpen ? 'hidden' : '';
+    if (prev.playing !== this.state.playing){
+      clearInterval(this.audioTimer);
+      if (this.state.playing){
+        this.audioTimer = setInterval(() => {
+          this.setState(function(s){ return { audioPct: s.audioPct >= 100 ? 0 : s.audioPct + 1 }; });
+        }, 260);
+      }
+    }
+  }
+
+  startReveals(){
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced || !('IntersectionObserver' in window)) return;
+    var nodes = Array.prototype.slice.call(document.querySelectorAll('[data-rv]'));
+    var vh = window.innerHeight;
+    var pending = nodes.filter(function(el){
+      if (el.getBoundingClientRect().top < vh * 0.9) return false;
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      el.style.transition = 'opacity .75s cubic-bezier(.2,.7,.3,1), transform .75s cubic-bezier(.2,.7,.3,1)';
+      return true;
+    });
+    if (!pending.length) return;
+    this.io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        var el = e.target;
+        this.io.unobserve(el);
+        el.style.opacity = '1';
+        el.style.transform = 'none';
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.06 });
+    pending.forEach((el) => this.io.observe(el));
+  }
+
+  startCounters(){
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var nodes = document.querySelectorAll('[data-count]');
+    if (!nodes.length || reduced || !('IntersectionObserver' in window)) return;
+    var cio = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (!e.isIntersecting) return;
+        var el = e.target; cio.unobserve(el);
+        var target = parseFloat(el.getAttribute('data-count'));
+        var t0 = performance.now(), dur = 1200;
+        var tick = function(now){
+          var p = Math.min((now - t0) / dur, 1);
+          el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3)));
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      });
+    }, { threshold: 0.5 });
+    nodes.forEach(function(el){ cio.observe(el); });
+  }
+
+  toggleTheme = () => {
+    var next = this.state.theme === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('vin-theme', next); } catch (e) {}
+    this.setState({ theme: next });
+  };
+
+  toggleNav = () => this.setState(function(s){ return { navOpen: !s.navOpen }; });
+  closeNav = (e) => { if (e.target.closest('a')) this.setState({ navOpen: false }); };
+
+  tabStyle(active, accent){
+    return 'font-size:10.5px;font-weight:800;letter-spacing:.1em;padding:7px 12px;border-radius:100px;cursor:pointer;transition:background .25s,color .25s,border-color .25s,transform .25s;border:1px solid '
+      + (active ? 'transparent' : 'var(--line)')
+      + ';background:' + (active ? 'var(--' + accent + '-btn)' : 'var(--surface)')
+      + ';color:' + (active ? '#fff' : 'var(--muted)');
+  }
+
+  qStyle(active, accent){
+    return 'font-size:11.5px;font-weight:700;text-align:left;padding:9px 13px;border-radius:100px;cursor:pointer;transition:background .25s,color .25s,border-color .25s;border:1px solid '
+      + (active ? 'var(--' + accent + ')' : 'var(--line)')
+      + ';background:' + (active ? 'var(--' + accent + '-t)' : 'var(--surface)')
+      + ';color:' + (active ? 'var(--' + accent + ')' : 'var(--muted)');
+  }
+
+  cellStyle(v){
+    var bg = 'var(--surface)', fg = 'var(--muted)', bd = 'var(--line)';
+    if (v === 1){ bg = 'var(--ok-t)'; fg = 'var(--ok)'; bd = 'var(--ok)'; }
+    if (v === 2){ bg = 'var(--vv-t)'; fg = 'var(--vv)'; bd = 'var(--vv)'; }
+    if (v === 3){ bg = 'var(--pt-t)'; fg = 'var(--pt)'; bd = 'var(--pt)'; }
+    return 'aspect-ratio:1;display:grid;place-items:center;border-radius:8px;font-size:10.5px;font-weight:800;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;cursor:pointer;padding:0;transition:transform .2s,background .2s;background:' + bg + ';color:' + fg + ';border:1px solid ' + bd;
+  }
+
+  cycleCell = (i) => {
+    this.setState(function(s){
+      var next = s.cells.slice();
+      next[i] = (next[i] + 1) % 4;
+      return { cells: next };
+    });
+  };
+
+  waveStyle(i){
+    var base = 'display:block;flex:1;min-width:0;border-radius:100px;background:var(--pd);opacity:.75;height:' + (10 + ((i * 7) % 20)) + 'px;transform-origin:bottom';
+    return this.state.playing ? base + ';animation:wave ' + (0.7 + (i % 5) * 0.12).toFixed(2) + 's ease-in-out infinite' : base + ';transform:scaleY(.45)';
+  }
+
+  fmt(total){
+    var h = Math.floor(total / 3600);
+    var m = Math.floor((total % 3600) / 60);
+    var s = total % 60;
+    var p = function(n){ return n < 10 ? '0' + n : String(n); };
+    return p(h) + ':' + p(m) + ':' + p(s);
+  }
+
+  say(kind, text){
+    var el = this.msgRef.current;
+    if (!el) return;
+    if (!text){ el.style.display = 'none'; el.textContent = ''; return; }
+    var ok = kind === 'ok';
+    el.style.display = 'block';
+    el.style.padding = '14px 16px';
+    el.style.borderRadius = '13px';
+    el.style.background = ok ? 'var(--ok-t)' : 'var(--vv-t)';
+    el.style.color = ok ? 'var(--ok)' : 'var(--vv)';
+    el.style.border = '1px solid ' + (ok ? 'var(--ok)' : 'var(--vv)');
+    el.textContent = text;
+  }
+
+  onSubmit = (e) => {
+    e.preventDefault();
+    var form = e.currentTarget;
+    var self = this;
+    if (form.querySelector('[name="website"]').value) return;
+    var btn = form.querySelector('button[type="submit"]');
+    var label = btn ? btn.textContent : '';
+    if (btn){ btn.disabled = true; btn.textContent = 'Sending…'; btn.style.opacity = '.7'; }
+    this.say('', '');
+    fetch(form.action, { method: 'POST', body: new FormData(form) })
+      .then(function(r){ return r.json().catch(function(){ return { ok: r.ok }; }); })
+      .then(function(data){
+        if (data && data.ok){
+          self.say('ok', 'Thank you — your enquiry has reached us. We reply within one working day.');
+          form.reset();
+        } else {
+          self.say('err', (data && data.error) || 'Something went wrong. Please email tech@vinstitution.com instead.');
+        }
+      })
+      .catch(function(){
+        self.say('err', 'Network problem. Please email tech@vinstitution.com or call +91 93109 59596.');
+      })
+      .finally(function(){
+        if (btn){ btn.disabled = false; btn.textContent = label; btn.style.opacity = '1'; }
+      });
+  };
+
+  renderVals(){
+    var s = this.state;
+    var vals = {
+      isMobile: s.isMobile,
+      isDesktop: !s.isMobile,
+      navOpen: s.navOpen,
+      expanded: String(s.navOpen),
+      toggleNav: this.toggleNav,
+      closeNav: this.closeNav,
+
+      isDark: s.theme === 'dark',
+      isLight: s.theme !== 'dark',
+      themeLabel: s.theme === 'dark' ? 'Switch to day mode' : 'Switch to night mode',
+      toggleTheme: this.toggleTheme,
+
+      vvTab0: this.tabStyle(s.vvTab === 0, 'vv'),
+      vvTab1: this.tabStyle(s.vvTab === 1, 'vv'),
+      vvTab2: this.tabStyle(s.vvTab === 2, 'vv'),
+      vvIsOverview: s.vvTab === 0,
+      vvIsFees: s.vvTab === 1,
+      vvIsMsgs: s.vvTab === 2,
+      vvOverview: () => this.setState({ vvTab: 0 }),
+      vvFees: () => this.setState({ vvTab: 1 }),
+      vvMsgs: () => this.setState({ vvTab: 2 }),
+
+      pdTab0: this.tabStyle(s.pdTab === 0, 'pd'),
+      pdTab1: this.tabStyle(s.pdTab === 1, 'pd'),
+      pdTab2: this.tabStyle(s.pdTab === 2, 'pd'),
+      pdTab3: this.tabStyle(s.pdTab === 3, 'pd'),
+      pdIsEpub: s.pdTab === 0,
+      pdIsPdf: s.pdTab === 1,
+      pdIsAudio: s.pdTab === 2,
+      pdIsVarta: s.pdTab === 3,
+      pdEpub: () => this.setState({ pdTab: 0 }),
+      pdPdf: () => this.setState({ pdTab: 1 }),
+      pdAudio: () => this.setState({ pdTab: 2 }),
+      pdVarta: () => this.setState({ pdTab: 3 }),
+
+      playing: s.playing,
+      paused: !s.playing,
+      playLabel: s.playing ? 'Pause' : 'Play',
+      togglePlay: () => this.setState(function(p){ return { playing: !p.playing }; }),
+      audioTime: this.fmt(Math.round(s.audioPct * 1.9)).slice(3),
+      audioBar: 'display:block;height:100%;width:' + s.audioPct + '%;border-radius:100px;background:var(--pd-btn);transition:width .26s linear',
+
+      dgQ0: this.qStyle(s.dgQ === 0, 'dg'),
+      dgQ1: this.qStyle(s.dgQ === 1, 'dg'),
+      dgIsPhoto: s.dgQ === 0,
+      dgIsHeat: s.dgQ === 1,
+      askPhoto: () => this.setState({ dgQ: 0 }),
+      askHeat: () => this.setState({ dgQ: 1 }),
+
+      examTime: this.fmt(s.examSecs),
+      cells: s.cells.map((v, i) => ({
+        n: i + 1,
+        title: ['Not visited', 'Answered', 'Not answered', 'Marked'][v],
+        style: this.cellStyle(v),
+        onClick: () => this.cycleCell(i)
+      })),
+
+      showHeroVisual: this.props.showHeroVisual ?? true,
+      showStats: this.props.showStats ?? true,
+      onSubmit: this.onSubmit,
+      msgRef: this.msgRef,
+      yearRef: this.yearRef,
+      progressRef: this.progressRef,
+      topRef: this.topRef
+    };
+    for (var i = 1; i <= 12; i++) vals['wave' + i] = this.waveStyle(i);
+    return vals;
+  }
+}
+</script>
 </body>
 </html>
