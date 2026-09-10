@@ -325,6 +325,7 @@ def build(key):
 </script>
 <link rel="stylesheet" href="../assets/css/style.css?v={ver}">
 <link rel="stylesheet" href="../assets/css/product.css?v={ver}">
+<link rel="stylesheet" href="../ishan/ishan.css?v={ver}">
 {jsonld}
 </head>
 <body>
@@ -423,6 +424,7 @@ def build(key):
 <a href="#top" id="to-top" class="totop" aria-label="Back to top">{up}</a>
 
 <script src="../assets/js/main.js?v={ver}"></script>
+<script src="../ishan/ishan.js?v={ver}" defer></script>
 </body>
 </html>
 """.format(

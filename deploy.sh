@@ -18,7 +18,7 @@ DOCROOT="${1:-$HOME/public_html}"
 SRC="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Everything the live site is made of. Anything not listed here is not deployed.
-PAYLOAD=(index.html contact.php favicon-32.png robots.txt sitemap.xml products assets)
+PAYLOAD=(index.html contact.php favicon-32.png robots.txt sitemap.xml products assets ishan)
 
 say() { printf '  %s\n' "$*"; }
 
@@ -48,6 +48,10 @@ for item in "${PAYLOAD[@]}"; do
 done
 
 # --- 3. rebuild .htaccess = our config + the untouched cPanel block ----------
+# The key installer is an operator tool, not site content: it must not be served.
+rm -f "$DOCROOT/ishan/set-ishan-key.sh"
+say "kept set-ishan-key.sh out of the docroot"
+
 cat "$SRC/htaccess-head" > "$DOCROOT/.htaccess"
 printf '%s\n' "$HANDLER" >> "$DOCROOT/.htaccess"
 say "rebuilt .htaccess (handler block preserved)"

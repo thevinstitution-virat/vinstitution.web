@@ -340,10 +340,13 @@ theme_boot = """
   })();
 </script>
 <link rel="stylesheet" href="assets/css/style.css?v=%s">
-""" % VER
+<link rel="stylesheet" href="ishan/ishan.css?v=%s">
+""" % (VER, VER)
 
 html = ("<!DOCTYPE html>\n<html lang=\"en\">\n<head>" + head + theme_boot + "</head>\n<body>\n"
-        + body + "\n\n<script src=\"assets/js/main.js?v=%s\"></script>\n</body>\n</html>\n" % VER)
+        + body
+        + "\n\n<script src=\"assets/js/main.js?v=%s\"></script>\n" % VER
+        + "<script src=\"ishan/ishan.js?v=%s\" defer></script>\n</body>\n</html>\n" % VER)
 io.open(os.path.join(ROOT, "index.html"), "w", encoding="utf-8", newline="\n").write(html)
 
 print("demo labels : %d chrome bars badged, %d LIVE chips removed, %d captions" % (n_chrome, n_live, n_caps))

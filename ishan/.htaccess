@@ -1,0 +1,5 @@
+# The knowledge base is the assistant's private prompt material, not a public
+# document: chat.php reads it from disk, nobody should be able to fetch it.
+<FilesMatch "\.(txt|md)$">
+  Require all denied
+</FilesMatch>
