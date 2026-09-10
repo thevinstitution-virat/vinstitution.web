@@ -1,0 +1,11 @@
+# release archives
+*.tgz
+*.tar.gz
+*.zip
+
+# editor / OS noise
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

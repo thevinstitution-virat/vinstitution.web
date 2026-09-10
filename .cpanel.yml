@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/thevins1/public_html
+    - /bin/bash deploy.sh "$DEPLOYPATH"

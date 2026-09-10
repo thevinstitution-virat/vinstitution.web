@@ -1,0 +1,74 @@
+# ============================================================================
+#  vinstitution.com
+#  The cPanel-generated PHP handler block is appended below at deploy time and
+#  must never be removed — contact.php stops executing without it.
+# ============================================================================
+
+Options -Indexes
+DirectoryIndex index.html index.php
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Force HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+  # --- Retired 2026 single-page site -------------------------------------
+  # product.php?p=<slug> was the old product detail page. Send each slug to
+  # its closest equivalent so existing links and search results keep working.
+  RewriteCond %{QUERY_STRING} (^|&)p=ai-learning(&|$)
+  RewriteRule ^product\.php$ /products/digi-classroom.html? [R=301,L]
+
+  RewriteCond %{QUERY_STRING} (^|&)p=cbt-platform(&|$)
+  RewriteRule ^product\.php$ /products/practest.html? [R=301,L]
+
+  RewriteCond %{QUERY_STRING} (^|&)p=digital-library(&|$)
+  RewriteRule ^product\.php$ /products/pdlms.html? [R=301,L]
+
+  RewriteCond %{QUERY_STRING} (^|&)p=school-erp(&|$)
+  RewriteRule ^product\.php$ /products/vidyaverse.html? [R=301,L]
+
+  # Publishing / news / magazine / branding now live in the services section
+  RewriteCond %{QUERY_STRING} (^|&)p=(publishing|magazine|news-portal|branding)(&|$)
+  RewriteRule ^product\.php$ /#services? [R=301,L]
+
+  # Anything else that hit the old handlers goes to the homepage
+  RewriteRule ^(product|submit_form)\.php$ /? [R=301,L]
+
+  # The old staging copy is gone; keep its links alive
+  RewriteRule ^v2/?$ /? [R=301,L]
+  RewriteRule ^v2/(.*)$ /$1 [R=301,L]
+</IfModule>
+
+# --- Defence in depth: never serve source, data or backup artefacts --------
+<FilesMatch "\.(sql|sql\.gz|tgz|tar|tar\.gz|zip|bak|old|log|ini|env|cdr|psd)$">
+  Require all denied
+</FilesMatch>
+<FilesMatch "^(config|database|\.env|composer\.(json|lock))">
+  Require all denied
+</FilesMatch>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 1 hour"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 month"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript image/svg+xml application/json
+</IfModule>
+
