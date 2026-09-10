@@ -203,6 +203,62 @@ body = body.replace(
     "The four panels below are interactive demos with sample data — click the tabs, "
     "chips and question grid.")
 
+# --- a caption under every panel -------------------------------------------
+# Each panel is a direct grid item, so a bare sibling <p> would become a third
+# column and break the layout: wrap instead. The hero panel additionally sits in
+# an aria-hidden wrapper, so wrap THAT, keeping the caption out of the hidden
+# subtree and readable by assistive tech.
+CAPTION = ('<p style="margin:10px 2px 0;font-size:11.5px;line-height:1.5;color:var(--faint);'
+           'text-wrap:pretty">Illustrative interface. The figures shown are sample data, '
+           'not a real institution\'s records.</p>')
+
+def enclosing_div_start(s, pos):
+    """index of the <div that opens the element containing pos"""
+    depth, i = 0, pos
+    while i > 0:
+        j = s.rfind("<", 0, i)
+        if j == -1:
+            return -1
+        if s.startswith("</div", j):
+            depth += 1
+        elif s.startswith("<div", j):
+            if depth == 0:
+                return j
+            depth -= 1
+        i = j
+    return -1
+
+def matching_div_end(s, start):
+    """index just past the </div> closing the <div at start"""
+    depth, i = 0, start
+    while True:
+        o, c = s.find("<div", i + 1), s.find("</div>", i + 1)
+        if c == -1:
+            return -1
+        if o != -1 and o < c:
+            depth, i = depth + 1, o
+        else:
+            if depth == 0:
+                return c + len("</div>")
+            depth, i = depth - 1, c
+
+spans = list(chrome.finditer(body))
+n_caps = 0
+for m in reversed(spans):                      # back-to-front keeps offsets valid
+    panel = enclosing_div_start(body, enclosing_div_start(body, m.start()))
+    if panel == -1:
+        continue
+    target = panel
+    parent = enclosing_div_start(body, panel)
+    if parent != -1 and 'aria-hidden="true"' in body[parent:body.index(">", parent) + 1]:
+        target = parent                        # hero: wrap the aria-hidden wrapper
+    end = matching_div_end(body, target)
+    if end == -1:
+        continue
+    body = (body[:target] + '<div style="min-width:0">' + body[target:end]
+            + CAPTION + "</div>" + body[end:])
+    n_caps += 1
+
 body = re.sub(r"[ \t]+\n", "\n", body)
 
 # ---------------------------------------------------------------- 7. CSS file
@@ -290,7 +346,7 @@ html = ("<!DOCTYPE html>\n<html lang=\"en\">\n<head>" + head + theme_boot + "</h
         + body + "\n\n<script src=\"assets/js/main.js?v=%s\"></script>\n</body>\n</html>\n" % VER)
 io.open(os.path.join(ROOT, "index.html"), "w", encoding="utf-8", newline="\n").write(html)
 
-print("demo labels : %d chrome bars badged, %d LIVE chips removed" % (n_chrome, n_live))
+print("demo labels : %d chrome bars badged, %d LIVE chips removed, %d captions" % (n_chrome, n_live, n_caps))
 print("style.css   :", len(base_css) + len(extra_css) + len(hover_css), "bytes")
 print("hover rules :", len(seen_h), "  focus rules:", len(seen_f))
 print("index.html  :", len(html), "bytes")
