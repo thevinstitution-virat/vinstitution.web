@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-acc="vv">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +7,7 @@
 <meta name="description" content="Vidyaverse runs an entire institution from one system: academics, fees, attendance, transport, hostel, documents and AI-powered WhatsApp updates to every parent. 47 modules, one login.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://vinstitution.com/products/vidyaverse.html">
+
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Vinstitution">
 <meta property="og:title" content="Vidyaverse — The Campus Operating System">
@@ -14,10 +15,16 @@
 <meta property="og:url" content="https://vinstitution.com/products/vidyaverse.html">
 <meta property="og:image" content="https://vinstitution.com/assets/img/og-vidyaverse.png">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vidyaverse — The Campus Operating System">
+<meta name="twitter:description" content="47 modules, one login. Academics, fees, attendance, documents and a WhatsApp channel to every parent.">
+<meta name="twitter:image" content="https://vinstitution.com/assets/img/og-vidyaverse.png">
 <meta name="theme-color" content="#FFFCF9" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#090D15" media="(prefers-color-scheme: dark)">
+
 <link rel="icon" href="../favicon-32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="../assets/img/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Mukta:wght@400;500;600&display=swap" rel="stylesheet">
@@ -31,8 +38,7 @@
   })();
 </script>
 <link rel="stylesheet" href="../assets/css/style.css?v=3">
-<link rel="stylesheet" href="../assets/css/pages.css?v=3">
-<style>:root{--accent:var(--vv);--accent-lt:var(--vv-lt)}</style>
+<link rel="stylesheet" href="../assets/css/product.css?v=3">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Vidyaverse",
 "applicationCategory":"BusinessApplication","operatingSystem":"Web",
@@ -43,295 +49,105 @@
 </head>
 <body>
 
-<header class="hdr">
+<div id="scroll-progress" class="progress" aria-hidden="true"></div>
+
+<header class="top">
   <div class="wrap">
-    <div class="hdr__in">
-      <a class="brand" href="../index.html" aria-label="Vinstitution — home">
-        <img class="brand__logo" src="../assets/logos/vinstitution-lockup.png"
-             alt="Vinstitution" width="520" height="168" fetchpriority="high">
+    <div class="top__in">
+      <a class="top__logo" href="../index.html" aria-label="Vinstitution — home">
+        <img src="../assets/logos/vinstitution-lockup.png" alt="Vinstitution" width="520" height="168" fetchpriority="high">
       </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="../products/vidyaverse.html">Vidyaverse</a>
-        <a href="../products/pdlms.html">PDLMS Pro</a>
-        <a href="../products/digi-classroom.html">Digi Classroom</a>
-        <a href="../products/practest.html">Practest</a>
-        <a href="../#contact">Contact</a>
-      </nav>
-      <button type="button" id="theme-toggle" class="theme-btn" aria-label="Switch to night mode" title="Switch to night mode">
-        <svg class="ico-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"></circle><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"></path></svg>
-        <svg class="ico-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13.2A8.6 8.6 0 1 1 10.8 3a6.8 6.8 0 0 0 10.2 10.2Z"></path></svg>
+      <nav class="top__nav" aria-label="Primary"><a href="vidyaverse.html" aria-current="page">Vidyaverse</a><a href="pdlms.html">PDLMS Pro</a><a href="digi-classroom.html">Digi Classroom</a><a href="practest.html">Practest</a><a href="../#contact">Contact</a></nav>
+      <button type="button" id="theme-toggle" class="iconbtn" aria-label="Switch to night mode" title="Switch to night mode">
+        <span class="ico-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:19px;height:19px"><circle cx="12" cy="12" r="4.2"></circle><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"></path></svg></span><span class="ico-light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:19px;height:19px"><path d="M21 13.2A8.6 8.6 0 1 1 10.8 3a6.8 6.8 0 0 0 10.2 10.2Z"></path></svg></span>
       </button>
-      <a class="btn btn--sm" href="../#contact">Book a demo</a>
-      <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><span></span></button>
+      <a class="b b--acc b--sm top__cta" href="../#contact">Book a demo</a>
+      <button type="button" id="nav-toggle" class="burger2" aria-label="Menu" aria-controls="mnav" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:20px;height:20px"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
     </div>
   </div>
 </header>
-<nav class="mnav" id="mnav" aria-label="Mobile">
-  <a href="../products/vidyaverse.html">Vidyaverse</a>
-  <a href="../products/pdlms.html">PDLMS Pro</a>
-  <a href="../products/digi-classroom.html">Digi Classroom</a>
-  <a href="../products/practest.html">Practest</a>
-  <a href="../#contact">Contact</a>
-  <a class="btn" href="../#contact">Book a demo</a>
+
+<nav id="mnav" class="mnav2" aria-label="Mobile" hidden><a href="vidyaverse.html">Vidyaverse</a><a href="pdlms.html">PDLMS Pro</a><a href="digi-classroom.html">Digi Classroom</a><a href="practest.html">Practest</a><a href="../#contact">Contact</a>
+  <a class="b b--acc" href="../#contact" style="align-self:flex-start;margin-top:22px">Book a demo</a>
 </nav>
 
-<main>
-
-<section class="phero">
+<section class="phero2" id="top">
+  <span class="phero2__glow" aria-hidden="true"></span>
+  <span class="phero2__grid" aria-hidden="true"></span>
   <div class="wrap">
-    <nav class="crumb rv" aria-label="Breadcrumb">
-      <a href="../index.html">Vinstitution</a>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-      <span>Vidyaverse</span>
-    </nav>
-    <div class="phero__in">
-      <div>
-        <span class="eyebrow rv">Campus operating system</span>
-        <h1 class="rv" data-rv-delay="60">The operating system for modern institutions.</h1>
-        <p class="phero__deva deva rv" data-rv-delay="100">विद्या · एक मंच, समग्र संस्थान</p>
-        <p class="phero__lede rv" data-rv-delay="140">
-          Run your entire campus from one system — academics, fees, attendance, transport, documents,
-          and AI-powered WhatsApp updates to every parent. Forty-seven modules, one login, zero silos.
-        </p>
-        <div class="btn-row rv" data-rv-delay="200">
-          <a class="btn" href="https://vidyaverse.vinstitution.com" target="_blank" rel="noopener">
-            Open Vidyaverse
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
-          </a>
-          <a class="btn btn--ghost" href="../#contact">Book a walkthrough</a>
+    <nav class="crumb2" aria-label="Breadcrumb"><a href="../index.html">Vinstitution</a><span>/</span>Vidyaverse</nav>
+    <div class="phero2__in">
+      <div style="min-width:0">
+        <span class="eyeb">Campus operating system</span>
+        <h1 class="h1">The <em>operating system</em> for modern institutions.</h1>
+        <p class="deva2">विद्या · एक मंच, समग्र संस्थान</p>
+        <p class="plede">Run your entire campus from one system — academics, fees, attendance, transport, documents, and AI-powered WhatsApp updates to every parent. Forty-seven modules, one login, zero silos.</p>
+        <div class="pcta">
+          <a class="b b--acc" href="https://vidyaverse.vinstitution.com" target="_blank" rel="noopener">Open Vidyaverse <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:16px;height:16px"><path d="M7 17 17 7M9 7h8v8"></path></svg></a>
+          <a class="b b--ghost" href="../#contact">Book a walkthrough</a>
         </div>
       </div>
-
-      <div class="pviz rv" data-rv-delay="160" aria-hidden="true">
-        <div class="pviz__bar"><i></i><i></i><i></i><span class="pviz__url">vidyaverse.vinstitution.com / dashboard</span></div>
-        <div class="pviz__stage">
-          <div class="vrow">
-            <span class="vrow__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/></svg></span>
-            <span><span class="vrow__t">Students on roll</span><span class="vrow__s">+18 this week</span></span>
-            <span class="vrow__v">1,248</span>
-          </div>
-          <div class="vrow">
-            <span class="vrow__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 11 3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
-            <span><span class="vrow__t">Present today</span><span class="vrow__s">1,201 / 1,248</span></span>
-            <span class="vrow__v">96.2%</span>
-          </div>
-          <div class="vbar" data-w="96%"><i></i></div>
-          <div class="vrow">
-            <span class="vrow__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
-            <span><span class="vrow__t">Fees collected</span><span class="vrow__s">Pending ₹4.1L · 214 students</span></span>
-            <span class="vrow__v">₹18.4L</span>
-          </div>
-          <div class="vquote">
-            <b>WhatsApp · to parent</b>
-            Aarav was marked present today at 8:42&nbsp;AM ✅<br>
-            Term-2 fee of ₹12,500 is due on 15 Jun. 💳 Pay now — secure link
-          </div>
+      <div style="min-width:0">
+        <div class="app">
+          <div class="app__bar"><i></i><i></i><i></i><span class="app__url">vidyaverse.vinstitution.com / dashboard</span>
+            <span class="app__live"><i></i>LIVE</span></div>
+          <div class="app__tabs"><button type="button" class="mock-tab is-active" data-tabset="vv" data-tab="0">Overview</button><button type="button" class="mock-tab" data-tabset="vv" data-tab="1">Fees</button><button type="button" class="mock-tab" data-tabset="vv" data-tab="2">Messages</button></div><div class="app__body"><div class="mock-panel" data-panel="vv-0"><div class="row"><span class="row__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8"></path></svg></span><span class="row__t"><b>Students on roll</b><span>+18 this week</span></span><span class="row__v">1,248</span></div><div class="row"><span class="row__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px"><path d="m9 11 3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg></span><span class="row__t"><b>Present today</b><span>1,201 / 1,248</span></span><span class="row__v">96.2%</span></div><div class="meter"><i style="width:96%"></i></div><div class="row"><span class="row__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></span><span class="row__t"><b>Fees collected</b><span>82% of term target</span></span><span class="row__v">₹18.4L</span></div><div class="meter"><i style="width:82%"></i></div></div><div class="mock-panel" data-panel="vv-1" hidden><div class="row"><span class="row__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></span><span class="row__t"><b>Term-2 fee · Aarav Sharma</b><span>Due 15 Jun</span></span><span class="row__v">₹12,500</span></div><div class="meter"><i style="width:82%"></i></div><div class="row"><span class="row__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px"><path d="m9 11 3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg></span><span class="row__t"><b>Receipts issued today</b><span>Auto-numbered, DPDP-logged</span></span><span class="row__v">37</span></div></div><div class="mock-panel" data-panel="vv-2" hidden><div class="note"><b>WhatsApp · to parent</b>Aarav was marked present today at 8:42&nbsp;AM ✅ &nbsp;· Term-2 fee ₹12,500 due 15 Jun.</div><div class="row"><span class="row__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8"></path></svg></span><span class="row__t"><b>Parents reached today</b><span>Delivered 1,204 / 1,248</span></span><span class="row__v">96%</span></div></div></div>
         </div>
       </div>
     </div>
-
-    <div class="stats rv" data-rv-delay="240">
-      <div class="stat"><b><span data-count="47">47</span></b><span>Integrated modules</span></div>
-      <div class="stat"><b><span data-count="6">6</span></b><span>Module categories</span></div>
-      <div class="stat"><b>SSO</b><span>One secure login</span></div>
-      <div class="stat"><b>10 min</b><span>Typical setup time</span></div>
-    </div>
   </div>
 </section>
 
-<section class="sec sec--alt">
+<div class="wrap"><div class="facts"><div class="fact"><b>47</b><span>Modules</span><i></i></div><div class="fact" data-rv><b>6</b><span>Module categories</span><i></i></div><div class="fact" data-rv><b>1</b><span>Institutional login</span><i></i></div><div class="fact" data-rv><b>ISO 9001</b><span>2015 certified</span><i></i></div></div></div>
+
+<section class="sec sec--alt"><div class="wrap"><div class="sechead" data-rv><span class="eyeb">One platform</span><h2 class="h2">47 modules. One login. Zero silos.</h2><p class="lede">Everything an institution runs on — academics, operations, finance, parent communication, documents and intelligence — in a single connected system. Toggle on only what you need.</p></div><div class="grid"><article class="card card--mod" data-rv data-rv-delay="0"><span class="card__rule"></span><div class="card__head"><h3>Academics</h3><span class="card__meta">10 MODULES</span></div><ul class="chips"><li>Student Info</li><li>Classes &amp; Sections</li><li>Attendance</li><li>Timetable</li><li>Examinations</li><li>Gradebook (CCE)</li><li>Online Tests</li><li>Assignments</li><li>AI Tutor</li><li>Live Classes</li></ul></article><article class="card card--mod" data-rv data-rv-delay="60"><span class="card__rule"></span><div class="card__head"><h3>Operations</h3><span class="card__meta">6 MODULES</span></div><ul class="chips"><li>Transport + GPS</li><li>Hostel &amp; Mess</li><li>Inventory</li><li>Health &amp; Clinic</li><li>Visitor &amp; Gate Pass</li><li>Library</li></ul></article><article class="card card--mod" data-rv data-rv-delay="120"><span class="card__rule"></span><div class="card__head"><h3>Finance</h3><span class="card__meta">5 MODULES</span></div><ul class="chips"><li>Fees &amp; Invoicing</li><li>Concessions &amp; Plans</li><li>Online Payments</li><li>HR &amp; Payroll</li><li>Accounting</li></ul></article><article class="card card--mod" data-rv data-rv-delay="180"><span class="card__rule"></span><div class="card__head"><h3>Communication</h3><span class="card__meta">5 MODULES</span></div><ul class="chips"><li>WhatsApp Messaging</li><li>AI Inbound Replies</li><li>Voice Notes</li><li>Notices &amp; Events</li><li>Guardian Digests</li></ul></article><article class="card card--mod" data-rv data-rv-delay="180"><span class="card__rule"></span><div class="card__head"><h3>Document Studio</h3><span class="card__meta">8 MODULES</span></div><ul class="chips"><li>ID Cards</li><li>Certificates</li><li>Marksheets</li><li>Hall Tickets</li><li>Transfer Certs</li><li>Portfolios</li><li>Library Cards</li><li>Group Photos</li></ul></article><article class="card card--mod" data-rv data-rv-delay="180"><span class="card__rule"></span><div class="card__head"><h3>Intelligence</h3><span class="card__meta">6 MODULES</span></div><ul class="chips"><li>Admissions CRM</li><li>Reports &amp; BI</li><li>Analytics</li><li>Approvals</li><li>Alumni</li><li>Placement</li></ul></article></div></div></section>
+
+<section class="sec"><div class="wrap"><div class="sechead" data-rv><span class="eyeb">What makes it different</span><h2 class="h2">The parts institutions actually feel.</h2></div><div class="grid"><article class="card" data-rv data-rv-delay="0"><span class="card__rule"></span><span class="card__tag">The differentiator</span><h3>Every parent reached, on WhatsApp</h3><p>Attendance, fees and results the moment they happen — with an AI that answers inbound questions in Hindi or English from live student data, day and night. Razorpay links sit inside the chat and the books reconcile themselves.</p></article><article class="card" data-rv data-rv-delay="60"><span class="card__rule"></span><span class="card__tag">Document Studio</span><h3>Every document, generated in one click</h3><p>Pick a type — ID card, marksheet, hall ticket, transfer certificate — and Vidyaverse renders it from your institution's template, branding and live student data. Ready to print or send, in bulk.</p></article><article class="card" data-rv data-rv-delay="120"><span class="card__rule"></span><span class="card__tag">Group photos</span><h3>AI face mapping for photo day</h3><p>Upload one group photo; face detection extracts each student and assigns them to the right profile. A three-day workflow collapses into about twenty minutes.</p></article><article class="card" data-rv data-rv-delay="180"><span class="card__rule"></span><span class="card__tag">One record</span><h3>A dashboard that is always live</h3><p>Every module writes to one shared record, so attendance, fees and admissions are never a stale export. Nothing is re-entered, and nothing drifts out of sync between departments.</p></article><article class="card" data-rv data-rv-delay="180"><span class="card__rule"></span><span class="card__tag">Admissions</span><h3>Built for the two-week rush</h3><p>Bulk CSV import with approval workflows and data-status tracking, so five hundred admissions in a fortnight don't become five hundred manual entries — and ID cards follow in minutes.</p></article><article class="card" data-rv data-rv-delay="180"><span class="card__rule"></span><span class="card__tag">Governance</span><h3>Roles, consent and audit trails</h3><p>Super Admin, Admin, Teacher and Student roles with least-privilege defaults. Parent messaging is consent-first with honoured opt-outs, and access is audit-logged throughout.</p></article></div></div></section>
+
+<section class="sec sec--alt"><div class="wrap"><div class="sechead" data-rv><span class="eyeb">How it works</span><h2 class="h2">From sign-up to a running campus in a day.</h2></div><div class="steps"><article class="step" data-rv data-rv-delay="0"><h3>Set up your institution</h3><p>Add classes, sections and students — or bulk-import from a spreadsheet. Your branding is applied everywhere automatically.</p></article><article class="step" data-rv data-rv-delay="70"><h3>Toggle the modules you need</h3><p>Start with attendance and fees; add transport or hostel later. Every module shares one database, so nothing is re-entered.</p></article><article class="step" data-rv data-rv-delay="140"><h3>Go live with parents</h3><p>Connect WhatsApp and updates start flowing. Generate ID cards, marksheets and certificates on demand.</p></article></div></div></section>
+
+<section class="sec sec--band"><div class="wrap"><div class="sechead" data-rv><span class="eyeb">The ecosystem</span><h2 class="h2">Vidyaverse is the identity everything else trusts.</h2><p class="lede">It is the hub of the stack: sign in once and step straight into the digital library and the AI tutor, with roles and memberships carried across on Ed25519-signed OIDC tokens.</p></div><div class="ecogrid2"><article class="ecocard2" data-rv data-rv-delay="0"><span class="card__tag">You're here · hub</span><h3>Vidyaverse</h3><p>The institution operating system and single sign-on that powers the whole ecosystem.</p></article><article class="ecocard2" data-rv data-rv-delay="60"><span class="card__tag">Connected</span><h3>PDLMS Pro</h3><p>EPUB, PDF and audiobooks with the Varta AI study assistant, one tap away.</p><a class="linkarrow" href="pdlms.html" style="color:var(--gold-hi)">See PDLMS Pro <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:15px;height:15px"><path d="M7 17 17 7M9 7h8v8"></path></svg></a></article><article class="ecocard2" data-rv data-rv-delay="120"><span class="card__tag">Connected</span><h3>Digi Classroom</h3><p>Agentic RAG over NCERT with an adaptive practice-test engine.</p><a class="linkarrow" href="digi-classroom.html" style="color:var(--gold-hi)">See Digi Classroom <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:15px;height:15px"><path d="M7 17 17 7M9 7h8v8"></path></svg></a></article></div></div></section>
+
+<section class="sec"><div class="wrap"><div class="close" data-rv><span class="close__glow"></span><h2 class="h2">Bring your whole campus into one system</h2><p class="lede" style="margin-inline:auto">Priority onboarding, founder pricing and a direct line to the team that builds it.</p><div class="pcta"><a class="b b--acc" href="https://vidyaverse.vinstitution.com" target="_blank" rel="noopener">Open Vidyaverse <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:16px;height:16px"><path d="M7 17 17 7M9 7h8v8"></path></svg></a><a class="b b--ghost" href="../#contact">Book a walkthrough</a></div></div></div></section>
+
+<footer class="foot">
   <div class="wrap">
-    <div class="sec-head rv">
-      <span class="eyebrow">One platform</span>
-      <h2>47 modules. One login. Zero silos.</h2>
-      <p>
-        Everything an institution runs on — academics, operations, finance, parent communication,
-        documents and intelligence — in a single connected system. Toggle on only what you need.
-      </p>
-    </div>
-
-    <div class="modgrid">
-      <article class="modcat rv">
-        <div class="modcat__h"><h3>Academics</h3><span>10 MODULES</span></div>
-        <ul><li>Student Info</li><li>Classes &amp; Sections</li><li>Attendance</li><li>Timetable</li><li>Examinations</li><li>Gradebook (CCE)</li><li>Online Tests</li><li>Assignments</li><li>AI Tutor</li><li>Live Classes</li></ul>
-      </article>
-      <article class="modcat rv" data-rv-delay="50">
-        <div class="modcat__h"><h3>Operations</h3><span>6 MODULES</span></div>
-        <ul><li>Transport + GPS</li><li>Hostel &amp; Mess</li><li>Inventory</li><li>Health &amp; Clinic</li><li>Visitor &amp; Gate Pass</li><li>Library</li></ul>
-      </article>
-      <article class="modcat rv" data-rv-delay="100">
-        <div class="modcat__h"><h3>Finance</h3><span>5 MODULES</span></div>
-        <ul><li>Fees &amp; Invoicing</li><li>Concessions &amp; Plans</li><li>Online Payments</li><li>HR &amp; Payroll</li><li>Accounting</li></ul>
-      </article>
-      <article class="modcat rv" data-rv-delay="50">
-        <div class="modcat__h"><h3>Communication</h3><span>5 MODULES</span></div>
-        <ul><li>WhatsApp Messaging</li><li>AI Inbound Replies</li><li>Voice Notes</li><li>Notices &amp; Events</li><li>Guardian Digests</li></ul>
-      </article>
-      <article class="modcat rv" data-rv-delay="100">
-        <div class="modcat__h"><h3>Document Studio</h3><span>8 MODULES</span></div>
-        <ul><li>ID Cards</li><li>Certificates</li><li>Marksheets</li><li>Hall Tickets</li><li>Transfer Certs</li><li>Portfolios</li><li>Library Cards</li><li>Group Photos</li></ul>
-      </article>
-      <article class="modcat rv" data-rv-delay="150">
-        <div class="modcat__h"><h3>Intelligence</h3><span>6 MODULES</span></div>
-        <ul><li>Admissions CRM</li><li>Reports &amp; BI</li><li>Analytics</li><li>Approvals</li><li>Alumni</li><li>Placement</li></ul>
-      </article>
-    </div>
-
-    <p class="rv" style="margin-top:22px;font-size:14.5px;color:var(--muted);text-align:center">
-      Per-institution module toggles and tiered plans — enable what fits your campus, scale when you grow.
-    </p>
-  </div>
-</section>
-
-<section class="sec">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="eyebrow">What makes it different</span>
-      <h2>The parts institutions actually feel.</h2>
-    </div>
-
-    <div class="fgrid">
-      <article class="fcard rv">
-        <span class="fcard__tag">The differentiator</span>
-        <h3>Every parent reached, on WhatsApp</h3>
-        <p>Attendance, fees and results the moment they happen — with an AI that answers inbound questions in Hindi or English from live student data, day and night. Razorpay links sit inside the chat and the books reconcile themselves.</p>
-      </article>
-      <article class="fcard rv" data-rv-delay="60">
-        <span class="fcard__tag">Document Studio</span>
-        <h3>Every document, generated in one click</h3>
-        <p>Pick a type — ID card, marksheet, hall ticket, transfer certificate — and Vidyaverse renders it from your institution's template, branding and live student data. Ready to print or send, in bulk.</p>
-      </article>
-      <article class="fcard rv" data-rv-delay="120">
-        <span class="fcard__tag">Group photos</span>
-        <h3>AI face mapping for photo day</h3>
-        <p>Upload one group photo; face detection extracts each student and assigns them to the right profile. A three-day workflow collapses into about twenty minutes.</p>
-      </article>
-      <article class="fcard rv">
-        <span class="fcard__tag">One record</span>
-        <h3>A dashboard that is always live</h3>
-        <p>Every module writes to one shared record, so attendance, fees and admissions are never a stale export. Nothing is re-entered, and nothing drifts out of sync between departments.</p>
-      </article>
-      <article class="fcard rv" data-rv-delay="60">
-        <span class="fcard__tag">Admissions</span>
-        <h3>Built for the two-week rush</h3>
-        <p>Bulk CSV import with approval workflows and data-status tracking, so five hundred admissions in a fortnight don't become five hundred manual entries — and ID cards follow in minutes.</p>
-      </article>
-      <article class="fcard rv" data-rv-delay="120">
-        <span class="fcard__tag">Governance</span>
-        <h3>Roles, consent and audit trails</h3>
-        <p>Super Admin, Admin, Teacher and Student roles with least-privilege defaults. Parent messaging is consent-first with honoured opt-outs, and access is audit-logged throughout.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="sec sec--alt">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="eyebrow">How it works</span>
-      <h2>From sign-up to a running campus in a day.</h2>
-    </div>
-    <div class="steps">
-      <article class="step rv">
-        <h3>Set up your institution</h3>
-        <p>Add classes, sections and students — or bulk-import from a spreadsheet. Your branding is applied everywhere automatically.</p>
-      </article>
-      <article class="step rv" data-rv-delay="70">
-        <h3>Toggle the modules you need</h3>
-        <p>Start with attendance and fees; add transport or hostel later. Every module shares one database, so nothing is re-entered.</p>
-      </article>
-      <article class="step rv" data-rv-delay="140">
-        <h3>Go live with parents</h3>
-        <p>Connect WhatsApp and updates start flowing. Generate ID cards, marksheets and certificates on demand.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="sec eco">
-  <div class="wrap">
-    <div class="sec-head sec-head--mid rv">
-      <span class="eyebrow">The ecosystem</span>
-      <h2>Vidyaverse is the identity everything else trusts.</h2>
-      <p>
-        It is the hub of the stack: sign in once and step straight into the digital library and the AI
-        tutor, with roles and memberships carried across on Ed25519-signed OIDC tokens.
-      </p>
-    </div>
-    <div class="ecogrid">
-      <article class="ecocard ecocard--hub rv">
-        <span class="ecocard__role">You're here · hub</span>
-        <h3>Vidyaverse</h3>
-        <p>The institution operating system and single sign-on that powers the whole ecosystem.</p>
-      </article>
-      <article class="ecocard rv" data-rv-delay="80">
-        <span class="ecocard__role">Connected</span>
-        <h3>PDLMS Pro</h3>
-        <p>EPUB, PDF and audiobooks with the Varta AI study assistant, one tap away.</p>
-        <ul><li><a href="../products/pdlms.html" style="color:inherit">See PDLMS Pro →</a></li></ul>
-      </article>
-      <article class="ecocard rv" data-rv-delay="160">
-        <span class="ecocard__role">Connected</span>
-        <h3>Digi Classroom</h3>
-        <p>Agentic RAG over NCERT with an adaptive practice-test engine.</p>
-        <ul><li><a href="../products/digi-classroom.html" style="color:inherit">See Digi Classroom →</a></li></ul>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="sec">
-  <div class="wrap">
-    <div class="cta rv">
-      <h2>Bring your whole campus into one system</h2>
-      <p>Priority onboarding, founder pricing and a direct line to the team that builds it.</p>
-      <div class="btn-row">
-        <a class="btn" href="https://vidyaverse.vinstitution.com" target="_blank" rel="noopener">Open Vidyaverse</a>
-        <a class="btn btn--ghost" href="../#contact">Book a walkthrough</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer class="ftr">
-  <div class="wrap">
-    <div class="ftr__top">
-      <div class="ftr__brand">
-        <a class="brand brand--ftr" href="../index.html" aria-label="Vinstitution — home">
-          <img class="ftr__logo" src="../assets/logos/vinstitution-full.png"
-               alt="Vinstitution — Uttiṣṭhata, Jāgrata, Prāpya · ISO 9001:2015 Certified"
-               width="760" height="338" loading="lazy">
+    <div class="foot__top">
+      <div class="foot__brand">
+        <a href="../index.html" aria-label="Vinstitution — home">
+          <img src="../assets/logos/vinstitution-full.png" alt="Vinstitution — Uttiṣṭhata, Jāgrata, Prāpya · ISO 9001:2015 Certified" width="760" height="338" loading="lazy">
         </a>
-        <p class="ftr__about">Four connected platforms for Indian institutions and learners — plus the publishing studio that started it all.</p>
+        <p>Education technology for Indian institutions and learners — a campus operating system, an AI digital library, an NCERT-grounded tutor and a CBT exam engine, connected by one institutional login.</p>
       </div>
-      <div><h4>Platforms</h4><ul>
-        <li><a href="../products/vidyaverse.html">Vidyaverse</a></li>
-        <li><a href="../products/pdlms.html">PDLMS Pro</a></li>
-        <li><a href="../products/digi-classroom.html">Digi Classroom</a></li>
-        <li><a href="../products/practest.html">e-Learning Practest</a></li>
-      </ul></div>
-      <div><h4>Open an app</h4><ul>
-        <li><a href="https://vidyaverse.vinstitution.com" target="_blank" rel="noopener">vidyaverse.vinstitution.com</a></li>
-        <li><a href="https://pdlms.vinstitution.com" target="_blank" rel="noopener">pdlms.vinstitution.com</a></li>
-        <li><a href="https://dgcl.vinstitution.com" target="_blank" rel="noopener">dgcl.vinstitution.com</a></li>
-        <li><a href="https://practest.live" target="_blank" rel="noopener">practest.live</a></li>
-      </ul></div>
-      <div><h4>Company</h4><ul>
-        <li><a href="../#ecosystem">The ecosystem</a></li>
-        <li><a href="../#why">Why Vinstitution</a></li>
-        <li><a href="../#services">Publishing &amp; branding</a></li>
-        <li><a href="../#contact">Contact</a></li>
-        <li><a href="mailto:tech@vinstitution.com">tech@vinstitution.com</a></li>
-      </ul></div>
+      <div>
+        <h4>Platforms</h4>
+        <ul><li><a href="vidyaverse.html">Vidyaverse</a></li><li><a href="pdlms.html">PDLMS Pro</a></li><li><a href="digi-classroom.html">Digi Classroom</a></li><li><a href="practest.html">Practest</a></li></ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../index.html#why">Why Vinstitution</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#ecosystem">Ecosystem</a></li>
+          <li><a href="../#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach us</h4>
+        <ul>
+          <li><a href="mailto:tech@vinstitution.com">tech@vinstitution.com</a></li>
+          <li>New Delhi, India</li>
+        </ul>
+      </div>
     </div>
-    <div class="ftr__btm">
-      <span>© <span data-year>2026</span> Vinstitution. All rights reserved.</span>
-      <span class="ftr__iso">New Delhi, India</span>
+    <div class="foot__btm">
+      <span>&copy; <span data-year>2026</span> Vinstitution. All rights reserved.</span>
+      <span class="foot__iso">ISO 9001:2015 Certified</span>
     </div>
   </div>
 </footer>
+
+<a href="#top" id="to-top" class="totop" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:18px;height:18px"><path d="M12 19V5M5 12l7-7 7 7"></path></svg></a>
 
 <script src="../assets/js/main.js?v=3"></script>
 </body>

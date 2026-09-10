@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-acc="pd">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +7,7 @@
 <meta name="description" content="PDLMS Pro turns every title into a reflowable EPUB, a page-accurate PDF, a natural-voice audiobook and Varta — an AI study assistant that answers only from the textbook, with paragraph-level citations.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://vinstitution.com/products/pdlms.html">
+
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Vinstitution">
 <meta property="og:title" content="PDLMS Pro — AI-Powered Digital Library">
@@ -14,10 +15,16 @@
 <meta property="og:url" content="https://vinstitution.com/products/pdlms.html">
 <meta property="og:image" content="https://vinstitution.com/assets/img/og-pdlms.png">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PDLMS Pro — AI-Powered Digital Library">
+<meta name="twitter:description" content="Read, listen, and chat with your books. Four reading modes and an AI assistant that cites the page.">
+<meta name="twitter:image" content="https://vinstitution.com/assets/img/og-pdlms.png">
 <meta name="theme-color" content="#FFFCF9" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#090D15" media="(prefers-color-scheme: dark)">
+
 <link rel="icon" href="../favicon-32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="../assets/img/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Mukta:wght@400;500;600&display=swap" rel="stylesheet">
@@ -31,8 +38,7 @@
   })();
 </script>
 <link rel="stylesheet" href="../assets/css/style.css?v=3">
-<link rel="stylesheet" href="../assets/css/pages.css?v=3">
-<style>:root{--accent:var(--pd);--accent-lt:var(--pd-lt)}</style>
+<link rel="stylesheet" href="../assets/css/product.css?v=3">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"PDLMS Pro",
 "applicationCategory":"EducationalApplication","operatingSystem":"Web",
@@ -43,302 +49,105 @@
 </head>
 <body>
 
-<header class="hdr">
+<div id="scroll-progress" class="progress" aria-hidden="true"></div>
+
+<header class="top">
   <div class="wrap">
-    <div class="hdr__in">
-      <a class="brand" href="../index.html" aria-label="Vinstitution — home">
-        <img class="brand__logo" src="../assets/logos/vinstitution-lockup.png"
-             alt="Vinstitution" width="520" height="168" fetchpriority="high">
+    <div class="top__in">
+      <a class="top__logo" href="../index.html" aria-label="Vinstitution — home">
+        <img src="../assets/logos/vinstitution-lockup.png" alt="Vinstitution" width="520" height="168" fetchpriority="high">
       </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="../products/vidyaverse.html">Vidyaverse</a>
-        <a href="../products/pdlms.html">PDLMS Pro</a>
-        <a href="../products/digi-classroom.html">Digi Classroom</a>
-        <a href="../products/practest.html">Practest</a>
-        <a href="../#contact">Contact</a>
-      </nav>
-      <button type="button" id="theme-toggle" class="theme-btn" aria-label="Switch to night mode" title="Switch to night mode">
-        <svg class="ico-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"></circle><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"></path></svg>
-        <svg class="ico-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13.2A8.6 8.6 0 1 1 10.8 3a6.8 6.8 0 0 0 10.2 10.2Z"></path></svg>
+      <nav class="top__nav" aria-label="Primary"><a href="vidyaverse.html">Vidyaverse</a><a href="pdlms.html" aria-current="page">PDLMS Pro</a><a href="digi-classroom.html">Digi Classroom</a><a href="practest.html">Practest</a><a href="../#contact">Contact</a></nav>
+      <button type="button" id="theme-toggle" class="iconbtn" aria-label="Switch to night mode" title="Switch to night mode">
+        <span class="ico-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:19px;height:19px"><circle cx="12" cy="12" r="4.2"></circle><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"></path></svg></span><span class="ico-light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:19px;height:19px"><path d="M21 13.2A8.6 8.6 0 1 1 10.8 3a6.8 6.8 0 0 0 10.2 10.2Z"></path></svg></span>
       </button>
-      <a class="btn btn--sm" href="../#contact">Book a demo</a>
-      <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><span></span></button>
+      <a class="b b--acc b--sm top__cta" href="../#contact">Book a demo</a>
+      <button type="button" id="nav-toggle" class="burger2" aria-label="Menu" aria-controls="mnav" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:20px;height:20px"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
     </div>
   </div>
 </header>
-<nav class="mnav" id="mnav" aria-label="Mobile">
-  <a href="../products/vidyaverse.html">Vidyaverse</a>
-  <a href="../products/pdlms.html">PDLMS Pro</a>
-  <a href="../products/digi-classroom.html">Digi Classroom</a>
-  <a href="../products/practest.html">Practest</a>
-  <a href="../#contact">Contact</a>
-  <a class="btn" href="../#contact">Book a demo</a>
+
+<nav id="mnav" class="mnav2" aria-label="Mobile" hidden><a href="vidyaverse.html">Vidyaverse</a><a href="pdlms.html">PDLMS Pro</a><a href="digi-classroom.html">Digi Classroom</a><a href="practest.html">Practest</a><a href="../#contact">Contact</a>
+  <a class="b b--acc" href="../#contact" style="align-self:flex-start;margin-top:22px">Book a demo</a>
 </nav>
 
-<main>
-
-<section class="phero">
+<section class="phero2" id="top">
+  <span class="phero2__glow" aria-hidden="true"></span>
+  <span class="phero2__grid" aria-hidden="true"></span>
   <div class="wrap">
-    <nav class="crumb rv" aria-label="Breadcrumb">
-      <a href="../index.html">Vinstitution</a>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-      <span>PDLMS Pro</span>
-    </nav>
-    <div class="phero__in">
-      <div>
-        <span class="eyebrow rv">Digital library · multi-tenant</span>
-        <h1 class="rv" data-rv-delay="60">AI-powered digital library for Indian institutions.</h1>
-        <p class="phero__lede rv" data-rv-delay="140">
-          Read, listen, and chat with your books. Equip students with responsive EPUBs, page-accurate
-          PDFs, natural text-to-speech — and <strong>Varta</strong>, the study assistant that answers
-          doubts with strict textbook citations.
-        </p>
-        <div class="btn-row rv" data-rv-delay="200">
-          <a class="btn" href="https://pdlms.vinstitution.com" target="_blank" rel="noopener">
-            Open PDLMS Pro
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
-          </a>
-          <a class="btn btn--ghost" href="../#contact">Book a demo</a>
+    <nav class="crumb2" aria-label="Breadcrumb"><a href="../index.html">Vinstitution</a><span>/</span>PDLMS Pro</nav>
+    <div class="phero2__in">
+      <div style="min-width:0">
+        <span class="eyeb">Digital library · multi-tenant</span>
+        <h1 class="h1">AI-powered <em>digital library</em> for Indian institutions.</h1>
+        
+        <p class="plede">Read, listen, and chat with your books. Equip students with responsive EPUBs, page-accurate PDFs, natural text-to-speech — and <strong>Varta</strong>, the study assistant that answers doubts with strict textbook citations.</p>
+        <div class="pcta">
+          <a class="b b--acc" href="https://pdlms.vinstitution.com" target="_blank" rel="noopener">Open PDLMS Pro <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:16px;height:16px"><path d="M7 17 17 7M9 7h8v8"></path></svg></a>
+          <a class="b b--ghost" href="../#contact">Book a walkthrough</a>
         </div>
-        <p class="rv" data-rv-delay="240" style="margin-top:20px;font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted-2)">
-          Built for universities · colleges · coaching institutes
-        </p>
       </div>
-
-      <div class="pviz rv" data-rv-delay="160" aria-hidden="true">
-        <div class="pviz__bar"><i></i><i></i><i></i><span class="pviz__url">pdlms.vinstitution.com / reader</span></div>
-        <div class="pviz__stage">
-          <div style="display:flex;gap:6px;flex-wrap:wrap">
-            <span class="vchip">EPUB</span><span class="vchip">PDF + CITATIONS</span>
-            <span class="vchip">AUDIOBOOK</span><span class="vchip">VARTA</span>
-          </div>
-          <div class="vquote">
-            <b>Chapter 7 · Heat &amp; Thermodynamics · p.142</b>
-            The specific heat capacity of water is 4186 J/kg·K, making it an excellent thermal buffer
-            in biological systems.
-          </div>
-          <div class="vrow">
-            <span class="vrow__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
-            <span><span class="vrow__t">Explain latent heat in one line.</span><span class="vrow__s">Varta · searching your book → 3 passages found</span></span>
-          </div>
-          <div class="vquote">
-            <b>Answer · grounded</b>
-            Latent heat is the energy absorbed or released during a phase change, without any change
-            in temperature. <span style="color:var(--pd);font-weight:700">↳ p. 148, ¶1</span>
-          </div>
-          <div class="vrow">
-            <span><span class="vrow__t">Saved to Sanchika</span><span class="vrow__s">+ Flashcard · + Practice Q</span></span>
-            <span class="vrow__v">2:34 / 8:12</span>
-          </div>
+      <div style="min-width:0">
+        <div class="app">
+          <div class="app__bar"><i></i><i></i><i></i><span class="app__url">pdlms.vinstitution.com / reader</span>
+            <span class="app__live"><i></i>LIVE</span></div>
+          <div class="app__tabs"><button type="button" class="mock-tab is-active" data-tabset="pd" data-tab="0">EPUB</button><button type="button" class="mock-tab" data-tabset="pd" data-tab="1">PDF</button><button type="button" class="mock-tab" data-tabset="pd" data-tab="2">AUDIO</button><button type="button" class="mock-tab" data-tabset="pd" data-tab="3">VARTA</button></div><div class="app__body"><div class="mock-panel" data-panel="pd-0"><div class="row"><span class="row__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"></path></svg></span><span class="row__t"><b>Reflowable EPUB</b><span>Font size, theme, bookmarks</span></span><span class="row__v">EPUB</span></div><div class="row"><span class="row__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px"><path d="m9 11 3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg></span><span class="row__t"><b>Reading position synced</b><span>Across every signed-in device</span></span><span class="row__v">✓</span></div></div><div class="mock-panel" data-panel="pd-1" hidden><div class="row"><span class="row__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"></path></svg></span><span class="row__t"><b>Page-accurate PDF</b><span>Exactly as the publisher set it</span></span><span class="row__v">PDF</span></div><div class="meter"><i style="width:46%"></i></div><div class="row"><span class="row__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px"><path d="m9 11 3 3L22 4M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg></span><span class="row__t"><b>Page 118 of 256</b><span>Annotations kept per student</span></span><span class="row__v">46%</span></div></div><div class="mock-panel" data-panel="pd-2" hidden><div class="row" style="gap:12px"><button type="button" id="pd-play" class="playbtn" aria-label="Play"><span class="ico-playing" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:15px;height:15px"><path d="M8 4h3v16H8zM13 4h3v16h-3z"></path></svg></span><span class="ico-paused"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:15px;height:15px"><path d="M7 4v16l13-8z"></path></svg></span></button><span class="row__t"><b>Natural text-to-speech</b><span>Chapter 4 · The Living World</span></span><span class="row__v" id="pd-time">01:05</span></div><div class="wavewrap"><i class="wv" style="--h:17px;--d:0.82s"></i><i class="wv" style="--h:24px;--d:0.94s"></i><i class="wv" style="--h:11px;--d:1.06s"></i><i class="wv" style="--h:18px;--d:1.18s"></i><i class="wv" style="--h:25px;--d:0.70s"></i><i class="wv" style="--h:12px;--d:0.82s"></i><i class="wv" style="--h:19px;--d:0.94s"></i><i class="wv" style="--h:26px;--d:1.06s"></i><i class="wv" style="--h:13px;--d:1.18s"></i><i class="wv" style="--h:20px;--d:0.70s"></i><i class="wv" style="--h:27px;--d:0.82s"></i><i class="wv" style="--h:14px;--d:0.94s"></i></div><div class="meter"><i id="pd-bar" style="width:34%"></i></div></div><div class="mock-panel" data-panel="pd-3" hidden><div class="note"><b>Varta · study assistant</b>“Why is the mitochondrion called the powerhouse?”</div><div class="row"><span class="row__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"></path></svg></span><span class="row__t"><b>Answered from your own library</b><span>Cited to page 118, paragraph 3</span></span><span class="row__v">CITED</span></div><div class="row"><span class="row__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:14px;height:14px"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"></path></svg></span><span class="row__t"><b>Saved to Sanchika</b><span>Your notebook, searchable later</span></span><span class="row__v">✓</span></div></div></div>
         </div>
       </div>
     </div>
-
-    <div class="stats rv" data-rv-delay="240">
-      <div class="stat"><b><span data-count="4">4</span></b><span>Reading modes</span></div>
-      <div class="stat"><b><span data-count="6">6</span></b><span>PDF Studio tools</span></div>
-      <div class="stat"><b>100%</b><span>Citation-backed AI</span></div>
-      <div class="stat"><b>5</b><span>Roles supported</span></div>
-    </div>
   </div>
 </section>
 
-<section class="sec sec--alt">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="eyebrow">The reading experience</span>
-      <h2>Four ways to read one book.</h2>
-      <p>
-        Upload once. Every title instantly becomes a reflowable EPUB, a page-accurate PDF, a
-        natural-voice audiobook, and an AI you can talk to. Switch modes anytime — highlights,
-        bookmarks and progress sync across all four.
-      </p>
-    </div>
-    <div class="fgrid">
-      <article class="fcard rv">
-        <span class="fcard__tag">EPUB</span>
-        <h3>Reflowable, on any screen</h3>
-        <p>Font size, sepia mode and a clean reading column that respects the publisher's layout. Distraction-free by design, on a laptop or a ₹8,000 phone.</p>
-      </article>
-      <article class="fcard rv" data-rv-delay="60">
-        <span class="fcard__tag">PDF</span>
-        <h3>Page-accurate, citation-ready</h3>
-        <p>The exact page a lecturer refers to, with the exact numbering. Every Varta citation links back to a page and paragraph a student can verify by eye.</p>
-      </article>
-      <article class="fcard rv" data-rv-delay="120">
-        <span class="fcard__tag">Audiobook</span>
-        <h3>Natural text-to-speech</h3>
-        <p>Every book becomes listenable. Study at the desk, revise on the bus — progress carries back to the text when they open it again.</p>
-      </article>
-    </div>
-  </div>
-</section>
+<div class="wrap"><div class="facts"><div class="fact"><b>4</b><span>Ways to read a book</span><i></i></div><div class="fact" data-rv><b>Varta</b><span>Cites the paragraph</span><i></i></div><div class="fact" data-rv><b>Multi-tenant</b><span>Per-institution libraries</span><i></i></div><div class="fact" data-rv><b>SSO</b><span>From Vidyaverse</span><i></i></div></div></div>
 
-<section class="sec">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="eyebrow">Varta</span>
-      <h2>The book that answers back.</h2>
-      <p>
-        Most AI guesses. Varta reads your textbook and answers only from it — with a citation you can
-        verify on the page. If it isn't in the book, Varta says so.
-      </p>
-    </div>
-    <div class="fgrid">
-      <article class="fcard rv">
-        <span class="fcard__tag">Trust</span>
-        <h3>Paragraph-level citations</h3>
-        <p>Every claim links back to the exact page and paragraph in the source book, so a student — or an examiner — can check it in seconds.</p>
-      </article>
-      <article class="fcard rv" data-rv-delay="60">
-        <span class="fcard__tag">Recall</span>
-        <h3>Instant flashcards</h3>
-        <p>Turn any explanation into spaced-repetition cards in one tap, without leaving the page they were reading.</p>
-      </article>
-      <article class="fcard rv" data-rv-delay="120">
-        <span class="fcard__tag">Practice</span>
-        <h3>Exam-style practice questions</h3>
-        <p>Generate questions from the chapter in front of them, pitched at the material actually covered rather than a generic bank.</p>
-      </article>
-      <article class="fcard rv">
-        <span class="fcard__tag">Sanchika</span>
-        <h3>A study archive that builds itself</h3>
-        <p>Highlights, Varta explanations, annotations and flashcards collect automatically across every book — one evolving notebook to revise from.</p>
-      </article>
-      <article class="fcard rv" data-rv-delay="60">
-        <span class="fcard__tag">PDF Studio</span>
-        <h3>A full annotation studio in the browser</h3>
-        <p>Freehand ink, smart shapes, highlights, redaction, OCR search and audio notes — Drawboard-grade tools with no download, syncing to Sanchika across devices.</p>
-      </article>
-      <article class="fcard rv" data-rv-delay="120">
-        <span class="fcard__tag">For faculty</span>
-        <h3>See what they read. Know what they skip.</h3>
-        <p>Assign books to batches, then read the struggling-chapter heatmap: which pages take longest, which chapters trigger the most Varta questions, who is falling behind.</p>
-      </article>
-    </div>
-  </div>
-</section>
+<section class="sec sec--alt"><div class="wrap"><div class="sechead" data-rv><span class="eyeb">The reading experience</span><h2 class="h2">Four ways to read one book.</h2><p class="lede">Upload once. Every title instantly becomes a reflowable EPUB, a page-accurate PDF, a natural-voice audiobook, and an AI you can talk to. Switch modes anytime — highlights, bookmarks and progress sync across all four.</p></div><div class="grid"><article class="card" data-rv data-rv-delay="0"><span class="card__rule"></span><span class="card__tag">EPUB</span><h3>Reflowable, on any screen</h3><p>Font size, sepia mode and a clean reading column that respects the publisher's layout. Distraction-free by design, on a laptop or a ₹8,000 phone.</p></article><article class="card" data-rv data-rv-delay="60"><span class="card__rule"></span><span class="card__tag">PDF</span><h3>Page-accurate, citation-ready</h3><p>The exact page a lecturer refers to, with the exact numbering. Every Varta citation links back to a page and paragraph a student can verify by eye.</p></article><article class="card" data-rv data-rv-delay="120"><span class="card__rule"></span><span class="card__tag">Audiobook</span><h3>Natural text-to-speech</h3><p>Every book becomes listenable. Study at the desk, revise on the bus — progress carries back to the text when they open it again.</p></article></div></div></section>
 
-<section class="sec sec--alt">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="eyebrow">Secure for Bharat</span>
-      <h2>Enterprise-grade. Built for institutions.</h2>
-      <p>
-        From a single coaching centre to a multi-campus university, the same architecture scales
-        without ever mixing one institution's data with another's.
-      </p>
-    </div>
-    <div class="fgrid">
-      <article class="fcard rv">
-        <span class="fcard__tag">Isolation</span>
-        <h3>Multi-tenant by design</h3>
-        <p>Every institution's data lives in its own logical boundary. One breach can never cross tenants — the separation is structural, not a query filter.</p>
-      </article>
-      <article class="fcard rv" data-rv-delay="60">
-        <span class="fcard__tag">Structure</span>
-        <h3>Branch hierarchy</h3>
-        <p>Model campuses, branches and departments, and assign books and seats per branch rather than flattening a university into one list.</p>
-      </article>
-      <article class="fcard rv" data-rv-delay="120">
-        <span class="fcard__tag">Access</span>
-        <h3>Five roles, least privilege</h3>
-        <p>Super Admin, Admin, Librarian, Teacher and Student — across both institutional (B2B) and independent (B2C) accounts, with SSO from Vidyaverse.</p>
-      </article>
-    </div>
-    <div class="ecosso rv" style="border-color:var(--line);background:var(--bg)">
-      <span>Per-institution roles</span>
-      <span>DPDP-ready data handling</span>
-      <span>Encrypted at rest &amp; in transit</span>
-      <span>Audit-logged access</span>
-    </div>
-  </div>
-</section>
+<section class="sec"><div class="wrap"><div class="sechead" data-rv><span class="eyeb">Varta</span><h2 class="h2">The book that answers back.</h2><p class="lede">Most AI guesses. Varta reads your textbook and answers only from it — with a citation you can verify on the page. If it isn't in the book, Varta says so.</p></div><div class="grid"><article class="card" data-rv data-rv-delay="0"><span class="card__rule"></span><span class="card__tag">Trust</span><h3>Paragraph-level citations</h3><p>Every claim links back to the exact page and paragraph in the source book, so a student — or an examiner — can check it in seconds.</p></article><article class="card" data-rv data-rv-delay="60"><span class="card__rule"></span><span class="card__tag">Recall</span><h3>Instant flashcards</h3><p>Turn any explanation into spaced-repetition cards in one tap, without leaving the page they were reading.</p></article><article class="card" data-rv data-rv-delay="120"><span class="card__rule"></span><span class="card__tag">Practice</span><h3>Exam-style practice questions</h3><p>Generate questions from the chapter in front of them, pitched at the material actually covered rather than a generic bank.</p></article><article class="card" data-rv data-rv-delay="180"><span class="card__rule"></span><span class="card__tag">Sanchika</span><h3>A study archive that builds itself</h3><p>Highlights, Varta explanations, annotations and flashcards collect automatically across every book — one evolving notebook to revise from.</p></article><article class="card" data-rv data-rv-delay="180"><span class="card__rule"></span><span class="card__tag">PDF Studio</span><h3>A full annotation studio in the browser</h3><p>Freehand ink, smart shapes, highlights, redaction, OCR search and audio notes — Drawboard-grade tools with no download, syncing to Sanchika across devices.</p></article><article class="card" data-rv data-rv-delay="180"><span class="card__rule"></span><span class="card__tag">For faculty</span><h3>See what they read. Know what they skip.</h3><p>Assign books to batches, then read the struggling-chapter heatmap: which pages take longest, which chapters trigger the most Varta questions, who is falling behind.</p></article></div></div></section>
 
-<section class="sec eco">
-  <div class="wrap">
-    <div class="sec-head sec-head--mid rv">
-      <span class="eyebrow">The ecosystem</span>
-      <h2>One login from the campus dashboard.</h2>
-      <p>
-        PDLMS sits inside the Vinstitution stack. Students signed into Vidyaverse open the library
-        without a second password, and their roles arrive with them.
-      </p>
-    </div>
-    <div class="ecogrid">
-      <article class="ecocard rv">
-        <span class="ecocard__role">Identity provider</span>
-        <h3>Vidyaverse</h3>
-        <p>The campus OS that issues the login and the roles the library trusts.</p>
-        <ul><li><a href="../products/vidyaverse.html" style="color:inherit">See Vidyaverse →</a></li></ul>
-      </article>
-      <article class="ecocard ecocard--hub rv" data-rv-delay="80">
-        <span class="ecocard__role">You're here</span>
-        <h3>PDLMS Pro</h3>
-        <p>The multi-tenant digital library, with Varta and Sanchika.</p>
-      </article>
-      <article class="ecocard rv" data-rv-delay="160">
-        <span class="ecocard__role">Connected</span>
-        <h3>Digi Classroom</h3>
-        <p>The NCERT-grounded AI tutor and adaptive practice engine.</p>
-        <ul><li><a href="../products/digi-classroom.html" style="color:inherit">See Digi Classroom →</a></li></ul>
-      </article>
-    </div>
-  </div>
-</section>
+<section class="sec sec--alt"><div class="wrap"><div class="sechead" data-rv><span class="eyeb">Secure for Bharat</span><h2 class="h2">Enterprise-grade. Built for institutions.</h2><p class="lede">From a single coaching centre to a multi-campus university, the same architecture scales without ever mixing one institution's data with another's.</p></div><div class="grid"><article class="card" data-rv data-rv-delay="0"><span class="card__rule"></span><span class="card__tag">Isolation</span><h3>Multi-tenant by design</h3><p>Every institution's data lives in its own logical boundary. One breach can never cross tenants — the separation is structural, not a query filter.</p></article><article class="card" data-rv data-rv-delay="60"><span class="card__rule"></span><span class="card__tag">Structure</span><h3>Branch hierarchy</h3><p>Model campuses, branches and departments, and assign books and seats per branch rather than flattening a university into one list.</p></article><article class="card" data-rv data-rv-delay="120"><span class="card__rule"></span><span class="card__tag">Access</span><h3>Five roles, least privilege</h3><p>Super Admin, Admin, Librarian, Teacher and Student — across both institutional (B2B) and independent (B2C) accounts, with SSO from Vidyaverse.</p></article></div></div></section>
 
-<section class="sec">
-  <div class="wrap">
-    <div class="cta rv">
-      <h2>Put the whole library in their pocket</h2>
-      <p>Founding institutions are onboarding now — priority setup and a direct line to the team.</p>
-      <div class="btn-row">
-        <a class="btn" href="https://pdlms.vinstitution.com" target="_blank" rel="noopener">Open PDLMS Pro</a>
-        <a class="btn btn--ghost" href="../#contact">Book a demo</a>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="sec sec--band"><div class="wrap"><div class="sechead" data-rv><span class="eyeb">The ecosystem</span><h2 class="h2">One login from the campus dashboard.</h2><p class="lede">PDLMS sits inside the Vinstitution stack. Students signed into Vidyaverse open the library without a second password, and their roles arrive with them.</p></div><div class="ecogrid2"><article class="ecocard2" data-rv data-rv-delay="0"><span class="card__tag">Identity provider</span><h3>Vidyaverse</h3><p>The campus OS that issues the login and the roles the library trusts.</p><a class="linkarrow" href="vidyaverse.html" style="color:var(--gold-hi)">See Vidyaverse <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:15px;height:15px"><path d="M7 17 17 7M9 7h8v8"></path></svg></a></article><article class="ecocard2" data-rv data-rv-delay="60"><span class="card__tag">You're here</span><h3>PDLMS Pro</h3><p>The multi-tenant digital library, with Varta and Sanchika.</p></article><article class="ecocard2" data-rv data-rv-delay="120"><span class="card__tag">Connected</span><h3>Digi Classroom</h3><p>The NCERT-grounded AI tutor and adaptive practice engine.</p><a class="linkarrow" href="digi-classroom.html" style="color:var(--gold-hi)">See Digi Classroom <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:15px;height:15px"><path d="M7 17 17 7M9 7h8v8"></path></svg></a></article></div></div></section>
 
-</main>
+<section class="sec"><div class="wrap"><div class="close" data-rv><span class="close__glow"></span><h2 class="h2">Put the whole library in their pocket</h2><p class="lede" style="margin-inline:auto">Founding institutions are onboarding now — priority setup and a direct line to the team.</p><div class="pcta"><a class="b b--acc" href="https://pdlms.vinstitution.com" target="_blank" rel="noopener">Open PDLMS Pro <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:16px;height:16px"><path d="M7 17 17 7M9 7h8v8"></path></svg></a><a class="b b--ghost" href="../#contact">Book a demo</a></div></div></div></section>
 
-<footer class="ftr">
+<footer class="foot">
   <div class="wrap">
-    <div class="ftr__top">
-      <div class="ftr__brand">
-        <a class="brand brand--ftr" href="../index.html" aria-label="Vinstitution — home">
-          <img class="ftr__logo" src="../assets/logos/vinstitution-full.png"
-               alt="Vinstitution — Uttiṣṭhata, Jāgrata, Prāpya · ISO 9001:2015 Certified"
-               width="760" height="338" loading="lazy">
+    <div class="foot__top">
+      <div class="foot__brand">
+        <a href="../index.html" aria-label="Vinstitution — home">
+          <img src="../assets/logos/vinstitution-full.png" alt="Vinstitution — Uttiṣṭhata, Jāgrata, Prāpya · ISO 9001:2015 Certified" width="760" height="338" loading="lazy">
         </a>
-        <p class="ftr__about">Four connected platforms for Indian institutions and learners — plus the publishing studio that started it all.</p>
+        <p>Education technology for Indian institutions and learners — a campus operating system, an AI digital library, an NCERT-grounded tutor and a CBT exam engine, connected by one institutional login.</p>
       </div>
-      <div><h4>Platforms</h4><ul>
-        <li><a href="../products/vidyaverse.html">Vidyaverse</a></li>
-        <li><a href="../products/pdlms.html">PDLMS Pro</a></li>
-        <li><a href="../products/digi-classroom.html">Digi Classroom</a></li>
-        <li><a href="../products/practest.html">e-Learning Practest</a></li>
-      </ul></div>
-      <div><h4>Open an app</h4><ul>
-        <li><a href="https://vidyaverse.vinstitution.com" target="_blank" rel="noopener">vidyaverse.vinstitution.com</a></li>
-        <li><a href="https://pdlms.vinstitution.com" target="_blank" rel="noopener">pdlms.vinstitution.com</a></li>
-        <li><a href="https://dgcl.vinstitution.com" target="_blank" rel="noopener">dgcl.vinstitution.com</a></li>
-        <li><a href="https://practest.live" target="_blank" rel="noopener">practest.live</a></li>
-      </ul></div>
-      <div><h4>Company</h4><ul>
-        <li><a href="../#ecosystem">The ecosystem</a></li>
-        <li><a href="../#why">Why Vinstitution</a></li>
-        <li><a href="../#services">Publishing &amp; branding</a></li>
-        <li><a href="../#contact">Contact</a></li>
-        <li><a href="mailto:tech@vinstitution.com">tech@vinstitution.com</a></li>
-      </ul></div>
+      <div>
+        <h4>Platforms</h4>
+        <ul><li><a href="vidyaverse.html">Vidyaverse</a></li><li><a href="pdlms.html">PDLMS Pro</a></li><li><a href="digi-classroom.html">Digi Classroom</a></li><li><a href="practest.html">Practest</a></li></ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../index.html#why">Why Vinstitution</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#ecosystem">Ecosystem</a></li>
+          <li><a href="../#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach us</h4>
+        <ul>
+          <li><a href="mailto:tech@vinstitution.com">tech@vinstitution.com</a></li>
+          <li>New Delhi, India</li>
+        </ul>
+      </div>
     </div>
-    <div class="ftr__btm">
-      <span>© <span data-year>2026</span> Vinstitution. All rights reserved.</span>
-      <span class="ftr__iso">New Delhi, India</span>
+    <div class="foot__btm">
+      <span>&copy; <span data-year>2026</span> Vinstitution. All rights reserved.</span>
+      <span class="foot__iso">ISO 9001:2015 Certified</span>
     </div>
   </div>
 </footer>
+
+<a href="#top" id="to-top" class="totop" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:18px;height:18px"><path d="M12 19V5M5 12l7-7 7 7"></path></svg></a>
 
 <script src="../assets/js/main.js?v=3"></script>
 </body>

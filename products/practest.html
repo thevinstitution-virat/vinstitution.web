@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-acc="pt">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +7,7 @@
 <meta name="description" content="e-Learning Practest replicates the real CBT exam hall: server-timed mocks with the exact five-state palette, section locks and negative marking of SSC, Banking, Railways, UPSC and State PCS papers, plus video courses and analytics.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://vinstitution.com/products/practest.html">
+
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Vinstitution">
 <meta property="og:title" content="e-Learning Practest — Practise like it's the real exam hall">
@@ -14,10 +15,16 @@
 <meta property="og:url" content="https://vinstitution.com/products/practest.html">
 <meta property="og:image" content="https://vinstitution.com/assets/img/og-practest.png">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="e-Learning Practest — Practise like it's the real exam hall">
+<meta name="twitter:description" content="Server-timed CBT mocks with exam-exact palette, section locks and negative marking for India's government exams.">
+<meta name="twitter:image" content="https://vinstitution.com/assets/img/og-practest.png">
 <meta name="theme-color" content="#FFFCF9" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#090D15" media="(prefers-color-scheme: dark)">
+
 <link rel="icon" href="../favicon-32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="../assets/img/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Mukta:wght@400;500;600&display=swap" rel="stylesheet">
@@ -31,8 +38,7 @@
   })();
 </script>
 <link rel="stylesheet" href="../assets/css/style.css?v=3">
-<link rel="stylesheet" href="../assets/css/pages.css?v=3">
-<style>:root{--accent:var(--pt);--accent-lt:var(--pt-lt)}</style>
+<link rel="stylesheet" href="../assets/css/product.css?v=3">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"e-Learning Practest",
 "applicationCategory":"EducationalApplication","operatingSystem":"Web",
@@ -43,281 +49,105 @@
 </head>
 <body>
 
-<header class="hdr">
+<div id="scroll-progress" class="progress" aria-hidden="true"></div>
+
+<header class="top">
   <div class="wrap">
-    <div class="hdr__in">
-      <a class="brand" href="../index.html" aria-label="Vinstitution — home">
-        <img class="brand__logo" src="../assets/logos/vinstitution-lockup.png"
-             alt="Vinstitution" width="520" height="168" fetchpriority="high">
+    <div class="top__in">
+      <a class="top__logo" href="../index.html" aria-label="Vinstitution — home">
+        <img src="../assets/logos/vinstitution-lockup.png" alt="Vinstitution" width="520" height="168" fetchpriority="high">
       </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="../products/vidyaverse.html">Vidyaverse</a>
-        <a href="../products/pdlms.html">PDLMS Pro</a>
-        <a href="../products/digi-classroom.html">Digi Classroom</a>
-        <a href="../products/practest.html">Practest</a>
-        <a href="../#contact">Contact</a>
-      </nav>
-      <button type="button" id="theme-toggle" class="theme-btn" aria-label="Switch to night mode" title="Switch to night mode">
-        <svg class="ico-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"></circle><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"></path></svg>
-        <svg class="ico-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13.2A8.6 8.6 0 1 1 10.8 3a6.8 6.8 0 0 0 10.2 10.2Z"></path></svg>
+      <nav class="top__nav" aria-label="Primary"><a href="vidyaverse.html">Vidyaverse</a><a href="pdlms.html">PDLMS Pro</a><a href="digi-classroom.html">Digi Classroom</a><a href="practest.html" aria-current="page">Practest</a><a href="../#contact">Contact</a></nav>
+      <button type="button" id="theme-toggle" class="iconbtn" aria-label="Switch to night mode" title="Switch to night mode">
+        <span class="ico-dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:19px;height:19px"><circle cx="12" cy="12" r="4.2"></circle><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"></path></svg></span><span class="ico-light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:19px;height:19px"><path d="M21 13.2A8.6 8.6 0 1 1 10.8 3a6.8 6.8 0 0 0 10.2 10.2Z"></path></svg></span>
       </button>
-      <a class="btn btn--sm" href="../#contact">Book a demo</a>
-      <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><span></span></button>
+      <a class="b b--acc b--sm top__cta" href="../#contact">Book a demo</a>
+      <button type="button" id="nav-toggle" class="burger2" aria-label="Menu" aria-controls="mnav" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:20px;height:20px"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
     </div>
   </div>
 </header>
-<nav class="mnav" id="mnav" aria-label="Mobile">
-  <a href="../products/vidyaverse.html">Vidyaverse</a>
-  <a href="../products/pdlms.html">PDLMS Pro</a>
-  <a href="../products/digi-classroom.html">Digi Classroom</a>
-  <a href="../products/practest.html">Practest</a>
-  <a href="../#contact">Contact</a>
-  <a class="btn" href="../#contact">Book a demo</a>
+
+<nav id="mnav" class="mnav2" aria-label="Mobile" hidden><a href="vidyaverse.html">Vidyaverse</a><a href="pdlms.html">PDLMS Pro</a><a href="digi-classroom.html">Digi Classroom</a><a href="practest.html">Practest</a><a href="../#contact">Contact</a>
+  <a class="b b--acc" href="../#contact" style="align-self:flex-start;margin-top:22px">Book a demo</a>
 </nav>
 
-<main>
-
-<section class="phero">
+<section class="phero2" id="top">
+  <span class="phero2__glow" aria-hidden="true"></span>
+  <span class="phero2__grid" aria-hidden="true"></span>
   <div class="wrap">
-    <nav class="crumb rv" aria-label="Breadcrumb">
-      <a href="../index.html">Vinstitution</a>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-      <span>e-Learning Practest</span>
-    </nav>
-    <div class="phero__in">
-      <div>
-        <span class="eyebrow rv">Govt-exam preparation, done properly</span>
-        <h1 class="rv" data-rv-delay="60">Practise like it's the real exam hall.</h1>
-        <p class="phero__lede rv" data-rv-delay="140">
-          Server-timed CBT mocks with the exact palette, section locks and negative marking of SSC,
-          Banking, Railways, UPSC and State PCS papers — plus video courses and analytics that tell you
-          precisely where marks are leaking.
-        </p>
-        <div class="btn-row rv" data-rv-delay="200">
-          <a class="btn" href="https://practest.live" target="_blank" rel="noopener">
-            Start preparing free
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg>
-          </a>
-          <a class="btn btn--ghost" href="../#contact">For coaching institutes</a>
+    <nav class="crumb2" aria-label="Breadcrumb"><a href="../index.html">Vinstitution</a><span>/</span>e-Learning Practest</nav>
+    <div class="phero2__in">
+      <div style="min-width:0">
+        <span class="eyeb">Govt-exam preparation, done properly</span>
+        <h1 class="h1">Practise like it's <em>the real exam hall</em>.</h1>
+        
+        <p class="plede">Server-timed CBT mocks with the exact palette, section locks and negative marking of SSC, Banking, Railways, UPSC and State PCS papers — plus video courses and analytics that tell you precisely where marks are leaking.</p>
+        <div class="pcta">
+          <a class="b b--acc" href="https://practest.live" target="_blank" rel="noopener">Open Practest <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:16px;height:16px"><path d="M7 17 17 7M9 7h8v8"></path></svg></a>
+          <a class="b b--ghost" href="../#contact">Book a walkthrough</a>
         </div>
-        <p class="rv" data-rv-delay="240" style="margin-top:20px;font-size:13px;color:var(--muted)">
-          Server-authoritative timer · autosave every answer · resume after any crash
-        </p>
       </div>
-
-      <div class="pviz rv" data-rv-delay="160" aria-hidden="true">
-        <div class="pviz__bar"><i></i><i></i><i></i><span class="pviz__url">practest.live / mock-04 · section 2</span></div>
-        <div class="pviz__stage">
-          <div class="vrow">
-            <span class="vrow__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
-            <span><span class="vrow__t">Section timer · server-side</span><span class="vrow__s">Auto-submit fires even if the tab is closed</span></span>
-            <span class="vrow__v">00:12:04</span>
-          </div>
-          <div style="display:flex;gap:6px;flex-wrap:wrap">
-            <span class="vchip" style="background:#E6F6EC;color:#1B7A44">1 Answered</span>
-            <span class="vchip" style="background:#FDECEA;color:#B3311B">2 Not answered</span>
-            <span class="vchip" style="background:#F1EDFD;color:#5B3FBF">3 Marked</span>
-            <span class="vchip" style="background:#EAF1FD;color:#2D5FB8">4 Ans + marked</span>
-            <span class="vchip" style="background:var(--bg-3);color:var(--muted)">5 Not visited</span>
-          </div>
-          <div class="vquote"><b>Subject accuracy · mock 04</b>Quant 82% · Reasoning 74% · English 91%</div>
-          <div class="vrow">
-            <span><span class="vrow__t">General Awareness</span><span class="vrow__s">GA is leaking marks — the system says so, plainly</span></span>
-            <span class="vrow__v">48%</span>
-          </div>
-          <div class="vbar" data-w="48%"><i></i></div>
+      <div style="min-width:0">
+        <div class="app">
+          <div class="app__bar"><i></i><i></i><i></i><span class="app__url">practest.live / mock-test</span>
+            <span class="app__live"><i></i>LIVE</span></div>
+          <div class="app__body"><div class="clock"><span>Quantitative Aptitude · Section 2 of 4</span><time id="exam-time">00:12:04</time></div><div class="palette"><button type="button" class="cell is-1" data-cell="0" title="Answered">1</button><button type="button" class="cell is-1" data-cell="1" title="Answered">2</button><button type="button" class="cell is-0" data-cell="2" title="Not visited">3</button><button type="button" class="cell is-2" data-cell="3" title="Not answered">4</button><button type="button" class="cell is-1" data-cell="4" title="Answered">5</button><button type="button" class="cell is-3" data-cell="5" title="Marked">6</button><button type="button" class="cell is-0" data-cell="6" title="Not visited">7</button><button type="button" class="cell is-1" data-cell="7" title="Answered">8</button><button type="button" class="cell is-1" data-cell="8" title="Answered">9</button><button type="button" class="cell is-2" data-cell="9" title="Not answered">10</button><button type="button" class="cell is-0" data-cell="10" title="Not visited">11</button><button type="button" class="cell is-0" data-cell="11" title="Not visited">12</button><button type="button" class="cell is-1" data-cell="12" title="Answered">13</button><button type="button" class="cell is-1" data-cell="13" title="Answered">14</button><button type="button" class="cell is-3" data-cell="14" title="Marked">15</button><button type="button" class="cell is-0" data-cell="15" title="Not visited">16</button><button type="button" class="cell is-1" data-cell="16" title="Answered">17</button><button type="button" class="cell is-0" data-cell="17" title="Not visited">18</button><button type="button" class="cell is-2" data-cell="18" title="Not answered">19</button><button type="button" class="cell is-1" data-cell="19" title="Answered">20</button></div><div class="legend"><span><i style="background:var(--ok-t);border-color:var(--ok)"></i>Answered</span><span><i style="background:var(--vv-t);border-color:var(--vv)"></i>Not answered</span><span><i style="background:var(--pt-t);border-color:var(--pt)"></i>Marked</span><span><i></i>Not visited</span></div><p style="font-size:11.5px;color:var(--muted);margin:0">Click any number — the palette cycles exactly as it does in the real paper.</p></div>
         </div>
       </div>
     </div>
-
-    <div class="stats rv" data-rv-delay="240">
-      <div class="stat"><b>05</b><span>Palette states, exam-exact</span></div>
-      <div class="stat"><b>±1s</b><span>Server-timer accuracy</span></div>
-      <div class="stat"><b><span data-count="6">6</span></b><span>Exam categories covered</span></div>
-      <div class="stat"><b>100%</b><span>Server-side scoring</span></div>
-    </div>
   </div>
 </section>
 
-<section class="sec sec--alt">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="eyebrow">Built like the real thing</span>
-      <h2>Every detail of the exam hall, replicated.</h2>
-      <p>
-        Engineered for SSC CGL, SBI PO, SBI Clerk, IBPS, Railways RRB, UPSC and State PCS aspirants
-        across India.
-      </p>
-    </div>
-    <div class="fgrid">
-      <article class="fcard rv">
-        <span class="fcard__tag">The palette</span>
-        <h3>Five states, exactly as SSC &amp; IBPS render them</h3>
-        <p>Answered, not answered, marked for review, answered &amp; marked, not visited — the same colours, the same teardrop shape, the same section locks. When you sit the real CBT, nothing surprises you.</p>
-      </article>
-      <article class="fcard rv" data-rv-delay="60">
-        <span class="fcard__tag">The clock</span>
-        <h3>A timer the browser cannot cheat</h3>
-        <p>Timing is server-authoritative to within a second, and auto-submit fires on the server when time expires — even if the tab is closed or the laptop dies.</p>
-      </article>
-      <article class="fcard rv" data-rv-delay="120">
-        <span class="fcard__tag">Resilience</span>
-        <h3>Crash-safe by default</h3>
-        <p>Every answer autosaves as it is marked. Internet drops mid-section, and the attempt resumes exactly where it stopped — with the clock still honest.</p>
-      </article>
-      <article class="fcard rv">
-        <span class="fcard__tag">Analytics</span>
-        <h3>Analysis that names the problem</h3>
-        <p>Every submission is re-scored on the server from raw answers: accuracy, time-per-question, subject and topic breakdowns, batch percentile and rank — recomputed, never estimated.</p>
-      </article>
-      <article class="fcard rv" data-rv-delay="60">
-        <span class="fcard__tag">Courses</span>
-        <h3>Video courses with resume-anywhere</h3>
-        <p>Modules and lessons in exam order with watched-seconds logged automatically. Close the tab mid-lecture and the player reopens within seconds of where you stopped, on any device.</p>
-      </article>
-      <article class="fcard rv" data-rv-delay="120">
-        <span class="fcard__tag">Institutes</span>
-        <h3>Batches and activation codes</h3>
-        <p>Coaching institutes issue activation codes that unlock a batch instantly, with all-India rank and percentile computed across the cohort.</p>
-      </article>
-    </div>
-  </div>
-</section>
+<div class="wrap"><div class="facts"><div class="fact"><b>5</b><span>Exam families</span><i></i></div><div class="fact" data-rv><b>Server-timed</b><span>Real exam clock</span><i></i></div><div class="fact" data-rv><b>Negative marking</b><span>Exact paper rules</span><i></i></div><div class="fact" data-rv><b>Video</b><span>Course library</span><i></i></div></div></div>
 
-<section class="sec">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="eyebrow">How it works</span>
-      <h2>From sign-up to scorecard in three steps.</h2>
-    </div>
-    <div class="steps">
-      <article class="step rv">
-        <h3>Register &amp; verify</h3>
-        <p>Create a free account and verify email and mobile with an OTP — about two minutes.</p>
-      </article>
-      <article class="step rv" data-rv-delay="70">
-        <h3>Activate your batch</h3>
-        <p>Enter the activation code from your institute, or pay online for instant access when enrolment is open.</p>
-      </article>
-      <article class="step rv" data-rv-delay="140">
-        <h3>Practise &amp; analyse</h3>
-        <p>Attempt timed mocks, watch structured lessons, and track accuracy, percentile and rank after every test.</p>
-      </article>
-    </div>
-  </div>
-</section>
+<section class="sec sec--alt"><div class="wrap"><div class="sechead" data-rv><span class="eyeb">Built like the real thing</span><h2 class="h2">Every detail of the exam hall, replicated.</h2><p class="lede">Engineered for SSC CGL, SBI PO, SBI Clerk, IBPS, Railways RRB, UPSC and State PCS aspirants across India.</p></div><div class="grid"><article class="card" data-rv data-rv-delay="0"><span class="card__rule"></span><span class="card__tag">The palette</span><h3>Five states, exactly as SSC &amp; IBPS render them</h3><p>Answered, not answered, marked for review, answered &amp; marked, not visited — the same colours, the same teardrop shape, the same section locks. When you sit the real CBT, nothing surprises you.</p></article><article class="card" data-rv data-rv-delay="60"><span class="card__rule"></span><span class="card__tag">The clock</span><h3>A timer the browser cannot cheat</h3><p>Timing is server-authoritative to within a second, and auto-submit fires on the server when time expires — even if the tab is closed or the laptop dies.</p></article><article class="card" data-rv data-rv-delay="120"><span class="card__rule"></span><span class="card__tag">Resilience</span><h3>Crash-safe by default</h3><p>Every answer autosaves as it is marked. Internet drops mid-section, and the attempt resumes exactly where it stopped — with the clock still honest.</p></article><article class="card" data-rv data-rv-delay="180"><span class="card__rule"></span><span class="card__tag">Analytics</span><h3>Analysis that names the problem</h3><p>Every submission is re-scored on the server from raw answers: accuracy, time-per-question, subject and topic breakdowns, batch percentile and rank — recomputed, never estimated.</p></article><article class="card" data-rv data-rv-delay="180"><span class="card__rule"></span><span class="card__tag">Courses</span><h3>Video courses with resume-anywhere</h3><p>Modules and lessons in exam order with watched-seconds logged automatically. Close the tab mid-lecture and the player reopens within seconds of where you stopped, on any device.</p></article><article class="card" data-rv data-rv-delay="180"><span class="card__rule"></span><span class="card__tag">Institutes</span><h3>Batches and activation codes</h3><p>Coaching institutes issue activation codes that unlock a batch instantly, with all-India rank and percentile computed across the cohort.</p></article></div></div></section>
 
-<section class="sec sec--alt">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <span class="eyebrow">Exams covered</span>
-      <h2>India's toughest CBT papers.</h2>
-    </div>
-    <div class="modgrid">
-      <article class="modcat rv">
-        <div class="modcat__h"><h3>Staff Selection</h3><span>SSC</span></div>
-        <ul><li>SSC CGL</li><li>SSC CHSL</li><li>Tier-wise sections</li><li>Negative marking</li></ul>
-      </article>
-      <article class="modcat rv" data-rv-delay="50">
-        <div class="modcat__h"><h3>Banking</h3><span>IBPS · SBI</span></div>
-        <ul><li>SBI PO</li><li>SBI Clerk</li><li>IBPS PO &amp; Clerk</li><li>Sectional timing</li></ul>
-      </article>
-      <article class="modcat rv" data-rv-delay="100">
-        <div class="modcat__h"><h3>Railways</h3><span>RRB</span></div>
-        <ul><li>RRB NTPC</li><li>RRB Group D</li><li>Normalised scoring</li></ul>
-      </article>
-      <article class="modcat rv" data-rv-delay="50">
-        <div class="modcat__h"><h3>Civil Services</h3><span>UPSC</span></div>
-        <ul><li>Prelims pattern</li><li>CSAT</li><li>Full-length mocks</li></ul>
-      </article>
-      <article class="modcat rv" data-rv-delay="100">
-        <div class="modcat__h"><h3>State PCS</h3><span>STATE</span></div>
-        <ul><li>State-wise papers</li><li>Regional GA</li><li>Prelims pattern</li></ul>
-      </article>
-      <article class="modcat rv" data-rv-delay="150">
-        <div class="modcat__h"><h3>Course library</h3><span>VIDEO</span></div>
-        <ul><li>Quant</li><li>Reasoning</li><li>English</li><li>General Awareness</li><li>Resume-anywhere</li></ul>
-      </article>
-    </div>
-  </div>
-</section>
+<section class="sec"><div class="wrap"><div class="sechead" data-rv><span class="eyeb">How it works</span><h2 class="h2">From sign-up to scorecard in three steps.</h2></div><div class="steps"><article class="step" data-rv data-rv-delay="0"><h3>Register &amp; verify</h3><p>Create a free account and verify email and mobile with an OTP — about two minutes.</p></article><article class="step" data-rv data-rv-delay="70"><h3>Activate your batch</h3><p>Enter the activation code from your institute, or pay online for instant access when enrolment is open.</p></article><article class="step" data-rv data-rv-delay="140"><h3>Practise &amp; analyse</h3><p>Attempt timed mocks, watch structured lessons, and track accuracy, percentile and rank after every test.</p></article></div></div></section>
 
-<section class="sec eco">
-  <div class="wrap">
-    <div class="sec-head sec-head--mid rv">
-      <span class="eyebrow">Part of Vinstitution</span>
-      <h2>The aspirant-facing arm of the same engineering.</h2>
-      <p>
-        Practest is a standalone platform for candidates and coaching institutes — built by the team
-        behind the campus OS, the digital library and the AI tutor, and sharing their assessment engine.
-      </p>
-    </div>
-    <div class="ecosso rv">
-      <span>Server-authoritative scoring</span>
-      <span>Shared adaptive-testing engine</span>
-      <span>Institute batches &amp; codes</span>
-      <span>All-India percentile</span>
-    </div>
-    <p class="eco__note rv">
-      Looking for a school or college platform instead? See <b><a href="../products/vidyaverse.html" style="color:var(--gold)">Vidyaverse</a></b>,
-      <b><a href="../products/pdlms.html" style="color:var(--gold)">PDLMS Pro</a></b> and
-      <b><a href="../products/digi-classroom.html" style="color:var(--gold)">Digi Classroom</a></b>.
-    </p>
-  </div>
-</section>
+<section class="sec sec--alt"><div class="wrap"><div class="sechead" data-rv><span class="eyeb">Exams covered</span><h2 class="h2">India's toughest CBT papers.</h2></div><div class="grid"><article class="card card--mod" data-rv data-rv-delay="0"><span class="card__rule"></span><div class="card__head"><h3>Staff Selection</h3><span class="card__meta">SSC</span></div><ul class="chips"><li>SSC CGL</li><li>SSC CHSL</li><li>Tier-wise sections</li><li>Negative marking</li></ul></article><article class="card card--mod" data-rv data-rv-delay="60"><span class="card__rule"></span><div class="card__head"><h3>Banking</h3><span class="card__meta">IBPS · SBI</span></div><ul class="chips"><li>SBI PO</li><li>SBI Clerk</li><li>IBPS PO &amp; Clerk</li><li>Sectional timing</li></ul></article><article class="card card--mod" data-rv data-rv-delay="120"><span class="card__rule"></span><div class="card__head"><h3>Railways</h3><span class="card__meta">RRB</span></div><ul class="chips"><li>RRB NTPC</li><li>RRB Group D</li><li>Normalised scoring</li></ul></article><article class="card card--mod" data-rv data-rv-delay="180"><span class="card__rule"></span><div class="card__head"><h3>Civil Services</h3><span class="card__meta">UPSC</span></div><ul class="chips"><li>Prelims pattern</li><li>CSAT</li><li>Full-length mocks</li></ul></article><article class="card card--mod" data-rv data-rv-delay="180"><span class="card__rule"></span><div class="card__head"><h3>State PCS</h3><span class="card__meta">STATE</span></div><ul class="chips"><li>State-wise papers</li><li>Regional GA</li><li>Prelims pattern</li></ul></article><article class="card card--mod" data-rv data-rv-delay="180"><span class="card__rule"></span><div class="card__head"><h3>Course library</h3><span class="card__meta">VIDEO</span></div><ul class="chips"><li>Quant</li><li>Reasoning</li><li>English</li><li>General Awareness</li><li>Resume-anywhere</li></ul></article></div></div></section>
 
-<section class="sec">
-  <div class="wrap">
-    <div class="cta rv">
-      <h2>Your seat in the exam hall starts here</h2>
-      <p>Free account, verified in minutes. Your institute's code unlocks everything.</p>
-      <div class="btn-row">
-        <a class="btn" href="https://practest.live" target="_blank" rel="noopener">Create free account</a>
-        <a class="btn btn--ghost" href="../#contact">Talk to us about batches</a>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="sec sec--band"><div class="wrap"><div class="sechead" data-rv><span class="eyeb">Part of Vinstitution</span><h2 class="h2">The aspirant-facing arm of the same engineering.</h2><p class="lede">Practest is a standalone platform for candidates and coaching institutes — built by the team behind the campus OS, the digital library and the AI tutor, and sharing their assessment engine.</p><p class="lede">Looking for a school or college platform instead? See <a href="vidyaverse.html">Vidyaverse</a>, <a href="pdlms.html">PDLMS Pro</a> and <a href="digi-classroom.html">Digi Classroom</a>.</p></div></div></section>
 
-</main>
+<section class="sec"><div class="wrap"><div class="close" data-rv><span class="close__glow"></span><h2 class="h2">Your seat in the exam hall starts here</h2><p class="lede" style="margin-inline:auto">Free account, verified in minutes. Your institute's code unlocks everything.</p><div class="pcta"><a class="b b--acc" href="https://practest.live" target="_blank" rel="noopener">Create free account <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:16px;height:16px"><path d="M7 17 17 7M9 7h8v8"></path></svg></a><a class="b b--ghost" href="../#contact">Talk to us about batches</a></div></div></div></section>
 
-<footer class="ftr">
+<footer class="foot">
   <div class="wrap">
-    <div class="ftr__top">
-      <div class="ftr__brand">
-        <a class="brand brand--ftr" href="../index.html" aria-label="Vinstitution — home">
-          <img class="ftr__logo" src="../assets/logos/vinstitution-full.png"
-               alt="Vinstitution — Uttiṣṭhata, Jāgrata, Prāpya · ISO 9001:2015 Certified"
-               width="760" height="338" loading="lazy">
+    <div class="foot__top">
+      <div class="foot__brand">
+        <a href="../index.html" aria-label="Vinstitution — home">
+          <img src="../assets/logos/vinstitution-full.png" alt="Vinstitution — Uttiṣṭhata, Jāgrata, Prāpya · ISO 9001:2015 Certified" width="760" height="338" loading="lazy">
         </a>
-        <p class="ftr__about">Four connected platforms for Indian institutions and learners — plus the publishing studio that started it all.</p>
+        <p>Education technology for Indian institutions and learners — a campus operating system, an AI digital library, an NCERT-grounded tutor and a CBT exam engine, connected by one institutional login.</p>
       </div>
-      <div><h4>Platforms</h4><ul>
-        <li><a href="../products/vidyaverse.html">Vidyaverse</a></li>
-        <li><a href="../products/pdlms.html">PDLMS Pro</a></li>
-        <li><a href="../products/digi-classroom.html">Digi Classroom</a></li>
-        <li><a href="../products/practest.html">e-Learning Practest</a></li>
-      </ul></div>
-      <div><h4>Open an app</h4><ul>
-        <li><a href="https://vidyaverse.vinstitution.com" target="_blank" rel="noopener">vidyaverse.vinstitution.com</a></li>
-        <li><a href="https://pdlms.vinstitution.com" target="_blank" rel="noopener">pdlms.vinstitution.com</a></li>
-        <li><a href="https://dgcl.vinstitution.com" target="_blank" rel="noopener">dgcl.vinstitution.com</a></li>
-        <li><a href="https://practest.live" target="_blank" rel="noopener">practest.live</a></li>
-      </ul></div>
-      <div><h4>Company</h4><ul>
-        <li><a href="../#ecosystem">The ecosystem</a></li>
-        <li><a href="../#why">Why Vinstitution</a></li>
-        <li><a href="../#services">Publishing &amp; branding</a></li>
-        <li><a href="../#contact">Contact</a></li>
-        <li><a href="mailto:tech@vinstitution.com">tech@vinstitution.com</a></li>
-      </ul></div>
+      <div>
+        <h4>Platforms</h4>
+        <ul><li><a href="vidyaverse.html">Vidyaverse</a></li><li><a href="pdlms.html">PDLMS Pro</a></li><li><a href="digi-classroom.html">Digi Classroom</a></li><li><a href="practest.html">Practest</a></li></ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../index.html#why">Why Vinstitution</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#ecosystem">Ecosystem</a></li>
+          <li><a href="../#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach us</h4>
+        <ul>
+          <li><a href="mailto:tech@vinstitution.com">tech@vinstitution.com</a></li>
+          <li>New Delhi, India</li>
+        </ul>
+      </div>
     </div>
-    <div class="ftr__btm">
-      <span>© <span data-year>2026</span> Vinstitution. All rights reserved.</span>
-      <span class="ftr__iso">New Delhi, India</span>
+    <div class="foot__btm">
+      <span>&copy; <span data-year>2026</span> Vinstitution. All rights reserved.</span>
+      <span class="foot__iso">ISO 9001:2015 Certified</span>
     </div>
   </div>
 </footer>
+
+<a href="#top" id="to-top" class="totop" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:18px;height:18px"><path d="M12 19V5M5 12l7-7 7 7"></path></svg></a>
 
 <script src="../assets/js/main.js?v=3"></script>
 </body>

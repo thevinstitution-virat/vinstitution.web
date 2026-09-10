@@ -1,0 +1,1153 @@
+{
+ "digi-classroom": {
+  "meta": {
+   "title": "Digi Classroom — The AI Tutor That Shows Its Sources | Vinstitution",
+   "description": "Digi Classroom runs Sarvagya, an agentic RAG engine over NCERT: every answer is citation-backed and Bloom-tagged, paired with adaptive testing and offline-ready study tools for CBSE and ICSE learners, Classes 6-12.",
+   "canonical": "https://vinstitution.com/products/digi-classroom.html",
+   "og_image": "https://vinstitution.com/assets/img/og-digi-classroom.png",
+   "og_title": "Digi Classroom — The AI tutor that shows its sources",
+   "og_desc": "NCERT-grounded, Bloom-tagged, citation-backed AI tutoring with adaptive practice for CBSE &amp; ICSE, Classes 6-12."
+  },
+  "jsonld": [
+   "\n{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"Digi Classroom\",\n\"applicationCategory\":\"EducationalApplication\",\"operatingSystem\":\"Web\",\n\"url\":\"https://dgcl.vinstitution.com\",\n\"description\":\"NCERT-grounded AI tutor powered by the Sarvagya agentic RAG engine, with adaptive computer-adaptive testing and a student productivity suite for CBSE and ICSE learners in Classes 6-12.\",\n\"offers\":{\"@type\":\"AggregateOffer\",\"priceCurrency\":\"INR\",\"lowPrice\":\"0\",\"highPrice\":\"999\"},\n\"publisher\":{\"@type\":\"Organization\",\"name\":\"Vinstitution\",\"url\":\"https://vinstitution.com/\"}}\n"
+  ],
+  "hero": {
+   "crumb": [
+    "Vinstitution",
+    "Start learning free",
+    "Talk to us"
+   ],
+   "eyebrow": "Powered by Sarvagya · agentic RAG over NCERT",
+   "h1": "The AI tutor that shows its sources.",
+   "deva": "ज्ञान · अभ्यास · उत्कर्ष",
+   "lede": "NCERT-grounded answers, Bloom-tagged and citation-backed. An adaptive Practest engine and offline-ready study tools — built for CBSE &amp; ICSE learners, Classes 6–12.",
+   "raw_len": 3359
+  },
+  "sections": [
+   {
+    "cls": "sec sec--alt",
+    "eyebrow": "The platform",
+    "h2": "Everything a serious learner needs, in one place.",
+    "intro": [
+     "Cutting-edge retrieval and assessment powering a personalised, trustworthy learning experience."
+    ],
+    "cards": [
+     {
+      "tag": "Agentic RAG",
+      "h3": "AI tutoring system",
+      "meta": "",
+      "p": [
+       "Conversational AI with role-based answers, CBSE/ICSE alignment and citation-backed retrieval over the NCERT books themselves — not a scraped approximation of them."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Smart testing",
+      "h3": "Practest engine",
+      "meta": "",
+      "p": [
+       "Adaptive assessment with intelligent question generation and real-time, chapter-level performance analytics that point at the specific gap."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Organised",
+      "h3": "Structured question bank",
+      "meta": "",
+      "p": [
+       "A clean Board → Class → Subject → Chapter hierarchy with metadata tagging, so a question is always findable and always in the right context."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Adaptive",
+      "h3": "Computer-adaptive testing",
+      "meta": "",
+      "p": [
+       "CAT algorithms move difficulty up and down with performance, so a learner spends their time at the edge of what they know rather than repeating what they've mastered."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Deep insight",
+      "h3": "Bloom's-taxonomy analytics",
+      "meta": "",
+      "p": [
+       "Mastery tracked by cognitive level, with honest strength and gap reporting — remembering a definition and applying it are scored as the different skills they are."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Universal",
+      "h3": "Multi-modal learning",
+      "meta": "",
+      "p": [
+       "Visual, reading and practice modes so every learner meets the material in the way they actually think best."
+      ],
+      "li": []
+     }
+    ],
+    "loose_li": [],
+    "links": []
+   },
+   {
+    "cls": "sec",
+    "eyebrow": "How it works",
+    "h2": "From doubt to mastery in three steps.",
+    "intro": [],
+    "cards": [
+     {
+      "tag": "",
+      "h3": "Ask anything",
+      "meta": "",
+      "p": [
+       "Type a doubt in Hindi or English from any NCERT chapter, Classes 6–12."
+      ],
+      "li": []
+     },
+     {
+      "tag": "",
+      "h3": "Learn with proof",
+      "meta": "",
+      "p": [
+       "Every answer cites the exact textbook page and tags its Bloom's level, so the learner can check it and the teacher can trust it."
+      ],
+      "li": []
+     },
+     {
+      "tag": "",
+      "h3": "Practise adaptively",
+      "meta": "",
+      "p": [
+       "Practest tunes difficulty to the learner and tracks mastery until it sticks."
+      ],
+      "li": []
+     }
+    ],
+    "loose_li": [],
+    "links": []
+   },
+   {
+    "cls": "sec sec--alt",
+    "eyebrow": "Beyond the tutor",
+    "h2": "The productivity suite.",
+    "intro": [
+     "A learning app should protect focus and motivation, not just serve content. These tools — built for Indian students — do exactly that."
+    ],
+    "cards": [
+     {
+      "tag": "Gamified active recall",
+      "h3": "FlashBharat",
+      "meta": "",
+      "p": [
+       "Indian-context flashcards, live quiz battles and cultural badges that make revision something a student actually returns to."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Offline-first",
+      "h3": "OfflineOrbit",
+      "meta": "",
+      "p": [
+       "Download lessons, tests and notes, study with zero internet, and sync smartly on reconnect — because connectivity is not a given."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Smart focus mode",
+      "h3": "FocusShield",
+      "meta": "",
+      "p": [
+       "Blocks distracting apps during study, with a whitelist the student controls and an emergency escape so it never becomes a trap."
+      ],
+      "li": []
+     },
+     {
+      "tag": "AI study coach",
+      "h3": "MoodMentor",
+      "meta": "",
+      "p": [
+       "Tracks how a learner is feeling and adapts the schedule — coaching that protects motivation, not just marks."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Parent &amp; teacher view",
+      "h3": "ParentPulse",
+      "meta": "",
+      "p": [
+       "Progress insight and direct messaging so families stay in the loop without the nagging."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Syllabus-aware pomodoro",
+      "h3": "CurricuTimer",
+      "meta": "",
+      "p": [
+       "Adaptive study timers tuned to the grade and the CBSE/ICSE syllabus, with engagement tracked over the term. Plus <strong>Mitram</strong>, a focus companion that runs quick attention checks."
+      ],
+      "li": []
+     }
+    ],
+    "loose_li": [],
+    "links": []
+   },
+   {
+    "cls": "sec",
+    "eyebrow": "Pricing",
+    "h2": "Simple, transparent plans.",
+    "intro": [
+     "Every plan includes the citation-backed AI tutor."
+    ],
+    "cards": [
+     {
+      "tag": "",
+      "h3": "Try free",
+      "meta": "",
+      "p": [
+       "₹0 / 7 days",
+       "Try every feature, limited questions."
+      ],
+      "li": [
+       "15 questions total",
+       "All boards &amp; classes",
+       "No credit card"
+      ]
+     },
+     {
+      "tag": "",
+      "h3": "Basic",
+      "meta": "",
+      "p": [
+       "₹249 / month",
+       "For focused, single-subject learning."
+      ],
+      "li": [
+       "30 questions / day",
+       "1 board, 1 class",
+       "Email support"
+      ]
+     },
+     {
+      "tag": "",
+      "h3": "Classic",
+      "meta": "",
+      "p": [
+       "₹499 / month",
+       "For dedicated daily learners."
+      ],
+      "li": [
+       "60 questions / day",
+       "1 board, 1 class",
+       "Priority support"
+      ]
+     },
+     {
+      "tag": "",
+      "h3": "Pro",
+      "meta": "",
+      "p": [
+       "₹999 / month",
+       "Ultimate flexibility, all classes."
+      ],
+      "li": [
+       "150 questions / day",
+       "1 board, ALL classes",
+       "Early feature access"
+      ]
+     }
+    ],
+    "loose_li": [],
+    "links": [
+     [
+      "https://dgcl.vinstitution.com",
+      "Choose Free"
+     ],
+     [
+      "https://dgcl.vinstitution.com",
+      "Choose Basic"
+     ],
+     [
+      "https://dgcl.vinstitution.com",
+      "Choose Classic"
+     ],
+     [
+      "https://dgcl.vinstitution.com",
+      "Choose Pro"
+     ]
+    ]
+   },
+   {
+    "cls": "sec eco",
+    "eyebrow": "The ecosystem",
+    "h2": "One login. Three platforms.",
+    "intro": [
+     "Digi Classroom is the tutor in the Vinstitution trio — alongside the campus OS and the digital library."
+    ],
+    "cards": [
+     {
+      "tag": "You're here",
+      "h3": "Digi Classroom",
+      "meta": "",
+      "p": [
+       "NCERT-grounded tutoring and adaptive practice for Classes 6–12."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Identity provider",
+      "h3": "Vidyaverse",
+      "meta": "",
+      "p": [
+       "The institution operating system — admissions through to ID cards."
+      ],
+      "li": [
+       "See Vidyaverse →"
+      ]
+     },
+     {
+      "tag": "Connected",
+      "h3": "PDLMS Pro",
+      "meta": "",
+      "p": [
+       "The multi-tenant digital library of learning resources."
+      ],
+      "li": [
+       "See PDLMS Pro →"
+      ]
+     }
+    ],
+    "loose_li": [],
+    "links": [
+     [
+      "../products/vidyaverse.html",
+      "See Vidyaverse →"
+     ],
+     [
+      "../products/pdlms.html",
+      "See PDLMS Pro →"
+     ]
+    ]
+   },
+   {
+    "cls": "sec",
+    "eyebrow": "",
+    "h2": "Start learning with proof, not guesses",
+    "intro": [
+     "Free for seven days, no card required. Founding learners are onboarding now."
+    ],
+    "cards": [],
+    "loose_li": [],
+    "links": [
+     [
+      "https://dgcl.vinstitution.com",
+      "Start learning free"
+     ],
+     [
+      "../#contact",
+      "Talk to us"
+     ]
+    ]
+   }
+  ]
+ },
+ "pdlms": {
+  "meta": {
+   "title": "PDLMS Pro — AI-Powered Digital Library for Indian Institutions | Vinstitution",
+   "description": "PDLMS Pro turns every title into a reflowable EPUB, a page-accurate PDF, a natural-voice audiobook and Varta — an AI study assistant that answers only from the textbook, with paragraph-level citations.",
+   "canonical": "https://vinstitution.com/products/pdlms.html",
+   "og_image": "https://vinstitution.com/assets/img/og-pdlms.png",
+   "og_title": "PDLMS Pro — AI-Powered Digital Library",
+   "og_desc": "Read, listen, and chat with your books. Four reading modes and an AI assistant that cites the page."
+  },
+  "jsonld": [
+   "\n{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"PDLMS Pro\",\n\"applicationCategory\":\"EducationalApplication\",\"operatingSystem\":\"Web\",\n\"url\":\"https://pdlms.vinstitution.com\",\n\"description\":\"Multi-tenant AI-powered digital library management system with four reading modes and the Varta citation-grounded study assistant.\",\n\"publisher\":{\"@type\":\"Organization\",\"name\":\"Vinstitution\",\"url\":\"https://vinstitution.com/\"}}\n"
+  ],
+  "hero": {
+   "crumb": [
+    "Vinstitution",
+    "Open PDLMS Pro",
+    "Book a demo"
+   ],
+   "eyebrow": "Digital library · multi-tenant",
+   "h1": "AI-powered digital library for Indian institutions.",
+   "deva": "",
+   "lede": "Read, listen, and chat with your books. Equip students with responsive EPUBs, page-accurate PDFs, natural text-to-speech — and <strong>Varta</strong>, the study assistant that answers doubts with strict textbook citations.",
+   "raw_len": 3627
+  },
+  "sections": [
+   {
+    "cls": "sec sec--alt",
+    "eyebrow": "The reading experience",
+    "h2": "Four ways to read one book.",
+    "intro": [
+     "Upload once. Every title instantly becomes a reflowable EPUB, a page-accurate PDF, a natural-voice audiobook, and an AI you can talk to. Switch modes anytime — highlights, bookmarks and progress sync across all four."
+    ],
+    "cards": [
+     {
+      "tag": "EPUB",
+      "h3": "Reflowable, on any screen",
+      "meta": "",
+      "p": [
+       "Font size, sepia mode and a clean reading column that respects the publisher's layout. Distraction-free by design, on a laptop or a ₹8,000 phone."
+      ],
+      "li": []
+     },
+     {
+      "tag": "PDF",
+      "h3": "Page-accurate, citation-ready",
+      "meta": "",
+      "p": [
+       "The exact page a lecturer refers to, with the exact numbering. Every Varta citation links back to a page and paragraph a student can verify by eye."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Audiobook",
+      "h3": "Natural text-to-speech",
+      "meta": "",
+      "p": [
+       "Every book becomes listenable. Study at the desk, revise on the bus — progress carries back to the text when they open it again."
+      ],
+      "li": []
+     }
+    ],
+    "loose_li": [],
+    "links": []
+   },
+   {
+    "cls": "sec",
+    "eyebrow": "Varta",
+    "h2": "The book that answers back.",
+    "intro": [
+     "Most AI guesses. Varta reads your textbook and answers only from it — with a citation you can verify on the page. If it isn't in the book, Varta says so."
+    ],
+    "cards": [
+     {
+      "tag": "Trust",
+      "h3": "Paragraph-level citations",
+      "meta": "",
+      "p": [
+       "Every claim links back to the exact page and paragraph in the source book, so a student — or an examiner — can check it in seconds."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Recall",
+      "h3": "Instant flashcards",
+      "meta": "",
+      "p": [
+       "Turn any explanation into spaced-repetition cards in one tap, without leaving the page they were reading."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Practice",
+      "h3": "Exam-style practice questions",
+      "meta": "",
+      "p": [
+       "Generate questions from the chapter in front of them, pitched at the material actually covered rather than a generic bank."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Sanchika",
+      "h3": "A study archive that builds itself",
+      "meta": "",
+      "p": [
+       "Highlights, Varta explanations, annotations and flashcards collect automatically across every book — one evolving notebook to revise from."
+      ],
+      "li": []
+     },
+     {
+      "tag": "PDF Studio",
+      "h3": "A full annotation studio in the browser",
+      "meta": "",
+      "p": [
+       "Freehand ink, smart shapes, highlights, redaction, OCR search and audio notes — Drawboard-grade tools with no download, syncing to Sanchika across devices."
+      ],
+      "li": []
+     },
+     {
+      "tag": "For faculty",
+      "h3": "See what they read. Know what they skip.",
+      "meta": "",
+      "p": [
+       "Assign books to batches, then read the struggling-chapter heatmap: which pages take longest, which chapters trigger the most Varta questions, who is falling behind."
+      ],
+      "li": []
+     }
+    ],
+    "loose_li": [],
+    "links": []
+   },
+   {
+    "cls": "sec sec--alt",
+    "eyebrow": "Secure for Bharat",
+    "h2": "Enterprise-grade. Built for institutions.",
+    "intro": [
+     "From a single coaching centre to a multi-campus university, the same architecture scales without ever mixing one institution's data with another's."
+    ],
+    "cards": [
+     {
+      "tag": "Isolation",
+      "h3": "Multi-tenant by design",
+      "meta": "",
+      "p": [
+       "Every institution's data lives in its own logical boundary. One breach can never cross tenants — the separation is structural, not a query filter."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Structure",
+      "h3": "Branch hierarchy",
+      "meta": "",
+      "p": [
+       "Model campuses, branches and departments, and assign books and seats per branch rather than flattening a university into one list."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Access",
+      "h3": "Five roles, least privilege",
+      "meta": "",
+      "p": [
+       "Super Admin, Admin, Librarian, Teacher and Student — across both institutional (B2B) and independent (B2C) accounts, with SSO from Vidyaverse."
+      ],
+      "li": []
+     }
+    ],
+    "loose_li": [],
+    "links": []
+   },
+   {
+    "cls": "sec eco",
+    "eyebrow": "The ecosystem",
+    "h2": "One login from the campus dashboard.",
+    "intro": [
+     "PDLMS sits inside the Vinstitution stack. Students signed into Vidyaverse open the library without a second password, and their roles arrive with them."
+    ],
+    "cards": [
+     {
+      "tag": "Identity provider",
+      "h3": "Vidyaverse",
+      "meta": "",
+      "p": [
+       "The campus OS that issues the login and the roles the library trusts."
+      ],
+      "li": [
+       "See Vidyaverse →"
+      ]
+     },
+     {
+      "tag": "You're here",
+      "h3": "PDLMS Pro",
+      "meta": "",
+      "p": [
+       "The multi-tenant digital library, with Varta and Sanchika."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Connected",
+      "h3": "Digi Classroom",
+      "meta": "",
+      "p": [
+       "The NCERT-grounded AI tutor and adaptive practice engine."
+      ],
+      "li": [
+       "See Digi Classroom →"
+      ]
+     }
+    ],
+    "loose_li": [],
+    "links": [
+     [
+      "../products/vidyaverse.html",
+      "See Vidyaverse →"
+     ],
+     [
+      "../products/digi-classroom.html",
+      "See Digi Classroom →"
+     ]
+    ]
+   },
+   {
+    "cls": "sec",
+    "eyebrow": "",
+    "h2": "Put the whole library in their pocket",
+    "intro": [
+     "Founding institutions are onboarding now — priority setup and a direct line to the team."
+    ],
+    "cards": [],
+    "loose_li": [],
+    "links": [
+     [
+      "https://pdlms.vinstitution.com",
+      "Open PDLMS Pro"
+     ],
+     [
+      "../#contact",
+      "Book a demo"
+     ]
+    ]
+   }
+  ]
+ },
+ "practest": {
+  "meta": {
+   "title": "e-Learning Practest — Exam-Pattern CBT Mocks for SSC, Banking, RRB &amp; UPSC | Vinstitution",
+   "description": "e-Learning Practest replicates the real CBT exam hall: server-timed mocks with the exact five-state palette, section locks and negative marking of SSC, Banking, Railways, UPSC and State PCS papers, plus video courses and analytics.",
+   "canonical": "https://vinstitution.com/products/practest.html",
+   "og_image": "https://vinstitution.com/assets/img/og-practest.png",
+   "og_title": "e-Learning Practest — Practise like it's the real exam hall",
+   "og_desc": "Server-timed CBT mocks with exam-exact palette, section locks and negative marking for India's government exams."
+  },
+  "jsonld": [
+   "\n{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"e-Learning Practest\",\n\"applicationCategory\":\"EducationalApplication\",\"operatingSystem\":\"Web\",\n\"url\":\"https://practest.live\",\n\"description\":\"Exam-pattern computer-based test platform for SSC CGL, SBI PO, SBI Clerk, IBPS, RRB, UPSC and State PCS aspirants, with server-authoritative timing, all-India percentile and structured video courses.\",\n\"publisher\":{\"@type\":\"Organization\",\"name\":\"Vinstitution\",\"url\":\"https://vinstitution.com/\"}}\n"
+  ],
+  "hero": {
+   "crumb": [
+    "Vinstitution",
+    "Start preparing free",
+    "For coaching institutes"
+   ],
+   "eyebrow": "Govt-exam preparation, done properly",
+   "h1": "Practise like it's the real exam hall.",
+   "deva": "",
+   "lede": "Server-timed CBT mocks with the exact palette, section locks and negative marking of SSC, Banking, Railways, UPSC and State PCS papers — plus video courses and analytics that tell you precisely where marks are leaking.",
+   "raw_len": 3574
+  },
+  "sections": [
+   {
+    "cls": "sec sec--alt",
+    "eyebrow": "Built like the real thing",
+    "h2": "Every detail of the exam hall, replicated.",
+    "intro": [
+     "Engineered for SSC CGL, SBI PO, SBI Clerk, IBPS, Railways RRB, UPSC and State PCS aspirants across India."
+    ],
+    "cards": [
+     {
+      "tag": "The palette",
+      "h3": "Five states, exactly as SSC &amp; IBPS render them",
+      "meta": "",
+      "p": [
+       "Answered, not answered, marked for review, answered &amp; marked, not visited — the same colours, the same teardrop shape, the same section locks. When you sit the real CBT, nothing surprises you."
+      ],
+      "li": []
+     },
+     {
+      "tag": "The clock",
+      "h3": "A timer the browser cannot cheat",
+      "meta": "",
+      "p": [
+       "Timing is server-authoritative to within a second, and auto-submit fires on the server when time expires — even if the tab is closed or the laptop dies."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Resilience",
+      "h3": "Crash-safe by default",
+      "meta": "",
+      "p": [
+       "Every answer autosaves as it is marked. Internet drops mid-section, and the attempt resumes exactly where it stopped — with the clock still honest."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Analytics",
+      "h3": "Analysis that names the problem",
+      "meta": "",
+      "p": [
+       "Every submission is re-scored on the server from raw answers: accuracy, time-per-question, subject and topic breakdowns, batch percentile and rank — recomputed, never estimated."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Courses",
+      "h3": "Video courses with resume-anywhere",
+      "meta": "",
+      "p": [
+       "Modules and lessons in exam order with watched-seconds logged automatically. Close the tab mid-lecture and the player reopens within seconds of where you stopped, on any device."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Institutes",
+      "h3": "Batches and activation codes",
+      "meta": "",
+      "p": [
+       "Coaching institutes issue activation codes that unlock a batch instantly, with all-India rank and percentile computed across the cohort."
+      ],
+      "li": []
+     }
+    ],
+    "loose_li": [],
+    "links": []
+   },
+   {
+    "cls": "sec",
+    "eyebrow": "How it works",
+    "h2": "From sign-up to scorecard in three steps.",
+    "intro": [],
+    "cards": [
+     {
+      "tag": "",
+      "h3": "Register &amp; verify",
+      "meta": "",
+      "p": [
+       "Create a free account and verify email and mobile with an OTP — about two minutes."
+      ],
+      "li": []
+     },
+     {
+      "tag": "",
+      "h3": "Activate your batch",
+      "meta": "",
+      "p": [
+       "Enter the activation code from your institute, or pay online for instant access when enrolment is open."
+      ],
+      "li": []
+     },
+     {
+      "tag": "",
+      "h3": "Practise &amp; analyse",
+      "meta": "",
+      "p": [
+       "Attempt timed mocks, watch structured lessons, and track accuracy, percentile and rank after every test."
+      ],
+      "li": []
+     }
+    ],
+    "loose_li": [],
+    "links": []
+   },
+   {
+    "cls": "sec sec--alt",
+    "eyebrow": "Exams covered",
+    "h2": "India's toughest CBT papers.",
+    "intro": [],
+    "cards": [
+     {
+      "tag": "",
+      "h3": "Staff Selection",
+      "meta": "SSC",
+      "p": [],
+      "li": [
+       "SSC CGL",
+       "SSC CHSL",
+       "Tier-wise sections",
+       "Negative marking"
+      ]
+     },
+     {
+      "tag": "",
+      "h3": "Banking",
+      "meta": "IBPS · SBI",
+      "p": [],
+      "li": [
+       "SBI PO",
+       "SBI Clerk",
+       "IBPS PO &amp; Clerk",
+       "Sectional timing"
+      ]
+     },
+     {
+      "tag": "",
+      "h3": "Railways",
+      "meta": "RRB",
+      "p": [],
+      "li": [
+       "RRB NTPC",
+       "RRB Group D",
+       "Normalised scoring"
+      ]
+     },
+     {
+      "tag": "",
+      "h3": "Civil Services",
+      "meta": "UPSC",
+      "p": [],
+      "li": [
+       "Prelims pattern",
+       "CSAT",
+       "Full-length mocks"
+      ]
+     },
+     {
+      "tag": "",
+      "h3": "State PCS",
+      "meta": "STATE",
+      "p": [],
+      "li": [
+       "State-wise papers",
+       "Regional GA",
+       "Prelims pattern"
+      ]
+     },
+     {
+      "tag": "",
+      "h3": "Course library",
+      "meta": "VIDEO",
+      "p": [],
+      "li": [
+       "Quant",
+       "Reasoning",
+       "English",
+       "General Awareness",
+       "Resume-anywhere"
+      ]
+     }
+    ],
+    "loose_li": [],
+    "links": []
+   },
+   {
+    "cls": "sec eco",
+    "eyebrow": "Part of Vinstitution",
+    "h2": "The aspirant-facing arm of the same engineering.",
+    "intro": [
+     "Practest is a standalone platform for candidates and coaching institutes — built by the team behind the campus OS, the digital library and the AI tutor, and sharing their assessment engine.",
+     "Looking for a school or college platform instead? See <a href=\"../products/vidyaverse.html\" style=\"color:var(--gold)\">Vidyaverse</a>, <a href=\"../products/pdlms.html\" style=\"color:var(--gold)\">PDLMS Pro</a> and <a href=\"../products/digi-classroom.html\" style=\"color:var(--gold)\">Digi Classroom</a>."
+    ],
+    "cards": [],
+    "loose_li": [],
+    "links": [
+     [
+      "../products/vidyaverse.html",
+      "Vidyaverse"
+     ],
+     [
+      "../products/pdlms.html",
+      "PDLMS Pro"
+     ],
+     [
+      "../products/digi-classroom.html",
+      "Digi Classroom"
+     ]
+    ]
+   },
+   {
+    "cls": "sec",
+    "eyebrow": "",
+    "h2": "Your seat in the exam hall starts here",
+    "intro": [
+     "Free account, verified in minutes. Your institute's code unlocks everything."
+    ],
+    "cards": [],
+    "loose_li": [],
+    "links": [
+     [
+      "https://practest.live",
+      "Create free account"
+     ],
+     [
+      "../#contact",
+      "Talk to us about batches"
+     ]
+    ]
+   }
+  ]
+ },
+ "vidyaverse": {
+  "meta": {
+   "title": "Vidyaverse — The Campus Operating System | Vinstitution",
+   "description": "Vidyaverse runs an entire institution from one system: academics, fees, attendance, transport, hostel, documents and AI-powered WhatsApp updates to every parent. 47 modules, one login.",
+   "canonical": "https://vinstitution.com/products/vidyaverse.html",
+   "og_image": "https://vinstitution.com/assets/img/og-vidyaverse.png",
+   "og_title": "Vidyaverse — The Campus Operating System",
+   "og_desc": "47 modules, one login. Academics, fees, attendance, documents and a WhatsApp channel to every parent."
+  },
+  "jsonld": [
+   "\n{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"Vidyaverse\",\n\"applicationCategory\":\"BusinessApplication\",\"operatingSystem\":\"Web\",\n\"url\":\"https://vidyaverse.vinstitution.com\",\n\"description\":\"Institution operating system with 47 integrated modules covering academics, operations, finance, communication, documents and intelligence.\",\n\"publisher\":{\"@type\":\"Organization\",\"name\":\"Vinstitution\",\"url\":\"https://vinstitution.com/\"}}\n"
+  ],
+  "hero": {
+   "crumb": [
+    "Vinstitution",
+    "Open Vidyaverse",
+    "Book a walkthrough"
+   ],
+   "eyebrow": "Campus operating system",
+   "h1": "The operating system for modern institutions.",
+   "deva": "विद्या · एक मंच, समग्र संस्थान",
+   "lede": "Run your entire campus from one system — academics, fees, attendance, transport, documents, and AI-powered WhatsApp updates to every parent. Forty-seven modules, one login, zero silos.",
+   "raw_len": 3570
+  },
+  "sections": [
+   {
+    "cls": "sec sec--alt",
+    "eyebrow": "One platform",
+    "h2": "47 modules. One login. Zero silos.",
+    "intro": [
+     "Everything an institution runs on — academics, operations, finance, parent communication, documents and intelligence — in a single connected system. Toggle on only what you need."
+    ],
+    "cards": [
+     {
+      "tag": "",
+      "h3": "Academics",
+      "meta": "10 MODULES",
+      "p": [],
+      "li": [
+       "Student Info",
+       "Classes &amp; Sections",
+       "Attendance",
+       "Timetable",
+       "Examinations",
+       "Gradebook (CCE)",
+       "Online Tests",
+       "Assignments",
+       "AI Tutor",
+       "Live Classes"
+      ]
+     },
+     {
+      "tag": "",
+      "h3": "Operations",
+      "meta": "6 MODULES",
+      "p": [],
+      "li": [
+       "Transport + GPS",
+       "Hostel &amp; Mess",
+       "Inventory",
+       "Health &amp; Clinic",
+       "Visitor &amp; Gate Pass",
+       "Library"
+      ]
+     },
+     {
+      "tag": "",
+      "h3": "Finance",
+      "meta": "5 MODULES",
+      "p": [],
+      "li": [
+       "Fees &amp; Invoicing",
+       "Concessions &amp; Plans",
+       "Online Payments",
+       "HR &amp; Payroll",
+       "Accounting"
+      ]
+     },
+     {
+      "tag": "",
+      "h3": "Communication",
+      "meta": "5 MODULES",
+      "p": [],
+      "li": [
+       "WhatsApp Messaging",
+       "AI Inbound Replies",
+       "Voice Notes",
+       "Notices &amp; Events",
+       "Guardian Digests"
+      ]
+     },
+     {
+      "tag": "",
+      "h3": "Document Studio",
+      "meta": "8 MODULES",
+      "p": [],
+      "li": [
+       "ID Cards",
+       "Certificates",
+       "Marksheets",
+       "Hall Tickets",
+       "Transfer Certs",
+       "Portfolios",
+       "Library Cards",
+       "Group Photos"
+      ]
+     },
+     {
+      "tag": "",
+      "h3": "Intelligence",
+      "meta": "6 MODULES",
+      "p": [],
+      "li": [
+       "Admissions CRM",
+       "Reports &amp; BI",
+       "Analytics",
+       "Approvals",
+       "Alumni",
+       "Placement"
+      ]
+     }
+    ],
+    "loose_li": [],
+    "links": []
+   },
+   {
+    "cls": "sec",
+    "eyebrow": "What makes it different",
+    "h2": "The parts institutions actually feel.",
+    "intro": [],
+    "cards": [
+     {
+      "tag": "The differentiator",
+      "h3": "Every parent reached, on WhatsApp",
+      "meta": "",
+      "p": [
+       "Attendance, fees and results the moment they happen — with an AI that answers inbound questions in Hindi or English from live student data, day and night. Razorpay links sit inside the chat and the books reconcile themselves."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Document Studio",
+      "h3": "Every document, generated in one click",
+      "meta": "",
+      "p": [
+       "Pick a type — ID card, marksheet, hall ticket, transfer certificate — and Vidyaverse renders it from your institution's template, branding and live student data. Ready to print or send, in bulk."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Group photos",
+      "h3": "AI face mapping for photo day",
+      "meta": "",
+      "p": [
+       "Upload one group photo; face detection extracts each student and assigns them to the right profile. A three-day workflow collapses into about twenty minutes."
+      ],
+      "li": []
+     },
+     {
+      "tag": "One record",
+      "h3": "A dashboard that is always live",
+      "meta": "",
+      "p": [
+       "Every module writes to one shared record, so attendance, fees and admissions are never a stale export. Nothing is re-entered, and nothing drifts out of sync between departments."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Admissions",
+      "h3": "Built for the two-week rush",
+      "meta": "",
+      "p": [
+       "Bulk CSV import with approval workflows and data-status tracking, so five hundred admissions in a fortnight don't become five hundred manual entries — and ID cards follow in minutes."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Governance",
+      "h3": "Roles, consent and audit trails",
+      "meta": "",
+      "p": [
+       "Super Admin, Admin, Teacher and Student roles with least-privilege defaults. Parent messaging is consent-first with honoured opt-outs, and access is audit-logged throughout."
+      ],
+      "li": []
+     }
+    ],
+    "loose_li": [],
+    "links": []
+   },
+   {
+    "cls": "sec sec--alt",
+    "eyebrow": "How it works",
+    "h2": "From sign-up to a running campus in a day.",
+    "intro": [],
+    "cards": [
+     {
+      "tag": "",
+      "h3": "Set up your institution",
+      "meta": "",
+      "p": [
+       "Add classes, sections and students — or bulk-import from a spreadsheet. Your branding is applied everywhere automatically."
+      ],
+      "li": []
+     },
+     {
+      "tag": "",
+      "h3": "Toggle the modules you need",
+      "meta": "",
+      "p": [
+       "Start with attendance and fees; add transport or hostel later. Every module shares one database, so nothing is re-entered."
+      ],
+      "li": []
+     },
+     {
+      "tag": "",
+      "h3": "Go live with parents",
+      "meta": "",
+      "p": [
+       "Connect WhatsApp and updates start flowing. Generate ID cards, marksheets and certificates on demand."
+      ],
+      "li": []
+     }
+    ],
+    "loose_li": [],
+    "links": []
+   },
+   {
+    "cls": "sec eco",
+    "eyebrow": "The ecosystem",
+    "h2": "Vidyaverse is the identity everything else trusts.",
+    "intro": [
+     "It is the hub of the stack: sign in once and step straight into the digital library and the AI tutor, with roles and memberships carried across on Ed25519-signed OIDC tokens."
+    ],
+    "cards": [
+     {
+      "tag": "You're here · hub",
+      "h3": "Vidyaverse",
+      "meta": "",
+      "p": [
+       "The institution operating system and single sign-on that powers the whole ecosystem."
+      ],
+      "li": []
+     },
+     {
+      "tag": "Connected",
+      "h3": "PDLMS Pro",
+      "meta": "",
+      "p": [
+       "EPUB, PDF and audiobooks with the Varta AI study assistant, one tap away."
+      ],
+      "li": [
+       "See PDLMS Pro →"
+      ]
+     },
+     {
+      "tag": "Connected",
+      "h3": "Digi Classroom",
+      "meta": "",
+      "p": [
+       "Agentic RAG over NCERT with an adaptive practice-test engine."
+      ],
+      "li": [
+       "See Digi Classroom →"
+      ]
+     }
+    ],
+    "loose_li": [],
+    "links": [
+     [
+      "../products/pdlms.html",
+      "See PDLMS Pro →"
+     ],
+     [
+      "../products/digi-classroom.html",
+      "See Digi Classroom →"
+     ]
+    ]
+   },
+   {
+    "cls": "sec",
+    "eyebrow": "",
+    "h2": "Bring your whole campus into one system",
+    "intro": [
+     "Priority onboarding, founder pricing and a direct line to the team that builds it."
+    ],
+    "cards": [],
+    "loose_li": [],
+    "links": [
+     [
+      "https://vidyaverse.vinstitution.com",
+      "Open Vidyaverse"
+     ],
+     [
+      "../#contact",
+      "Book a walkthrough"
+     ]
+    ]
+   }
+  ]
+ }
+}

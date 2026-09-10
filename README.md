@@ -34,16 +34,16 @@ products/
 contact.php             enquiry handler -> tech@vinstitution.com, returns JSON
 assets/
   css/style.css         v2 design tokens + hub-page styles  (GENERATED - see below)
-  css/pages.css         component classes the product pages use, on v2 tokens
+  css/product.css       the product-page component layer, hand-maintained
   js/main.js            progressive enhancement only; the site works without it
   img/                  OG share cards, app icons
   logos/                the three logo crops (see below)
 design/
   vinstitution-v2.dc.html   the design canvas the hub page is built from
+  product-content.json      every word on the product pages (their content source)
 tools/
-  build-from-canvas.py      design canvas -> index.html + assets/css/style.css
-  build-pages-css.py        one-off: rebuilt pages.css on the v2 tokens
-  patch-product-pages.py    one-off: put products/*.html on the v2 theme
+  build-from-canvas.py      design canvas   -> index.html + assets/css/style.css
+  build-product-pages.py    product-content -> products/*.html
 htaccess-head           .htaccess minus the cPanel PHP block (assembled at deploy)
 php-handler.fallback    safety copy of that cPanel block
 deploy.sh               repo -> document root
@@ -83,6 +83,30 @@ Type is Fraunces (display) + Plus Jakarta Sans (UI) + Mukta (Devanagari).
 `main.js` serves both page styles from one bundle: the hub page's hooks
 (`#theme-toggle`, `#mnav`, `.mock-tab`, `.cell`, `[data-rv]`) and the product
 pages' older ones (`.burger`, `.mnav.is-open`, `.rv`, `.vbar`).
+
+### Product pages
+
+**`products/*.html` are generated too.** Their copy lives in
+`design/product-content.json` and the layout lives in `tools/build-product-pages.py`:
+
+```
+python tools/build-product-pages.py
+```
+
+The canvas only ever described the hub page, so the product layout is extrapolated
+from its vocabulary - same section rhythm (eyebrow + rule + Fraunces h2), same card
+treatment, same motion - but written as real classes in `assets/css/product.css`
+rather than inline styles. To change wording, edit the JSON. To change layout, edit
+the builder.
+
+Each page sets one attribute, `data-acc="vv|pd|dg|pt"` on `<html>`, and every accent
+on the page follows: buttons, the h1 underline, the eyebrow, card hover borders, the
+hero glow, the step numbers, the current nav item.
+
+The hero panel on each page is a working mock-UI, and it deliberately reuses the same
+hooks `main.js` already drives for the hub page - `.mock-tab` + `[data-panel]`,
+`.mock-q`, `.cell`, `#pd-play`, `#exam-time`. Adding a new one means emitting that
+markup, not writing new JavaScript.
 
 ### Logo
 
