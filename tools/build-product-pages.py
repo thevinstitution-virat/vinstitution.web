@@ -12,6 +12,8 @@ import io, json, os, re
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 VER = "3"
 content = json.load(io.open(os.path.join(ROOT, "design", "product-content.json"), encoding="utf-8"))
+# Corporate identity, shared with build-from-canvas.py so the footers match.
+CO = json.load(io.open(os.path.join(ROOT, "design", "company.json"), encoding="utf-8"))
 
 def fix_href(h):
     """the v1 pages wrote sibling links as ../products/x.html; from products/ that is just x.html"""
@@ -415,8 +417,13 @@ def build(key):
       </div>
     </div>
     <div class="foot__btm">
-      <span>&copy; <span data-year>2026</span> Vinstitution. All rights reserved.</span>
-      <span class="foot__iso">ISO 9001:2015 Certified</span>
+      <span>&copy; <span data-year>2026</span> {legal_short} All rights reserved.</span>
+      <span class="foot__iso">{iso}</span>
+    </div>
+    <div class="foot__legal">
+      <p><strong>{relationship}</strong></p>
+      <p>PAN {pan} &nbsp;&middot;&nbsp; GSTIN {gstin}</p>
+      <p>Designed by <a href="{credit_url}" target="_blank" rel="noopener">VGraphics.in</a></p>
     </div>
   </div>
 </footer>
@@ -440,6 +447,9 @@ def build(key):
         lede=hero["lede"], app=cfg["app"], app_label=cfg["app_label"],
         url_hint=cfg["url_hint"], panel=PANELS[cfg["panel"]](),
         facts=facts, sections="\n\n".join(body_secs),
+        legal_short=CO["legal_entity_short"], iso=CO["iso"],
+        relationship=CO["relationship"],
+        pan=CO["pan"], gstin=CO["gstin"], credit_url=CO["credit_url"],
         sun=svg("sun", 19, "1.9"), moon=svg("moon", 19, "1.9"), menu=svg("menu", 20),
         out=svg("arrow_out", 16), up=svg("up", 18, "2.2"))
 

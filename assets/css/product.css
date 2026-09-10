@@ -222,6 +222,13 @@
 .foot__iso{display:inline-flex;align-items:center;gap:8px}
 .foot__iso::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ok);display:block}
 
+.foot__legal{margin-top:20px;padding-top:18px;border-top:1px solid var(--band-line);
+  text-align:center;font-size:12.5px;line-height:1.7;color:var(--band-body);opacity:.85}
+.foot__legal p{margin:0}
+.foot__legal p + p{margin-top:5px}
+.foot__legal strong{color:var(--band-ink);font-weight:700}
+.foot__legal a{color:var(--band-ink)}
+
 .totop{position:fixed;right:20px;bottom:20px;z-index:90;width:48px;height:48px;border-radius:100px;
   display:none;place-items:center;background:var(--surface);border:1px solid var(--line-2);
   color:var(--ink);box-shadow:var(--sh2);transition:transform .28s,box-shadow .28s,color .28s}

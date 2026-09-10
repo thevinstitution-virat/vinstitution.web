@@ -1,12 +1,15 @@
 # Convert the Claude Design Canvas spec (.dc.html) into the static Vinstitution site.
 # Mechanical transform: DSL -> plain HTML + CSS classes + vanilla JS hooks.
-import io, os, re
+import io, os, re, json
 
 SRC  = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "design", "vinstitution-v2.dc.html")
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 VER  = "3"
 
 src = io.open(SRC, encoding="utf-8").read()
+# Corporate identity for the footer. build-product-pages.py reads the same file,
+# so the legal entity, tax registrations and address cannot drift between pages.
+CO = json.load(io.open(os.path.join(ROOT, "design", "company.json"), encoding="utf-8"))
 
 # ---------------------------------------------------------------- 1. helmet CSS
 base_css = re.search(r"<style>(.*?)</style>", src, re.S).group(1).strip("\n")
@@ -179,6 +182,35 @@ if _acc["i"] != 4:
 
 body = re.sub(r'[ ]{2,}(?=[a-zA-Z-]+=")', " ", body)   # tidy gaps left by stripped handlers
 
+# --- corporate identity in the footer --------------------------------------
+# The canvas footer ends at a copyright line. The operating company, its tax
+# registrations and the registered address belong there too. They come from
+# design/company.json, which the product-page builder reads as well, so the
+# two footers cannot drift apart.
+_FOOT_OLD = '<span>© <span id="year">2026</span> Vinstitution. All rights reserved.</span>'
+if _FOOT_OLD not in body:
+    raise SystemExit("footer copyright line not found - has the canvas changed?")
+body = body.replace(
+    _FOOT_OLD,
+    # the short name already ends in "Ltd." - do not add a second full stop
+    '<span>© <span id="year">2026</span> ' + CO["legal_entity_short"] + ' All rights reserved.</span>',
+    1)
+
+_LEGAL = (
+    '<div style="margin-top:22px;padding-top:20px;border-top:1px solid var(--band-line);'
+    'text-align:center;font-size:12.5px;line-height:1.7;color:#6E7A8C">'
+    '<p style="margin:0"><strong style="color:#8F9BAC;font-weight:700">' + CO["relationship"] + '</strong></p>'
+    '<p style="margin:5px 0 0">PAN ' + CO["pan"] + ' &nbsp;·&nbsp; GSTIN ' + CO["gstin"]
+    + ' &nbsp;·&nbsp; ' + CO["iso"] + '</p>'
+    '<p style="margin:5px 0 0">Designed by <a href="' + CO["credit_url"] + '" target="_blank" '
+    'rel="noopener" style="color:#8F9BAC">VGraphics.in</a></p>'
+    '</div>')
+
+_TAIL = "\n    </div>\n  </div>\n</footer>"
+if _TAIL not in body:
+    raise SystemExit("footer tail not found - has the canvas changed?")
+body = body.replace(_TAIL, "\n    </div>\n" + _LEGAL + "\n  </div>\n</footer>", 1)
+
 # ---------------------------------------------------------------------------
 # The mock-UI panels show invented figures. Label them so nobody reads them as
 # real institution data: drop the "LIVE" chip, badge every browser chrome with
@@ -320,7 +352,9 @@ io.open(os.path.join(ROOT, "assets/css/style.css"), "w", encoding="utf-8", newli
 # ---------------------------------------------------------------- 8. index.html
 old = io.open(os.path.join(ROOT, "index.html"), encoding="utf-8").read()
 head = old[old.index("<head>") + len("<head>"):old.index("</head>")]
-head = re.sub(r'\n<link rel="stylesheet" href="assets/css/style\.css[^"]*">', "", head)
+# Strip every stylesheet link this builder re-adds below. Missing one here means
+# it accumulates a fresh copy on every run, which is exactly what ishan.css did.
+head = re.sub(r'\n<link rel="stylesheet" href="(?:assets/css/style|ishan/ishan)\.css[^"]*">', "", head)
 # strip a theme-boot block from a previous run so repeated builds stay idempotent
 head = re.sub(r"\n<script>\s*\(function\(\)\{\s*try\{\s*var s = localStorage\.getItem\('vin-theme'\).*?</script>",
               "", head, flags=re.S)
