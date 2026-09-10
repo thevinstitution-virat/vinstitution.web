@@ -131,7 +131,12 @@ if (!$trusted) {
 }
 
 // Only now that the caller is vetted is it safe to report configuration state.
-if ($apiKey === '') fail(503, 'Ishan is not configured yet.');
+// The wording is for a visitor, not an operator: this endpoint is publicly
+// reachable the moment the site deploys, which may be before the key lands.
+if ($apiKey === '') {
+    error_log('ishan chat.php: no api_key in ' . $cfgFile);
+    fail(503, 'I am still being set up here. In the meantime the team is on WhatsApp at +91 93109 59596, or ' . TEAM_EMAIL . ' — they reply within one working day.');
+}
 
 // Same reasoning for the budget: a stranger should not be able to read our
 // spend state either.
