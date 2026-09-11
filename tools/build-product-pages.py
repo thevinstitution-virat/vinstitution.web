@@ -10,7 +10,7 @@
 import io, json, os, re
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-VER = "4"
+VER = "5"
 content = json.load(io.open(os.path.join(ROOT, "design", "product-content.json"), encoding="utf-8"))
 # Corporate identity, shared with build-from-canvas.py so the footers match.
 CO = json.load(io.open(os.path.join(ROOT, "design", "company.json"), encoding="utf-8"))

@@ -177,7 +177,7 @@
     box.innerHTML =
       '<h4></h4><p></p>' +
       '<input type="text" name="name" placeholder="Your name" autocomplete="name" required>' +
-      '<input type="email" name="email" placeholder="Email" autocomplete="email" required>' +
+      '<input type="email" name="email" placeholder="Email (optional)" autocomplete="email">' +
       '<input type="tel" name="phone" placeholder="Phone" autocomplete="tel" required>' +
       '<button type="button"></button>' +
       '<p class="ishan__err" hidden></p>';
@@ -192,13 +192,18 @@
       var email = box.querySelector('[name=email]').value.trim();
       var phone = box.querySelector('[name=phone]').value.trim();
       err.hidden = true;
-      if (!name)  { err.textContent = 'Please add your name.';  err.hidden = false; return; }
-      if (!email) { err.textContent = 'Please add your email.'; err.hidden = false; return; }
+      if (!name)  { err.textContent = 'Please add your name.'; err.hidden = false; return; }
       if (!phone) { err.textContent = 'Please add your phone number.'; err.hidden = false; return; }
       // A required field that accepts "x" is not really required. Count digits
       // rather than pattern-matching, so +91 / spaces / dashes all pass.
       if (phone.replace(/\D/g, '').length < 8) {
         err.textContent = 'Please add a valid phone number.'; err.hidden = false; return;
+      }
+      // The email is optional, but a typo in one that was offered is worth catching
+      // now rather than discovering it when a reply bounces.
+      if (email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+        err.textContent = 'That email does not look right — check it, or leave it blank.';
+        err.hidden = false; return;
       }
 
       btn.disabled = true;

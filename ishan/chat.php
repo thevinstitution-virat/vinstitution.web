@@ -392,7 +392,7 @@ $out = ['reply' => $reply, 'ref' => $ref];
 if ($wantsLead) {
     $out['lead'] = [
         'title' => 'Let the team pick this up',
-        'note'  => 'Your name, email and phone — all three, so the team can reach you either way. We reply within one working day.',
+        'note'  => 'Your name and phone number. Add an email too if you would rather we wrote. We reply within one working day.',
         'cta'   => 'Send to the team',
     ];
 }

@@ -4,7 +4,7 @@ import io, os, re, json
 
 SRC  = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "design", "vinstitution-v2.dc.html")
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-VER  = "4"
+VER  = "5"
 
 src = io.open(SRC, encoding="utf-8").read()
 # Corporate identity for the footer. build-product-pages.py reads the same file,

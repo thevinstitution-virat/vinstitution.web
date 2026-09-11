@@ -43,8 +43,11 @@ $message  = mb_substr(trim((string)($_POST['message'] ?? '')), 0, 5000);
 
 $errors = [];
 if ($name === '')    { $errors[] = 'Name is required.'; }
-if ($email === '')   { $errors[] = 'Email is required.'; }
-elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) { $errors[] = 'Please provide a valid email address.'; }
+// One reachable contact is required, not specifically an email: the Ishan AI
+// lead card asks for a phone number and leaves the email optional. An email
+// that IS supplied still has to be a real one.
+if ($email === '' && $phone === '') { $errors[] = 'Please leave an email address or a phone number.'; }
+if ($email !== '' && !filter_var($email, FILTER_VALIDATE_EMAIL)) { $errors[] = 'Please provide a valid email address.'; }
 if ($message === '') { $errors[] = 'Message is required.'; }
 if ($errors) {
     fail(400, implode(' ', $errors));
@@ -55,8 +58,8 @@ $lines = [
     str_repeat('=', 36),
     '',
     'Name:        ' . $name,
-    'Email:       ' . $email,
 ];
+if ($email !== '')    { $lines[] = 'Email:       ' . $email; }
 if ($org !== '')      { $lines[] = 'Institution: ' . $org; }
 if ($phone !== '')    { $lines[] = 'Phone:       ' . $phone; }
 if ($interest !== '') { $lines[] = 'Interest:    ' . $interest; }
@@ -70,14 +73,16 @@ $lines[] = 'Sent ' . date('d M Y, H:i') . ' IST from ' . ($_SERVER['REMOTE_ADDR'
 $body    = implode("\n", $lines);
 $subject = '=?UTF-8?B?' . base64_encode('Enquiry — ' . ($interest !== '' ? $interest : 'vinstitution.com')) . '?=';
 
-$headers = implode("\r\n", [
-    'From: Vinstitution Website <' . MAIL_FROM . '>',
-    'Reply-To: ' . $email,
+$headerLines = ['From: Vinstitution Website <' . MAIL_FROM . '>'];
+// Only set Reply-To when there is an address to reply to. "Reply-To: " with an
+// empty value is a malformed header, and some MTAs reject the whole message.
+if ($email !== '') { $headerLines[] = 'Reply-To: ' . $email; }
+$headers = implode("\r\n", array_merge($headerLines, [
     'MIME-Version: 1.0',
     'Content-Type: text/plain; charset=UTF-8',
     'Content-Transfer-Encoding: 8bit',
     'X-Mailer: Vinstitution-Site/1.0',
-]);
+]));
 
 // Warnings are suppressed so a transport failure cannot corrupt the JSON body.
 if (@mail(MAIL_TO, $subject, $body, $headers, '-f' . MAIL_FROM)) {
