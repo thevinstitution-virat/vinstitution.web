@@ -178,7 +178,7 @@
       '<h4></h4><p></p>' +
       '<input type="text" name="name" placeholder="Your name" autocomplete="name" required>' +
       '<input type="email" name="email" placeholder="Email" autocomplete="email" required>' +
-      '<input type="tel" name="phone" placeholder="Phone (optional)" autocomplete="tel">' +
+      '<input type="tel" name="phone" placeholder="Phone" autocomplete="tel" required>' +
       '<button type="button"></button>' +
       '<p class="ishan__err" hidden></p>';
     box.querySelector('h4').textContent = spec.title || 'Let the team pick this up';
@@ -194,6 +194,12 @@
       err.hidden = true;
       if (!name)  { err.textContent = 'Please add your name.';  err.hidden = false; return; }
       if (!email) { err.textContent = 'Please add your email.'; err.hidden = false; return; }
+      if (!phone) { err.textContent = 'Please add your phone number.'; err.hidden = false; return; }
+      // A required field that accepts "x" is not really required. Count digits
+      // rather than pattern-matching, so +91 / spaces / dashes all pass.
+      if (phone.replace(/\D/g, '').length < 8) {
+        err.textContent = 'Please add a valid phone number.'; err.hidden = false; return;
+      }
 
       btn.disabled = true;
       btn.textContent = 'Sending…';
