@@ -1,15 +1,15 @@
 {
  "digi-classroom": {
   "meta": {
-   "title": "Digi Classroom — The AI Tutor That Shows Its Sources | Vinstitution",
-   "description": "Digi Classroom runs Sarvagya, an agentic RAG engine over NCERT: every answer is citation-backed and Bloom-tagged, paired with adaptive testing and offline-ready study tools for CBSE and ICSE learners, Classes 6-12.",
+   "title": "Study Buddy (formerly Digi Classroom) — AI Tutor | Vinstitution",
+   "description": "Study Buddy runs Sarvagya, an agentic RAG engine over NCERT: every answer is citation-backed and Bloom-tagged, paired with adaptive testing and offline-ready study tools for CBSE and ICSE learners, Classes 6-12.",
    "canonical": "https://vinstitution.com/products/digi-classroom.html",
    "og_image": "https://vinstitution.com/assets/img/og-digi-classroom.png",
-   "og_title": "Digi Classroom — The AI tutor that shows its sources",
+   "og_title": "Study Buddy — The AI tutor that shows its sources",
    "og_desc": "NCERT-grounded, Bloom-tagged, citation-backed AI tutoring with adaptive practice for CBSE &amp; ICSE, Classes 6-12."
   },
   "jsonld": [
-   "\n{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"Digi Classroom\",\n\"applicationCategory\":\"EducationalApplication\",\"operatingSystem\":\"Web\",\n\"url\":\"https://dgcl.vinstitution.com\",\n\"description\":\"NCERT-grounded AI tutor powered by the Sarvagya agentic RAG engine, with adaptive computer-adaptive testing and a student productivity suite for CBSE and ICSE learners in Classes 6-12.\",\n\"offers\":{\"@type\":\"AggregateOffer\",\"priceCurrency\":\"INR\",\"lowPrice\":\"0\",\"highPrice\":\"999\"},\n\"publisher\":{\"@type\":\"Organization\",\"name\":\"Vinstitution\",\"url\":\"https://vinstitution.com/\"}}\n"
+   "\n{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"Study Buddy\",\n\"applicationCategory\":\"EducationalApplication\",\"operatingSystem\":\"Web\",\n\"url\":\"https://dgcl.vinstitution.com\",\n\"description\":\"NCERT-grounded AI tutor powered by the Sarvagya agentic RAG engine, with adaptive computer-adaptive testing and a student productivity suite for CBSE and ICSE learners in Classes 6-12.\",\n\"offers\":{\"@type\":\"AggregateOffer\",\"priceCurrency\":\"INR\",\"lowPrice\":\"0\",\"highPrice\":\"999\"},\n\"publisher\":{\"@type\":\"Organization\",\"name\":\"Vinstitution\",\"url\":\"https://vinstitution.com/\"}}\n"
   ],
   "hero": {
    "crumb": [
@@ -283,12 +283,12 @@
     "eyebrow": "The ecosystem",
     "h2": "One login. Three platforms.",
     "intro": [
-     "Digi Classroom is the tutor in the Vinstitution trio — alongside the campus OS and the digital library."
+     "Study Buddy is the tutor in the Vinstitution trio — alongside the campus OS and the digital library."
     ],
     "cards": [
      {
       "tag": "You're here",
-      "h3": "Digi Classroom",
+      "h3": "Study Buddy",
       "meta": "",
       "p": [
        "NCERT-grounded tutoring and adaptive practice for Classes 6–12."
@@ -308,13 +308,13 @@
      },
      {
       "tag": "Connected",
-      "h3": "PDLMS Pro",
+      "h3": "Book Buddy",
       "meta": "",
       "p": [
        "The multi-tenant digital library of learning resources."
       ],
       "li": [
-       "See PDLMS Pro →"
+       "See Book Buddy →"
       ]
      }
     ],
@@ -326,7 +326,7 @@
      ],
      [
       "../products/pdlms.html",
-      "See PDLMS Pro →"
+      "See Book Buddy →"
      ]
     ]
    },
@@ -354,20 +354,20 @@
  },
  "pdlms": {
   "meta": {
-   "title": "PDLMS Pro — AI-Powered Digital Library for Indian Institutions | Vinstitution",
-   "description": "PDLMS Pro turns every title into a reflowable EPUB, a page-accurate PDF, a natural-voice audiobook and Varta — an AI study assistant that answers only from the textbook, with paragraph-level citations.",
+   "title": "Book Buddy (formerly PDLMS Pro) — AI Digital Library | Vinstitution",
+   "description": "Book Buddy turns every title into a reflowable EPUB, a page-accurate PDF, a natural-voice audiobook and Varta — an AI study assistant that answers only from the textbook, with paragraph-level citations.",
    "canonical": "https://vinstitution.com/products/pdlms.html",
    "og_image": "https://vinstitution.com/assets/img/og-pdlms.png",
-   "og_title": "PDLMS Pro — AI-Powered Digital Library",
+   "og_title": "Book Buddy — AI-Powered Digital Library",
    "og_desc": "Read, listen, and chat with your books. Four reading modes and an AI assistant that cites the page."
   },
   "jsonld": [
-   "\n{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"PDLMS Pro\",\n\"applicationCategory\":\"EducationalApplication\",\"operatingSystem\":\"Web\",\n\"url\":\"https://pdlms.vinstitution.com\",\n\"description\":\"Multi-tenant AI-powered digital library management system with four reading modes and the Varta citation-grounded study assistant.\",\n\"publisher\":{\"@type\":\"Organization\",\"name\":\"Vinstitution\",\"url\":\"https://vinstitution.com/\"}}\n"
+   "\n{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"Book Buddy\",\n\"applicationCategory\":\"EducationalApplication\",\"operatingSystem\":\"Web\",\n\"url\":\"https://pdlms.vinstitution.com\",\n\"description\":\"Multi-tenant AI-powered digital library management system with four reading modes and the Varta citation-grounded study assistant.\",\n\"publisher\":{\"@type\":\"Organization\",\"name\":\"Vinstitution\",\"url\":\"https://vinstitution.com/\"}}\n"
   ],
   "hero": {
    "crumb": [
     "Vinstitution",
-    "Open PDLMS Pro",
+    "Open Book Buddy",
     "Book a demo"
    ],
    "eyebrow": "Digital library · multi-tenant",
@@ -526,7 +526,7 @@
     "eyebrow": "The ecosystem",
     "h2": "One login from the campus dashboard.",
     "intro": [
-     "PDLMS sits inside the Vinstitution stack. Students signed into Vidyaverse open the library without a second password, and their roles arrive with them."
+     "Book Buddy sits inside the Vinstitution stack. Students signed into Vidyaverse open the library without a second password, and their roles arrive with them."
     ],
     "cards": [
      {
@@ -542,7 +542,7 @@
      },
      {
       "tag": "You're here",
-      "h3": "PDLMS Pro",
+      "h3": "Book Buddy",
       "meta": "",
       "p": [
        "The multi-tenant digital library, with Varta and Sanchika."
@@ -551,13 +551,13 @@
      },
      {
       "tag": "Connected",
-      "h3": "Digi Classroom",
+      "h3": "Study Buddy",
       "meta": "",
       "p": [
        "The NCERT-grounded AI tutor and adaptive practice engine."
       ],
       "li": [
-       "See Digi Classroom →"
+       "See Study Buddy →"
       ]
      }
     ],
@@ -569,7 +569,7 @@
      ],
      [
       "../products/digi-classroom.html",
-      "See Digi Classroom →"
+      "See Study Buddy →"
      ]
     ]
    },
@@ -585,7 +585,7 @@
     "links": [
      [
       "https://pdlms.vinstitution.com",
-      "Open PDLMS Pro"
+      "Open Book Buddy"
      ],
      [
       "../#contact",
@@ -809,7 +809,7 @@
     "h2": "The aspirant-facing arm of the same engineering.",
     "intro": [
      "Practest is a standalone platform for candidates and coaching institutes — built by the team behind the campus OS, the digital library and the AI tutor, and sharing their assessment engine.",
-     "Looking for a school or college platform instead? See <a href=\"../products/vidyaverse.html\" style=\"color:var(--gold)\">Vidyaverse</a>, <a href=\"../products/pdlms.html\" style=\"color:var(--gold)\">PDLMS Pro</a> and <a href=\"../products/digi-classroom.html\" style=\"color:var(--gold)\">Digi Classroom</a>."
+     "Looking for a school or college platform instead? See <a href=\"../products/vidyaverse.html\" style=\"color:var(--gold)\">Vidyaverse</a>, <a href=\"../products/pdlms.html\" style=\"color:var(--gold)\">Book Buddy</a> and <a href=\"../products/digi-classroom.html\" style=\"color:var(--gold)\">Study Buddy</a>."
     ],
     "cards": [],
     "loose_li": [],
@@ -820,11 +820,11 @@
      ],
      [
       "../products/pdlms.html",
-      "PDLMS Pro"
+      "Book Buddy"
      ],
      [
       "../products/digi-classroom.html",
-      "Digi Classroom"
+      "Study Buddy"
      ]
     ]
    },
@@ -1095,24 +1095,24 @@
      },
      {
       "tag": "Connected",
-      "h3": "PDLMS Pro",
+      "h3": "Book Buddy",
       "meta": "",
       "p": [
        "EPUB, PDF and audiobooks with the Varta AI study assistant, one tap away."
       ],
       "li": [
-       "See PDLMS Pro →"
+       "See Book Buddy →"
       ]
      },
      {
       "tag": "Connected",
-      "h3": "Digi Classroom",
+      "h3": "Study Buddy",
       "meta": "",
       "p": [
        "Agentic RAG over NCERT with an adaptive practice-test engine."
       ],
       "li": [
-       "See Digi Classroom →"
+       "See Study Buddy →"
       ]
      }
     ],
@@ -1120,11 +1120,11 @@
     "links": [
      [
       "../products/pdlms.html",
-      "See PDLMS Pro →"
+      "See Book Buddy →"
      ],
      [
       "../products/digi-classroom.html",
-      "See Digi Classroom →"
+      "See Study Buddy →"
      ]
     ]
    },

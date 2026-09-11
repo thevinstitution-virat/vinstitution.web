@@ -13,8 +13,8 @@ Live at **https://vinstitution.com**
 | Product | Live at | What it is |
 |---|---|---|
 | **Vidyaverse** | [vidyaverse.vinstitution.com](https://vidyaverse.vinstitution.com) | Campus operating system — 47 modules, one login. Also the OIDC identity provider the others sign in against. |
-| **PDLMS Pro** | [pdlms.vinstitution.com](https://pdlms.vinstitution.com) | Multi-tenant AI digital library. Four reading modes plus *Varta*, which answers only from the book with paragraph-level citations. |
-| **Digi Classroom** | [dgcl.vinstitution.com](https://dgcl.vinstitution.com) | NCERT-grounded AI tutor on the *Sarvagya* agentic-RAG engine. Citation-backed, Bloom-tagged, CBSE & ICSE Classes 6–12. |
+| **Book Buddy** | [pdlms.vinstitution.com](https://pdlms.vinstitution.com) | Multi-tenant AI digital library. Four reading modes plus *Varta*, which answers only from the book with paragraph-level citations. |
+| **Study Buddy** | [dgcl.vinstitution.com](https://dgcl.vinstitution.com) | NCERT-grounded AI tutor on the *Sarvagya* agentic-RAG engine. Citation-backed, Bloom-tagged, CBSE & ICSE Classes 6–12. |
 | **e-Learning Practest** | [practest.live](https://practest.live) | Exam-pattern CBT mocks for SSC, Banking, Railways, UPSC and State PCS. |
 
 > **`practest.in` is not in use** — it is registered but has no DNS record. Always link

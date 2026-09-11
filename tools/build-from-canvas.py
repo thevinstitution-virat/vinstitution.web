@@ -200,7 +200,8 @@ _LEGAL = (
     '<div style="margin-top:22px;padding-top:20px;border-top:1px solid var(--band-line);'
     'text-align:center;font-size:12.5px;line-height:1.7;color:#6E7A8C">'
     '<p style="margin:0"><strong style="color:#8F9BAC;font-weight:700">' + CO["relationship"] + '</strong></p>'
-    '<p style="margin:5px 0 0">PAN ' + CO["pan"] + ' &nbsp;·&nbsp; GSTIN ' + CO["gstin"]
+    '<p style="margin:5px 0 0">CIN ' + CO["cin"] + ' &nbsp;·&nbsp; PAN ' + CO["pan"]
+    + ' &nbsp;·&nbsp; GSTIN ' + CO["gstin"] + ' &nbsp;·&nbsp; Udyam ' + CO["udyam"]
     + ' &nbsp;·&nbsp; ' + CO["iso"] + '</p>'
     '<p style="margin:5px 0 0">Designed by <a href="' + CO["credit_url"] + '" target="_blank" '
     'rel="noopener" style="color:#8F9BAC">VGraphics.in</a></p>'

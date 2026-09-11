@@ -1,27 +1,23 @@
 {
-  "_comment": "Corporate identity shown in the footer of every page. Both builders read this file, so these facts live in exactly one place. Source: the Vidyaverse footer, adapted — on vinstitution.com Vinstitution IS the segment, so the wording differs from the Vidyaverse site's 'brand of the Vinstitution segment'.",
-
-  "_address_conflict": "UNRESOLVED as of 2026-09-11. The Vidyaverse footer says 2nd Floor / Property No. 44 / 110090. This site already says First Floor / 110001 in BOTH its JSON-LD schema and its contact section, and 110001 is the real Connaught Place pincode. The address is therefore NOT rendered in the footer strip until the correct version is confirmed; fix all three places together.",
-
+  "_comment": "Corporate identity shown in the footer of every page. Both builders read this file, so these facts live in exactly one place. Confirmed against the DPIIT Startup India application, 2026-09-11.",
   "legal_entity": "VPD Vastus Ventures Private Limited",
   "legal_entity_short": "VPD Vastus Ventures Pvt. Ltd.",
   "relationship": "Vinstitution is a segment of VPD Vastus Ventures Private Limited.",
-
+  "cin": "U58111DL2026PTC467107",
   "pan": "AAMCV2938B",
   "gstin": "07AAMCV2938B1ZA",
+  "udyam": "UDYAM-DL-03-0083001",
   "iso": "ISO 9001:2015 Certified",
-
+  "incorporated": "30 May 2026, New Delhi",
   "address_lines": [
-    "Vinstitution, 2nd Floor, Property No. 44",
-    "Regal Building, Connaught Place",
-    "New Delhi — 110090"
+    "44, 2nd Floor, Regal Building",
+    "Connaught Place",
+    "New Delhi 110001"
   ],
-  "address_one_line": "2nd Floor, Property No. 44, Regal Building, Connaught Place, New Delhi — 110090",
-
+  "address_one_line": "44, 2nd Floor, Regal Building, Connaught Place, New Delhi 110001",
   "phone_display": "+91 93109 59596",
   "phone_href": "+919310959596",
   "email": "tech@vinstitution.com",
-
   "credit": "Designed by VGraphics.in",
   "credit_url": "https://vgraphics.in"
 }

@@ -305,7 +305,7 @@
       return;
     }
     bubble('Hi, I\'m Ishan — I look after questions about Vinstitution. ' +
-           'We build four platforms: Vidyaverse, PDLMS Pro, Digi Classroom and Practest. ' +
+           'We build four platforms: Vidyaverse, Book Buddy, Study Buddy and Practest. ' +
            'What would you like to know?\n\nआप हिन्दी में भी पूछ सकते हैं.', 'bot');
     chips(['What is Vidyaverse?', 'How does the single login work?',
            'हिन्दी में बात करें', 'Book a demo']);

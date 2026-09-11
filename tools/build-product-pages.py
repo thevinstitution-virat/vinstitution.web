@@ -27,6 +27,7 @@ def clean_links(html):
 # --------------------------------------------------------------- per product
 PRODUCTS = {
     "vidyaverse": dict(
+        formerly=None,
         acc="vv", name="Vidyaverse", app="https://vidyaverse.vinstitution.com",
         app_label="Open Vidyaverse", url_hint="vidyaverse.vinstitution.com / dashboard",
         em="operating system",
@@ -34,20 +35,23 @@ PRODUCTS = {
                ("1", "Institutional login"), ("ISO 9001", "2015 certified")],
         panel="tabs_vv"),
     "pdlms": dict(
-        acc="pd", name="PDLMS Pro", app="https://pdlms.vinstitution.com",
-        app_label="Open PDLMS Pro", url_hint="pdlms.vinstitution.com / reader",
+        formerly="PDLMS Pro",
+        acc="pd", name="Book Buddy", app="https://pdlms.vinstitution.com",
+        app_label="Open Book Buddy", url_hint="pdlms.vinstitution.com / reader",
         em="digital library",
         facts=[("4", "Ways to read a book"), ("Varta", "Cites the paragraph"),
                ("Multi-tenant", "Per-institution libraries"), ("SSO", "From Vidyaverse")],
         panel="tabs_pd"),
     "digi-classroom": dict(
-        acc="dg", name="Digi Classroom", app="https://dgcl.vinstitution.com",
-        app_label="Open Digi Classroom", url_hint="dgcl.vinstitution.com / ask",
+        formerly="Digi Classroom",
+        acc="dg", name="Study Buddy", app="https://dgcl.vinstitution.com",
+        app_label="Open Study Buddy", url_hint="dgcl.vinstitution.com / ask",
         em="shows its sources",
         facts=[("6–12", "Classes covered"), ("NCERT", "Grounded answers"),
                ("Sarvagya", "Agentic RAG engine"), ("CBSE &amp; ICSE", "Boards")],
         panel="ask_dg"),
     "practest": dict(
+        formerly=None,
         acc="pt", name="e-Learning Practest", app="https://practest.live",
         app_label="Open Practest", url_hint="practest.live / mock-test",
         em="the real exam hall",
@@ -56,8 +60,8 @@ PRODUCTS = {
         panel="exam_pt"),
 }
 ORDER = ["vidyaverse", "pdlms", "digi-classroom", "practest"]
-NAV = [("vidyaverse", "Vidyaverse"), ("pdlms", "PDLMS Pro"),
-       ("digi-classroom", "Digi Classroom"), ("practest", "Practest")]
+NAV = [("vidyaverse", "Vidyaverse"), ("pdlms", "Book Buddy"),
+       ("digi-classroom", "Study Buddy"), ("practest", "Practest")]
 
 ICON = {
  "arrow_out": '<path d="M7 17 17 7M9 7h8v8"></path>',
@@ -363,6 +367,7 @@ def build(key):
       <div style="min-width:0">
         <span class="eyeb">{eyebrow}</span>
         <h1 class="h1">{h1}</h1>
+        {formerly}
         {deva}
         <p class="plede">{lede}</p>
         <div class="pcta">
@@ -422,7 +427,7 @@ def build(key):
     </div>
     <div class="foot__legal">
       <p><strong>{relationship}</strong></p>
-      <p>PAN {pan} &nbsp;&middot;&nbsp; GSTIN {gstin}</p>
+      <p>CIN {cin} &nbsp;&middot;&nbsp; PAN {pan} &nbsp;&middot;&nbsp; GSTIN {gstin} &nbsp;&middot;&nbsp; Udyam {udyam}</p>
       <p>Designed by <a href="{credit_url}" target="_blank" rel="noopener">VGraphics.in</a></p>
     </div>
   </div>
@@ -444,12 +449,16 @@ def build(key):
         name=cfg["name"], eyebrow=hero["eyebrow"],
         h1=em_wrap(hero["h1"], cfg["em"]),
         deva=('<p class="deva2">%s</p>' % hero["deva"]) if hero["deva"] else "",
+        # same muted small-text treatment the breadcrumb uses - no new CSS
+        formerly=('<p class="crumb2" style="padding-top:10px">formerly %s</p>' % cfg["formerly"])
+                 if cfg.get("formerly") else "",
         lede=hero["lede"], app=cfg["app"], app_label=cfg["app_label"],
         url_hint=cfg["url_hint"], panel=PANELS[cfg["panel"]](),
         facts=facts, sections="\n\n".join(body_secs),
         legal_short=CO["legal_entity_short"], iso=CO["iso"],
         relationship=CO["relationship"],
-        pan=CO["pan"], gstin=CO["gstin"], credit_url=CO["credit_url"],
+        cin=CO["cin"], pan=CO["pan"], gstin=CO["gstin"], udyam=CO["udyam"],
+        credit_url=CO["credit_url"],
         sun=svg("sun", 19, "1.9"), moon=svg("moon", 19, "1.9"), menu=svg("menu", 20),
         out=svg("arrow_out", 16), up=svg("up", 18, "2.2"))
 
