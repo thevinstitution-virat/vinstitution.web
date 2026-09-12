@@ -240,6 +240,8 @@
   --serif:'Fraunces',Georgia,serif;
   --deva:'Mukta','Nirmala UI',sans-serif;
   --mono:ui-monospace,SFMono-Regular,Menlo,monospace}
+/* the company page is not a product: it takes the parent brand accent */
+html[data-acc="co"]{--acc:var(--brand);--acc-t:var(--brand-tint);--acc-btn:var(--btn);--acc-glow:rgba(232,69,42,.30)}
 html[data-acc="vv"]{--acc:var(--vv);--acc-t:var(--vv-t);--acc-btn:var(--vv-btn);--acc-glow:rgba(179,51,39,.30)}
 html[data-acc="pd"]{--acc:var(--pd);--acc-t:var(--pd-t);--acc-btn:var(--pd-btn);--acc-glow:rgba(166,94,11,.30)}
 html[data-acc="dg"]{--acc:var(--dg);--acc-t:var(--dg-t);--acc-btn:var(--dg-btn);--acc-glow:rgba(184,69,14,.30)}
@@ -251,3 +253,12 @@ html[data-acc="pt"]{--acc:var(--pt);--acc-t:var(--pt-t);--acc-btn:var(--pt-btn);
 }
 @media (min-width:901px){ .burger2{display:none !important} }
 @media (max-width:560px){ .palette{grid-template-columns:repeat(5,1fr)} }
+
+/* company page: registered particulars */
+.reg{display:grid;gap:0;margin:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--surface)}
+.reg div{display:grid;grid-template-columns:minmax(140px,34%) 1fr;gap:12px;padding:13px 16px;border-bottom:1px solid var(--line)}
+.reg div:last-child{border-bottom:0}
+.reg dt{font-size:12.5px;font-weight:700;color:var(--muted)}
+.reg dd{margin:0;font-size:14px;color:var(--ink);font-family:var(--mono);word-break:break-word}
+.reg dd.plain{font-family:inherit}
+@media (max-width:520px){ .reg div{grid-template-columns:1fr;gap:3px} }

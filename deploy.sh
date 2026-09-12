@@ -18,7 +18,7 @@ DOCROOT="${1:-$HOME/public_html}"
 SRC="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Everything the live site is made of. Anything not listed here is not deployed.
-PAYLOAD=(index.html contact.php favicon-32.png robots.txt sitemap.xml products assets ishan)
+PAYLOAD=(index.html about.html contact.php favicon.ico favicon.png favicon-32.png apple-touch-icon.png robots.txt sitemap.xml products assets ishan)
 
 say() { printf '  %s\n' "$*"; }
 

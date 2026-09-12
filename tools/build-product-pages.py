@@ -80,6 +80,149 @@ ICON = {
  "clock": '<circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3.2 2"></path>',
 }
 
+PAGE = """<!DOCTYPE html>
+<html lang="en" data-acc="{acc}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{title}</title>
+<meta name="description" content="{desc}">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="{canonical}">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vinstitution">
+<meta property="og:title" content="{og_title}">
+<meta property="og:description" content="{og_desc}">
+<meta property="og:url" content="{canonical}">
+<meta property="og:image" content="{og_image}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{og_title}">
+<meta name="twitter:description" content="{og_desc}">
+<meta name="twitter:image" content="{og_image}">
+<meta name="theme-color" content="#FFFCF9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#090D15" media="(prefers-color-scheme: dark)">
+
+<link rel="icon" href="../favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="../assets/img/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Mukta:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+  (function(){{
+    try{{
+      var s = localStorage.getItem('vin-theme');
+      var d = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', s || (d ? 'dark' : 'light'));
+    }}catch(e){{ document.documentElement.setAttribute('data-theme','light'); }}
+  }})();
+</script>
+<link rel="stylesheet" href="../assets/css/style.css?v={ver}">
+<link rel="stylesheet" href="../assets/css/product.css?v={ver}">
+<link rel="stylesheet" href="../ishan/ishan.css?v={ver}">
+{jsonld}
+</head>
+<body>
+
+<div id="scroll-progress" class="progress" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="wrap">
+    <div class="top__in">
+      <a class="top__logo" href="../index.html" aria-label="Vinstitution — home">
+        <img src="../assets/logos/vinstitution-lockup.png" alt="Vinstitution" width="520" height="168" fetchpriority="high">
+      </a>
+      <nav class="top__nav" aria-label="Primary">{nav}<a href="../#contact">Contact</a></nav>
+      <button type="button" id="theme-toggle" class="iconbtn" aria-label="Switch to night mode" title="Switch to night mode">
+        <span class="ico-dark">{sun}</span><span class="ico-light">{moon}</span>
+      </button>
+      <a class="b b--acc b--sm top__cta" href="../#contact">Book a demo</a>
+      <button type="button" id="nav-toggle" class="burger2" aria-label="Menu" aria-controls="mnav" aria-expanded="false">{menu}</button>
+    </div>
+  </div>
+</header>
+
+<nav id="mnav" class="mnav2" aria-label="Mobile" hidden>{mnav}<a href="../#contact">Contact</a>
+  <a class="b b--acc" href="../#contact" style="align-self:flex-start;margin-top:22px">Book a demo</a>
+</nav>
+
+<section class="phero2" id="top">
+  <span class="phero2__glow" aria-hidden="true"></span>
+  <span class="phero2__grid" aria-hidden="true"></span>
+  <div class="wrap">
+    <nav class="crumb2" aria-label="Breadcrumb"><a href="../index.html">Vinstitution</a><span>/</span>{name}</nav>
+    <div class="phero2__in">
+      <div style="min-width:0">
+        <span class="eyeb">{eyebrow}</span>
+        <h1 class="h1">{h1}</h1>
+        {formerly}
+        {deva}
+        <p class="plede">{lede}</p>
+        {hero_cta}
+      </div>
+      {hero_aside}
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="facts">{facts}</div></div>
+
+{sections}
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__top">
+      <div class="foot__brand">
+        <a href="../index.html" aria-label="Vinstitution — home">
+          <img src="../assets/logos/vinstitution-full.png" alt="Vinstitution — Uttiṣṭhata, Jāgrata, Prāpya · ISO 9001:2015 Certified" width="760" height="338" loading="lazy">
+        </a>
+        <p>Education technology for Indian institutions and learners — a campus operating system, an AI digital library, an NCERT-grounded tutor and a CBT exam engine, connected by one institutional login.</p>
+      </div>
+      <div>
+        <h4>Platforms</h4>
+        <ul>{footnav}</ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../about.html">About the company</a></li>
+          <li><a href="../index.html#why">Why Vinstitution</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#ecosystem">Ecosystem</a></li>
+          <li><a href="../#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach us</h4>
+        <ul>
+          <li><a href="mailto:tech@vinstitution.com">tech@vinstitution.com</a></li>
+          <li>New Delhi, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__btm">
+      <span>&copy; <span data-year>2026</span> {legal_short} All rights reserved.</span>
+      <span class="foot__iso">{iso}</span>
+    </div>
+    <div class="foot__legal">
+      <p><strong>{relationship}</strong></p>
+      <p>CIN {cin} &nbsp;&middot;&nbsp; PAN {pan} &nbsp;&middot;&nbsp; GSTIN {gstin} &nbsp;&middot;&nbsp; Udyam {udyam}</p>
+      <p>Designed by <a href="{credit_url}" target="_blank" rel="noopener">VGraphics.in</a></p>
+    </div>
+  </div>
+</footer>
+
+<a href="#top" id="to-top" class="totop" aria-label="Back to top">{up}</a>
+
+<script src="../assets/js/main.js?v={ver}"></script>
+<script src="../ishan/ishan.js?v={ver}" defer></script>
+</body>
+</html>
+"""
+
+
 def svg(name, size=16, sw="2"):
     return ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="%s" '
             'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" '
@@ -290,156 +433,7 @@ def build(key):
 
     jsonld = "".join('<script type="application/ld+json">%s</script>' % j for j in data["jsonld"])
 
-    return """<!DOCTYPE html>
-<html lang="en" data-acc="{acc}">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{title}</title>
-<meta name="description" content="{desc}">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="{canonical}">
-
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Vinstitution">
-<meta property="og:title" content="{og_title}">
-<meta property="og:description" content="{og_desc}">
-<meta property="og:url" content="{canonical}">
-<meta property="og:image" content="{og_image}">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{og_title}">
-<meta name="twitter:description" content="{og_desc}">
-<meta name="twitter:image" content="{og_image}">
-<meta name="theme-color" content="#FFFCF9" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#090D15" media="(prefers-color-scheme: dark)">
-
-<link rel="icon" href="../favicon-32.png" type="image/png" sizes="32x32">
-<link rel="icon" href="../assets/img/icon-192.png" type="image/png" sizes="192x192">
-<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Mukta:wght@400;500;600&display=swap" rel="stylesheet">
-<script>
-  (function(){{
-    try{{
-      var s = localStorage.getItem('vin-theme');
-      var d = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      document.documentElement.setAttribute('data-theme', s || (d ? 'dark' : 'light'));
-    }}catch(e){{ document.documentElement.setAttribute('data-theme','light'); }}
-  }})();
-</script>
-<link rel="stylesheet" href="../assets/css/style.css?v={ver}">
-<link rel="stylesheet" href="../assets/css/product.css?v={ver}">
-<link rel="stylesheet" href="../ishan/ishan.css?v={ver}">
-{jsonld}
-</head>
-<body>
-
-<div id="scroll-progress" class="progress" aria-hidden="true"></div>
-
-<header class="top">
-  <div class="wrap">
-    <div class="top__in">
-      <a class="top__logo" href="../index.html" aria-label="Vinstitution — home">
-        <img src="../assets/logos/vinstitution-lockup.png" alt="Vinstitution" width="520" height="168" fetchpriority="high">
-      </a>
-      <nav class="top__nav" aria-label="Primary">{nav}<a href="../#contact">Contact</a></nav>
-      <button type="button" id="theme-toggle" class="iconbtn" aria-label="Switch to night mode" title="Switch to night mode">
-        <span class="ico-dark">{sun}</span><span class="ico-light">{moon}</span>
-      </button>
-      <a class="b b--acc b--sm top__cta" href="../#contact">Book a demo</a>
-      <button type="button" id="nav-toggle" class="burger2" aria-label="Menu" aria-controls="mnav" aria-expanded="false">{menu}</button>
-    </div>
-  </div>
-</header>
-
-<nav id="mnav" class="mnav2" aria-label="Mobile" hidden>{mnav}<a href="../#contact">Contact</a>
-  <a class="b b--acc" href="../#contact" style="align-self:flex-start;margin-top:22px">Book a demo</a>
-</nav>
-
-<section class="phero2" id="top">
-  <span class="phero2__glow" aria-hidden="true"></span>
-  <span class="phero2__grid" aria-hidden="true"></span>
-  <div class="wrap">
-    <nav class="crumb2" aria-label="Breadcrumb"><a href="../index.html">Vinstitution</a><span>/</span>{name}</nav>
-    <div class="phero2__in">
-      <div style="min-width:0">
-        <span class="eyeb">{eyebrow}</span>
-        <h1 class="h1">{h1}</h1>
-        {formerly}
-        {deva}
-        <p class="plede">{lede}</p>
-        <div class="pcta">
-          <a class="b b--acc" href="{app}" target="_blank" rel="noopener">{app_label} {out}</a>
-          <a class="b b--ghost" href="../#contact">Book a walkthrough</a>
-        </div>
-      </div>
-      <div style="min-width:0">
-        <div class="app">
-          <div class="app__bar"><i></i><i></i><i></i><span class="app__url">{url_hint}</span>
-            <span class="app__demo">DEMO</span></div>
-          {panel}
-        </div>
-        <p class="app__note">Illustrative interface. The figures shown are sample data, not a real institution's records.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="wrap"><div class="facts">{facts}</div></div>
-
-{sections}
-
-<footer class="foot">
-  <div class="wrap">
-    <div class="foot__top">
-      <div class="foot__brand">
-        <a href="../index.html" aria-label="Vinstitution — home">
-          <img src="../assets/logos/vinstitution-full.png" alt="Vinstitution — Uttiṣṭhata, Jāgrata, Prāpya · ISO 9001:2015 Certified" width="760" height="338" loading="lazy">
-        </a>
-        <p>Education technology for Indian institutions and learners — a campus operating system, an AI digital library, an NCERT-grounded tutor and a CBT exam engine, connected by one institutional login.</p>
-      </div>
-      <div>
-        <h4>Platforms</h4>
-        <ul>{footnav}</ul>
-      </div>
-      <div>
-        <h4>Company</h4>
-        <ul>
-          <li><a href="../index.html#why">Why Vinstitution</a></li>
-          <li><a href="../index.html#services">Services</a></li>
-          <li><a href="../index.html#ecosystem">Ecosystem</a></li>
-          <li><a href="../#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Reach us</h4>
-        <ul>
-          <li><a href="mailto:tech@vinstitution.com">tech@vinstitution.com</a></li>
-          <li>New Delhi, India</li>
-        </ul>
-      </div>
-    </div>
-    <div class="foot__btm">
-      <span>&copy; <span data-year>2026</span> {legal_short} All rights reserved.</span>
-      <span class="foot__iso">{iso}</span>
-    </div>
-    <div class="foot__legal">
-      <p><strong>{relationship}</strong></p>
-      <p>CIN {cin} &nbsp;&middot;&nbsp; PAN {pan} &nbsp;&middot;&nbsp; GSTIN {gstin} &nbsp;&middot;&nbsp; Udyam {udyam}</p>
-      <p>Designed by <a href="{credit_url}" target="_blank" rel="noopener">VGraphics.in</a></p>
-    </div>
-  </div>
-</footer>
-
-<a href="#top" id="to-top" class="totop" aria-label="Back to top">{up}</a>
-
-<script src="../assets/js/main.js?v={ver}"></script>
-<script src="../ishan/ishan.js?v={ver}" defer></script>
-</body>
-</html>
-""".format(
+    return PAGE.format(
         acc=cfg["acc"], ver=VER,
         title=meta["title"], desc=meta["description"], canonical=meta["canonical"],
         og_title=meta["og_title"] or meta["title"], og_desc=meta["og_desc"] or meta["description"],
@@ -453,7 +447,17 @@ def build(key):
         formerly=('<p class="crumb2" style="padding-top:10px">formerly %s</p>' % cfg["formerly"])
                  if cfg.get("formerly") else "",
         lede=hero["lede"], app=cfg["app"], app_label=cfg["app_label"],
-        url_hint=cfg["url_hint"], panel=PANELS[cfg["panel"]](),
+        hero_aside=('<div style="min-width:0"><div class="app">'
+                    '<div class="app__bar"><i></i><i></i><i></i>'
+                    '<span class="app__url">%s</span>'
+                    '<span class="app__demo">DEMO</span></div>%s</div>'
+                    '<p class="app__note">Illustrative interface. The figures shown are '
+                    'sample data, not a real institution&#39;s records.</p></div>'
+                    % (cfg["url_hint"], PANELS[cfg["panel"]]())),
+        hero_cta=('<div class="pcta">'
+                  '<a class="b b--acc" href="%s" target="_blank" rel="noopener">%s %s</a>'
+                  '<a class="b b--ghost" href="../#contact">Book a walkthrough</a></div>'
+                  % (cfg["app"], cfg["app_label"], svg("arrow_out", 16))),
         facts=facts, sections="\n\n".join(body_secs),
         legal_short=CO["legal_entity_short"], iso=CO["iso"],
         relationship=CO["relationship"],
@@ -462,8 +466,192 @@ def build(key):
         sun=svg("sun", 19, "1.9"), moon=svg("moon", 19, "1.9"), menu=svg("menu", 20),
         out=svg("arrow_out", 16), up=svg("up", 18, "2.2"))
 
+# ------------------------------------------------------- about (root depth)
+def to_root(html):
+    """The shared template is written from products/. Re-point it at the root.
+
+    The order matters: ../#contact has to become index.html#contact (there is no
+    contact section on this page) before the blanket ../ strip runs."""
+    html = html.replace('href="../#contact"', 'href="index.html#contact"')
+    return html.replace('"../', '"')
+
+def reg_card():
+    rows = [("Legal entity", CO["legal_entity"]),
+            ("CIN", CO["cin"]),
+            ("PAN", CO["pan"]),
+            ("GSTIN", CO["gstin"]),
+            ("Udyam", CO["udyam"]),
+            ("Incorporated", CO["incorporated"]),
+            ("Registered office", CO["address_one_line"]),
+            ("Quality", CO["iso"])]
+    return ('<div style="min-width:0"><dl class="reg">%s</dl>'
+            '<p class="app__note">Corporate particulars of %s, the entity that '
+            'operates the Vinstitution brand.</p></div>'
+            % ("".join("<div><dt>%s</dt><dd>%s</dd></div>" % r for r in rows),
+               CO["legal_entity"]))
+
+ABOUT_PLATFORMS = [
+    ("Campus OS", "Vidyaverse", "products/vidyaverse.html",
+     "47 modules behind a single login — academics, fees, attendance, transport, "
+     "hostel, documents, admissions and intelligence, all writing to one shared "
+     "record. Vidyaverse is also the identity provider the rest of the stack trusts."),
+    ("Digital library", "Book Buddy", "products/pdlms.html",
+     "Four ways to read one book — reflowable EPUB, page-accurate PDF, natural "
+     "text-to-speech, and Varta, the study assistant that answers from the "
+     "institution&#39;s own library and cites the exact paragraph. Formerly PDLMS Pro."),
+    ("AI tutor", "Study Buddy", "products/digi-classroom.html",
+     "An NCERT-grounded tutor for CBSE and ICSE learners, Classes 6–12, running on "
+     "Sarvagya. Every answer carries its citation and a Bloom&#39;s-taxonomy level. "
+     "Formerly Digi Classroom."),
+    ("Exam engine", "e-Learning Practest", "products/practest.html",
+     "Server-timed CBT mocks that replicate the real exam hall — the question "
+     "palette, section locks and negative marking of SSC, Banking, Railways, UPSC "
+     "and State PCS papers, with analytics that show where marks leak."),
+]
+
+ABOUT_STORY = [
+    ("2026 — the company",
+     "VPD Vastus Ventures Private Limited was incorporated in New Delhi on "
+     "30 May 2026 to build connected software for Indian institutions and "
+     "learners, under the Vinstitution brand."),
+    ("The campus, then the library",
+     "Vidyaverse came first: 47 modules and one shared student record. Running it "
+     "made the next gap obvious — an institution&#39;s books needed the same single "
+     "login and the same data model, and that became Book Buddy."),
+    ("The tutor, then the exam hall",
+     "A library that could answer questions became Study Buddy, grounded in NCERT "
+     "and citing its sources. The same engineering pointed at aspirants became "
+     "e-Learning Practest, the server-timed CBT engine for government exams."),
+]
+
+def build_about():
+    canonical = "https://vinstitution.com/about.html"
+    title = "About Vinstitution — VPD Vastus Ventures Private Limited"
+    desc = ("Vinstitution is a segment of VPD Vastus Ventures Private Limited, "
+            "incorporated in New Delhi on 30 May 2026. Corporate particulars, the "
+            "four platforms and how to reach the team.")
+
+    jsonld = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": title,
+        "url": canonical,
+        "description": desc,
+        "mainEntity": {"@id": "https://vinstitution.com/#organization"},
+    }, ensure_ascii=False, indent=1)
+    crumbs = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Vinstitution",
+             "item": "https://vinstitution.com/"},
+            {"@type": "ListItem", "position": 2, "name": "Company", "item": canonical},
+        ],
+    }, ensure_ascii=False, indent=1)
+
+    cards = "".join(
+        '<article class="card" data-rv data-rv-delay="%d"><span class="card__rule"></span>'
+        '<span class="card__tag">%s</span><h3>%s</h3><p>%s</p>'
+        '<a class="linkarrow" href="%s">About %s %s</a></article>'
+        % (min(i * 60, 180), tag, name, body, href, name, svg("arrow_out", 15))
+        for i, (tag, name, href, body) in enumerate(ABOUT_PLATFORMS))
+
+    steps = "".join('<article class="step" data-rv data-rv-delay="%d"><h3>%s</h3><p>%s</p></article>'
+                    % (i * 70, h3, p) for i, (h3, p) in enumerate(ABOUT_STORY))
+
+    reach = "".join([
+        '<article class="card" data-rv><span class="card__rule"></span>'
+        '<span class="card__tag">Registered office</span><h3>New Delhi</h3><p>%s</p></article>'
+        % "<br>".join(CO["address_lines"]),
+        '<article class="card" data-rv data-rv-delay="60"><span class="card__rule"></span>'
+        '<span class="card__tag">Talk to us</span><h3>Phone and WhatsApp</h3>'
+        '<p><a href="tel:%s">%s</a></p><p><a href="mailto:%s">%s</a></p>'
+        '<p>We reply within one working day.</p></article>'
+        % (CO["phone_href"], CO["phone_display"], CO["email"], CO["email"]),
+        '<article class="card" data-rv data-rv-delay="120"><span class="card__rule"></span>'
+        '<span class="card__tag">Also from Vinstitution</span><h3>Publishing and branding</h3>'
+        '<p>Alongside the software we design and produce what schools hand to students — '
+        'magazines, prospectus, report cards and campus branding — with data drawn '
+        'straight from Vidyaverse.</p>'
+        '<a class="linkarrow" href="index.html#services">See the services %s</a></article>'
+        % svg("arrow_out", 15),
+    ])
+
+    sections = "\n\n".join([
+        '<section class="sec sec--alt"><div class="wrap">'
+        '<div class="sechead" data-rv><span class="eyeb">What we build</span>'
+        '<h2 class="h2">One company, four connected platforms.</h2>'
+        '<p class="lede">Each platform solves a problem completely on its own, and they '
+        'share an identity, a data model and a design language. An institution can adopt '
+        'one, or run the whole stack.</p></div>'
+        '<div class="grid">%s</div></div></section>' % cards,
+
+        '<section class="sec sec--band"><div class="wrap">'
+        '<div class="sechead" data-rv><span class="eyeb">The founding story</span>'
+        '<h2 class="h2">Each layer was built because the one before it exposed the next problem.</h2>'
+        '<p class="lede">The campus system needed a library, the library needed a tutor, '
+        'and the tutor needed an exam hall.</p></div>'
+        '<div class="steps">%s</div></div></section>' % steps,
+
+        '<section class="sec"><div class="wrap">'
+        '<div class="sechead" data-rv><span class="eyeb">Reach us</span>'
+        '<h2 class="h2">Where we are, and how to start a conversation.</h2></div>'
+        '<div class="grid">%s</div></div></section>' % reach,
+
+        '<section class="sec"><div class="wrap"><div class="close" data-rv>'
+        '<span class="close__glow"></span>'
+        '<h2 class="h2">Let&#39;s see if this fits your institution.</h2>'
+        '<p class="lede" style="margin-inline:auto">Tell us the size of your campus and '
+        'which problem is loudest right now. We will show you the part of the stack that '
+        'answers it.</p>'
+        '<div class="pcta"><a class="b b--acc" href="index.html#contact">Book a walkthrough</a>'
+        '<a class="b b--ghost" href="index.html">Explore the platforms</a></div>'
+        '</div></div></section>',
+    ])
+
+    facts = [("2026", "Incorporated"), ("4", "Connected platforms"),
+             ("ISO 9001", "2015 certified"), ("New Delhi", "Registered office")]
+
+    html = PAGE.format(
+        acc="co", ver=VER,
+        title=title, desc=desc, canonical=canonical,
+        og_title="About Vinstitution — the company behind the platforms",
+        og_desc=desc,
+        og_image="https://vinstitution.com/assets/img/og-vinstitution.png",
+        jsonld=('<script type="application/ld+json">%s</script>'
+                '<script type="application/ld+json">%s</script>' % (jsonld, crumbs)),
+        nav="".join('<a href="../products/%s.html">%s</a>' % (k, l) for k, l in NAV),
+        mnav="".join('<a href="../products/%s.html">%s</a>' % (k, l) for k, l in NAV),
+        footnav="".join('<li><a href="../products/%s.html">%s</a></li>' % (k, l) for k, l in NAV),
+        name="Company", eyebrow="The company",
+        h1=em_wrap("The company behind Vinstitution", "behind Vinstitution"),
+        formerly="", deva="",
+        lede=("%s The company was incorporated in New Delhi on 30 May 2026 and builds "
+              "education technology for Indian institutions and learners."
+              % CO["relationship"]),
+        app="", app_label="",
+        hero_aside=reg_card(),
+        hero_cta=('<div class="pcta">'
+                  '<a class="b b--acc" href="../#contact">Book a walkthrough</a>'
+                  '<a class="b b--ghost" href="../index.html#platforms">See the platforms</a></div>'),
+        facts="".join('<div class="fact"%s><b>%s</b><span>%s</span><i></i></div>'
+                      % (' data-rv' if i else "", v, l) for i, (v, l) in enumerate(facts)),
+        sections=sections,
+        legal_short=CO["legal_entity_short"], iso=CO["iso"],
+        relationship=CO["relationship"],
+        cin=CO["cin"], pan=CO["pan"], gstin=CO["gstin"], udyam=CO["udyam"],
+        credit_url=CO["credit_url"],
+        sun=svg("sun", 19, "1.9"), moon=svg("moon", 19, "1.9"), menu=svg("menu", 20),
+        out=svg("arrow_out", 16), up=svg("up", 18, "2.2"))
+    return to_root(html)
+
+
 for key in ORDER:
     html = build(key)
     path = os.path.join(ROOT, "products", key + ".html")
     io.open(path, "w", encoding="utf-8", newline="\n").write(html)
     print("%-22s %6d bytes" % (key + ".html", len(html)))
+
+html = build_about()
+io.open(os.path.join(ROOT, "about.html"), "w", encoding="utf-8", newline="\n").write(html)
+print("%-22s %6d bytes" % ("about.html", len(html)))
